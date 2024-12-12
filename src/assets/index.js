@@ -6,4 +6,6 @@ import instagram from "./socials/instagram.svg";
 import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
 
-export { logo, downarrow, facebook, instagram, telegram, twitter };
+import completed from "./completed.png";
+
+export { logo, downarrow, facebook, instagram, telegram, twitter, completed };

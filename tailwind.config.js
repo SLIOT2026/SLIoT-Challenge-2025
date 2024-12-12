@@ -26,8 +26,8 @@ export default {
         n: {
           1: "#FFFFFF",
           2: "#CAC6DD",
-          3: "#ADA8C3",
-          4: "#757185",
+          3: "#2b0091", //blue
+          4: "#ff00a4", //pink
           5: "#3F3A52",
           6: "#252134",
           7: "#15131D",
@@ -130,6 +130,8 @@ export default {
       },
       animation: {
         pulse: "pulse 2s infinite",
+        movedown: "movedown 1s linear forwards",
+        bounce: "bounce 1s infinite",
       },
       keyframes: {
         pulse: {
@@ -139,6 +141,14 @@ export default {
           "50%": {
             transform: "scale(1.1)",
           },
+        },
+        movedown: {
+          "0%": { opacity: "1", transform: "translateY(-30px)" },
+          "100%": { opacity: "1", transform: "translateY(0px)" },
+        },
+        bounce: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-4px)" },
         },
       },
       borderRadius: {
