@@ -8,24 +8,44 @@ export const navigation = [
   },
   {
     id: "1",
-    title: "About Us",
-    url: "/aboutus",
+    title: "Industry4.0",
+    url: "/industry4.0",
   },
   {
     id: "2",
-    title: "OurTeam",
-    url: "/ourteam",
+    title: "About",
+    url: "/about",
   },
   {
     id: "3",
-    title: "Events",
-    url: "/events",
+    title: "Categories",
+    url: "/categories",
   },
   {
     id: "4",
-    title: "Book Now",
-    url: "/booknow",
+    title: "Challenge",
+    url: "/challenge",
     onlyMobile: true,
+  },
+   {
+    id: "5",
+    title: "Timeline",
+    url: "/timeline",
+   },
+  {
+    id: "6",
+    title: "Gallery",
+    url: "/gallery",
+  },
+  {
+    id: "7",
+    title: "Spotlight",
+    url: "/spotlight",
+  },
+  {
+    id: "8",
+    title: "Partners",
+    url: "/partners",
   },
 ];
 

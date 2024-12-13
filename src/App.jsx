@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import OurTeam from "./pages/OurTeam";
 import Events from "./pages/Events";
+import Partners from "./pages/Partners";
 import Footer from "./components/Footer";
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
             <Route path="/aboutus" element={<AboutUs />} />
             <Route path="/ourteam" element={<OurTeam />} />
             <Route path="/events" element={<Events />} />
+            <Route path ="/Partners" element={<Partners />} />
           </Routes>
         </div>
         <Footer className="mt-auto" />

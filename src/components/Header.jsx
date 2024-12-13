@@ -1,7 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { navigation } from "../constants";
-import RoundButton from "./RoundButton";
 import MenuSvg from "../assets/svg/MenuSvg";
 import { HamburgerMenu } from "./design/Header";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
@@ -25,10 +24,10 @@ const Header = () => {
     <div className="flex flex-col justify-center items-center">
       <div className="flex justify-center items-center">
         <div
-          className={`fixed top-0 w-full px-[5%] lg:px-[4%] xl:px-[10%] mx-auto z-50 lg:bg-n-1 lg:border-b-2 shadow-lg lg:bg-opacity-80 lg:backdrop-blur-sm ${
+          className={`fixed top-0 w-full px-[5%] lg:px-[4%] xl:px-[10%] mx-auto z-50 shadow-lg backdrop-blur-lg ${
             openNavigation
-              ? "bg-n-1 bg-opacity-80"
-              : "bg-n-1 bg-opacity-80 lg:backdrop-blur-sm"
+              ? "bg-white/30"
+              : "bg-white/20 lg:backdrop-blur-lg"
           }`}
         >
           <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
@@ -39,20 +38,20 @@ const Header = () => {
             <nav
               className={`${
                 openNavigation ? "flex" : "hidden"
-              } fixed top-[7rem] bottom-[2rem] left-[5%] right-[5%] rounded-lg bg-n-1 bg-opacity-80 lg:static lg:flex lg:bg-transparent`}
+              } fixed top-[7rem] bottom-[2rem] left-[5%] right-[5%] rounded-lg bg-white/30 lg:static lg:flex lg:bg-transparent`}
             >
               <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
                 {navigation.map((item) => (
                   <a
                     key={item.id}
                     href={item.url}
-                    className={`block relative font-poppins text-xl text-n-8 transition-colors hover:text-n-14 ${
+                    className={`block relative font-poppins text-base text-n-1 transition-colors hover:text-n-4 ${
                       item.onlyMobile ? "lg:hidden" : ""
-                    } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-sm lg:font-semibold ${
+                    } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-sm lg:font-normal ${
                       item.url === pathname.pathname
-                        ? "z-2 lg:text-n-8"
-                        : "lg:text-n-8/50"
-                    } lg:leading-5 lg:hover:text-n-14`}
+                        ? "z-2 lg:text-n-4"
+                        : "lg:text-n-2"
+                    } lg:leading-5 lg:hover:text-n-1`}
                   >
                     {item.title}
                   </a>
@@ -61,20 +60,29 @@ const Header = () => {
               <HamburgerMenu />
             </nav>
 
-            <RoundButton
-              className="hidden lg:flex text-n-8 lg:text-sm hover:text-n-1"
+            {/* Gradient Border Contact Button with Rounded Corners */}
+            <a
+              className="hidden lg:flex text-sm font-medium py-2 px-6 rounded-full border-2 border-transparent bg-gradient-to-r from-blue-500 to-pink-500 text-transparent bg-clip-text hover:bg-blue-500 hover:text-white transition-all duration-300"
               href="/booknow"
+              style={{
+                borderImageSource: "linear-gradient(to right, #3b82f6, #ec4899)",
+                borderImageSlice: 1,
+              }}
             >
-              Join Now
-            </RoundButton>
+              Contact
+            </a>
 
-            <RoundButton
-              className="ml-auto lg:hidden"
-              px="px-3"
+            {/* Gradient Border Hamburger Button with Rounded Corners */}
+            <button
+              className="ml-auto lg:hidden px-3 py-2 rounded-full border-2 border-transparent bg-gradient-to-r from-blue-500 to-pink-500 text-transparent bg-clip-text hover:bg-blue-500 hover:text-white transition-all duration-300"
               onClick={toggleNavigation}
+              style={{
+                borderImageSource: "linear-gradient(to right, #3b82f6, #ec4899)",
+                borderImageSlice: 1,
+              }}
             >
               <MenuSvg openNavigation={openNavigation} />
-            </RoundButton>
+            </button>
           </div>
         </div>
       </div>
