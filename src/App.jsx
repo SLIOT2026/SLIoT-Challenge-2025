@@ -4,11 +4,7 @@ import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import OurTeam from "./pages/OurTeam";
 import Events from "./pages/Events";
-import BookNowLayout from "./pages/BookNowLayout";
 import Footer from "./components/Footer";
-import BookingForm1 from "./components/BookingForm1";
-import BookingForm2 from "./components/BookingForm2";
-import BookingForm3 from "./components/BookingForm3";
 
 const App = () => {
   return (
@@ -21,17 +17,6 @@ const App = () => {
             <Route path="/aboutus" element={<AboutUs />} />
             <Route path="/ourteam" element={<OurTeam />} />
             <Route path="/events" element={<Events />} />
-            <Route path="/booknow" element={<BookNowLayout />}>
-              <Route
-                path="/booknow/customer_details"
-                element={<BookingForm1 />}
-              />
-              <Route
-                path="/booknow/billing_details"
-                element={<BookingForm2 />}
-              />
-              <Route path="/booknow/event_details" element={<BookingForm3 />} />
-            </Route>
           </Routes>
         </div>
         <Footer className="mt-auto" />

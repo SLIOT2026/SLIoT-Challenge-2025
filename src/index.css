@@ -15,6 +15,15 @@
 @layer base {
   body {
     @apply font-sans bg-n-1 text-n-8 text-base;
+    background: linear-gradient(
+      90deg,
+      rgba(22, 26, 49, 1) 0%,
+      rgba(35, 19, 74, 1) 0%,
+      rgba(10, 9, 37, 1) 44%,
+      rgba(6, 9, 31, 1) 47%,
+      rgba(59, 0, 38, 1) 100%,
+      rgba(9, 6, 18, 1) 100%
+    );
   }
 
   :root {
@@ -148,7 +157,6 @@
 }
 
 @layer components {
-
   /* SHADCN COMPONENTS */
   /* Form */
   .shad-form_label {
