@@ -1,4 +1,5 @@
 import { completed } from "@/assets";
+import TimeLine from "@/components/design/TimeLine";
 import { useEffect, useState } from "react";
 
 const Home = () => {
@@ -97,11 +98,11 @@ const Home = () => {
 
   return (
     <div className="w-full">
-      <section id="timeline" className="my-16 items-center justify-center">
-        <div className="timeline-anim animated-div">
-          <h2 className="text-3xl font-bold text-center mb-8">Timeline</h2>
+      <section id="timeline" className="items-center justify-center my-16">
+        {/* <div className="timeline-anim animated-div">
+          <h2 className="mb-8 text-3xl font-bold text-center">Timeline</h2>
           <div className="relative mx-4">
-            <div className="absolute w-1 bg-gradient-to-b from-purple-700 to-pink-500 left-1/2 transform -translate-x-1/2 h-full"></div>
+            <div className="absolute w-1 h-full transform -translate-x-1/2 bg-gradient-to-b from-purple-700 to-pink-500 left-1/2"></div>
             {events.map((event, index) => (
               <div
                 key={index}
@@ -111,9 +112,9 @@ const Home = () => {
                   index % 2 === 0 ? "translate-x-0" : "-translate-x-full"
                 } animate-movedown opacity-100`}
               >
-                <div className="relative p-6 bg-white border-3 border-purple-700">
-                  <h6 className="font-semibold text-lg mb-1">{event.date}</h6>
-                  <h4 className="font-semibold mb-1">{event.title}</h4>
+                <div className="relative p-6 bg-white border-purple-700 border-3">
+                  <h6 className="mb-1 text-lg font-semibold">{event.date}</h6>
+                  <h4 className="mb-1 font-semibold">{event.title}</h4>
                   <span
                     className={`absolute top-5 z-1 ${
                       index % 2 === 0
@@ -128,7 +129,7 @@ const Home = () => {
             <img
               src={completed}
               alt="Completed"
-              className="absolute w-9 h-9 rounded-full z-10 animate-bounce"
+              className="absolute z-10 rounded-full w-9 h-9 animate-bounce"
               style={{
                 left: "49%", // Center horizontally
                 transform: "translate(-50%, -50%)", // Center perfectly
@@ -136,7 +137,8 @@ const Home = () => {
               }}
             />
           </div>
-        </div>
+        </div> */}
+        <TimeLine/>
       </section>
     </div>
   );
