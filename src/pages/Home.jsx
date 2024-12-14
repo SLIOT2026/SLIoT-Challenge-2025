@@ -2,6 +2,7 @@ import Gallery from "@/components/Gallery";
 import About from "../components/About";
 import Spotlight from "@/components/Spotlight";
 import TimeLine from "@/components/design/TimeLine";
+import ShiftingCountdown from "@/components/design/CountDown";
 
 const Home = () => {
   return (
@@ -10,6 +11,8 @@ const Home = () => {
       <Gallery />
       <Spotlight />
       <TimeLine/>
+      <ShiftingCountdown/>
+   
     </div>
   );
 };
