@@ -2,13 +2,21 @@ import React from "react";
 import "./prizes.scss";
 
 const Prizes = () => {
+  const [category, setCategory] = React.useState("school");
+
+  const prizes = {
+    school: ["LKR 15,000", "LKR 10,000", "LKR 7,000"],
+    university: ["LKR 25,000", "LKR 15,000", "LKR 10,000"],
+    open: ["LKR 25,000", "LKR 15,000", "LKR 10,000"],
+  }
+
   return (
     <div className="mt-10 w-full mx-auto text-white body-container">
       <h1 className="text-6xl text-center">Prizes</h1>
 
       <div className="flex flex-wrap justify-center items-center gap-x-4 md:gap-x-10 mt-10 px-4 md:px-0">
         <div className="button-container">
-          <button className="blob-btn">
+          <button className="blob-btn active-category">
             School Category
             <span className="blob-btn__inner">
               <span className="blob-btn__blobs">
