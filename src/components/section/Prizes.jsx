@@ -15,48 +15,41 @@ const Prizes = () => {
       <h1 className="text-6xl text-center">Prizes</h1>
 
       <div className="flex flex-wrap justify-center items-center gap-x-4 md:gap-x-10 mt-10 px-4 md:px-0">
-        <div className="button-container">
-          <button className="blob-btn active-category">
-            School Category
-            <span className="blob-btn__inner">
-              <span className="blob-btn__blobs">
-                <span className="blob-btn__blob"></span>
-                <span className="blob-btn__blob"></span>
-                <span className="blob-btn__blob"></span>
-                <span className="blob-btn__blob"></span>
-              </span>
+        <button className={`blob-btn ${category == "school" && "active-category"}`} onClick={() => setCategory("school")}>
+          School Category
+          <span className="blob-btn__inner">
+            <span className="blob-btn__blobs">
+              <span className="blob-btn__blob"></span>
+              <span className="blob-btn__blob"></span>
+              <span className="blob-btn__blob"></span>
+              <span className="blob-btn__blob"></span>
             </span>
-          </button>
-        </div>
+          </span>
+        </button>
 
-        <div className="button-container">
-          <button className="blob-btn">
-            University Category
-            <span className="blob-btn__inner">
-              <span className="blob-btn__blobs">
-                <span className="blob-btn__blob"></span>
-                <span className="blob-btn__blob"></span>
-                <span className="blob-btn__blob"></span>
-                <span className="blob-btn__blob"></span>
-              </span>
+        <button className={`blob-btn ${category == "university" && "active-category"}`} onClick={() => setCategory("university")}>
+          University Category
+          <span className="blob-btn__inner">
+            <span className="blob-btn__blobs">
+              <span className="blob-btn__blob"></span>
+              <span className="blob-btn__blob"></span>
+              <span className="blob-btn__blob"></span>
+              <span className="blob-btn__blob"></span>
             </span>
-          </button>
-        </div>
+          </span>
+        </button>
 
-        <div className="button-container">
-          <button className="blob-btn">
-            Open Category
-            <span className="blob-btn__inner">
-              <span className="blob-btn__blobs">
-                <span className="blob-btn__blob"></span>
-                <span className="blob-btn__blob"></span>
-                <span className="blob-btn__blob"></span>
-                <span className="blob-btn__blob"></span>
-              </span>
+        <button className={`blob-btn ${category == "open" && "active-category"}`} onClick={() => setCategory("open")}>
+          Open Category
+          <span className="blob-btn__inner">
+            <span className="blob-btn__blobs">
+              <span className="blob-btn__blob"></span>
+              <span className="blob-btn__blob"></span>
+              <span className="blob-btn__blob"></span>
+              <span className="blob-btn__blob"></span>
             </span>
-          </button>
-        </div>
-
+          </span>
+        </button>
       </div>
 
       <div className="w-full flex flex-wrap-reverse justify-center items-center text-center mt-6 px-4 md:px-0">
