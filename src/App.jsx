@@ -5,6 +5,7 @@ import AboutUs from "./pages/AboutUs";
 import OurTeam from "./pages/OurTeam";
 import Events from "./pages/Events";
 import Footer from "./components/Footer";
+import EventOrganizers from "./pages/EventOrganizers"
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
             <Route path="/aboutus" element={<AboutUs />} />
             <Route path="/ourteam" element={<OurTeam />} />
             <Route path="/events" element={<Events />} />
+            <Route path="/EventOrganizers" element={<EventOrganizers />} />
           </Routes>
         </div>
         <Footer className="mt-auto" />
