@@ -1,5 +1,6 @@
 import React from "react";
 import "./prizes.scss";
+import { first, second, third } from "../../assets";
 
 const Prizes = () => {
   const [category, setCategory] = React.useState("school");
@@ -53,37 +54,43 @@ const Prizes = () => {
       </div>
 
       <div className="w-full flex flex-wrap-reverse justify-center items-center text-center mt-6 px-4 md:px-0">
-        <div className="product order-3 lg:order-2">
+        <div className="product order-3 md:order-2">
           <div className="effect-1"></div>
           <div className="effect-2"></div>
           <div className="content">
-            <div className="text-black">1st</div>
+            <div class="image-wrapper shine">
+              <img src={first} alt="trophy" className="w-[550px]" />
+            </div>
           </div>
-          <span className="title">
+          <span className="text-4xl font-bold">
             {prizes[category][0]}
           </span>
         </div>
         <div className="bg"></div>
 
-        <div className="product order-2 lg:order-3">
+        <div className="product order-2 md:order-3">
           <div className="effect-1"></div>
           <div className="effect-2"></div>
           <div className="content">
-            <div className="text-black">2nd</div>
+            <div class="image-wrapper shine">
+              <img src={second} alt="trophy" className="w-[550px]" />
+            </div>
           </div>
-          <span className="title">
+          <span className="text-4xl font-bold">
             {prizes[category][1]}
           </span>
         </div>
         <div className="bg"></div>
 
-        <div className="product order-1 lg:order-1">
+        <div className="product order-1 md:order-1">
           <div className="effect-1"></div>
           <div className="effect-2"></div>
           <div className="content">
-            <div className="text-black">3rd</div>
+            <div class="image-wrapper shine">
+              <img src={third} alt="trophy" className="w-[550px]" />
+            </div>
           </div>
-          <span className="title">
+          <span className="text-4xl font-bold">
             {prizes[category][2]}
           </span>
         </div>

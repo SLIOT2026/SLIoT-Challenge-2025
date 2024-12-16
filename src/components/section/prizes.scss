@@ -14,27 +14,18 @@
 .product {
   flex: auto;
   font-size: 1.5rem;
-  margin: 0 1vw calc(1vw + 50px) 1vw;
+  // margin: 0 1vw calc(1vw + 150px) 1vw;
+  margin-top: 30px;
   min-width: 200px;
-  max-width: 500px;
+  max-width: 400px;
   position: relative;
   animation: entry 1s linear 1;
 }
-
-.product:hover+.bg {
-  opacity: 1;
-  background: -moz-linear-gradient(-45deg, #632c65 15%, #56a5e2 100%);
-  background: -webkit-linear-gradient(-45deg, #632c65 15%, #56a5e2 100%);
-  background: linear-gradient(135deg, #632c65 15%, #56a5e2 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#632c65', endColorstr='#56a5e2', GradientType=1);
-}
-
 .product:before {
   content: "";
   float: left;
   padding-top: 100%;
 }
-
 .content {
   background: white;
   border-radius: 100%;
@@ -46,16 +37,27 @@
   z-index: 5000;
   transition: .5s all ease;
   transform: rotateX(0deg) scale(0.8);
+  // background-image: url("../../assets/prizes/firstr.png");
 }
 
 .product:hover .content {
   transform: rotateX(0deg) scale(1);
-}
+} 
 
 .product:hover .effect-1,
 .product:hover .effect-2 {
   display: block;
 }
+
+.product:hover+.bg {
+  opacity: 1;
+  background: -moz-linear-gradient(-45deg, #632c65 15%, #56a5e2 100%);
+  background: -webkit-linear-gradient(-45deg, #632c65 15%, #56a5e2 100%);
+  background: linear-gradient(135deg, #632c65 15%, #56a5e2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#632c65', endColorstr='#56a5e2', GradientType=1);
+}
+
+
 
 .effect-1,
 .effect-2 {
@@ -116,21 +118,6 @@
     top: 0%;
   }
 }
-
-.title {
-  position: relative;
-  top: calc(100% + 16px);
-}
-
-.sleep {
-  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
-  border-radius: 50%;
-  height: 50%;
-  margin: 25%;
-  width: 50%;
-}
-
-
 
 $cyan: #2b0091;
 $dark: #FFFFFF;
@@ -276,4 +263,52 @@ $borderW: 2px;
 
 .active-category .blob-btn__inner {
   background: $cyan;
+}
+
+.image-wrapper {
+	display: flex;
+	align-items: center;
+	text-align: center;
+  border-radius: 100%;
+	line-height: 1.6;
+
+	img {
+		height: auto;
+		max-width: 100%;
+	}
+}
+
+.shine {
+	position: relative;
+	overflow: hidden;
+
+	&::before {
+		background: linear-gradient(
+			to right,
+			fade_out(#fff, 1) 0%,
+			fade_out(#fff, 0.7) 100%
+		);
+		content: "";
+		display: block;
+		height: 100%;
+		left: -75%;
+		position: absolute;
+		top: 0;
+		transform: skewX(-25deg);
+		width: 50%;
+		z-index: 2;
+	}
+
+	&:hover,
+	&:focus {
+		&::before {
+			animation: shine 1s;
+		}
+	}
+
+	@keyframes shine {
+		100% {
+			left: 125%;
+		}
+	}
 }
