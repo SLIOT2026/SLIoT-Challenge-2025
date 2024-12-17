@@ -27,7 +27,7 @@ const Header = () => {
           className={`fixed top-0 w-full px-[5%] lg:px-[4%] xl:px-[10%] mx-auto z-50 shadow-lg backdrop-blur-lg ${
             openNavigation
               ? "bg-white/30"
-              : "bg-white/20 lg:backdrop-blur-lg"
+              : "bg-white/45 lg:backdrop-blur-lg"
           }`}
         >
           <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
@@ -60,29 +60,9 @@ const Header = () => {
               <HamburgerMenu />
             </nav>
 
-            {/* Gradient Border Contact Button with Rounded Corners */}
-            <a
-              className="hidden lg:flex text-sm font-medium py-2 px-6 rounded-full border-2 border-transparent bg-gradient-to-r from-blue-500 to-pink-500 text-transparent bg-clip-text hover:bg-blue-500 hover:text-white transition-all duration-300"
-              href="/booknow"
-              style={{
-                borderImageSource: "linear-gradient(to right, #3b82f6, #ec4899)",
-                borderImageSlice: 1,
-              }}
-            >
-              Contact
-            </a>
-
-            {/* Gradient Border Hamburger Button with Rounded Corners */}
-            <button
-              className="ml-auto lg:hidden px-3 py-2 rounded-full border-2 border-transparent bg-gradient-to-r from-blue-500 to-pink-500 text-transparent bg-clip-text hover:bg-blue-500 hover:text-white transition-all duration-300"
-              onClick={toggleNavigation}
-              style={{
-                borderImageSource: "linear-gradient(to right, #3b82f6, #ec4899)",
-                borderImageSlice: 1,
-              }}
-            >
-              <MenuSvg openNavigation={openNavigation} />
-            </button>
+            <button className="relative px-6 py-2 text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-pink-500 rounded-lg border-2 border-transparent hover:text-white transition duration-300 before:absolute before:inset-0 before:-z-10 before:rounded-lg before:bg-gradient-to-r before:from-blue-400 before:to-pink-500 before:content-[''] before:p-[2px]">
+      Contact
+    </button>
           </div>
         </div>
       </div>
