@@ -8,6 +8,13 @@ import twitter from "./socials/twitter.svg";
 
 import completed from "./completed.png";
 
+// <<<<<<< prizes
+import first from "./prizes/first.png";
+import second from "./prizes/second.png";
+import third from "./prizes/third.png";
+
+// export { logo, downarrow, facebook, instagram, telegram, twitter, completed, first, second, third };
+
 import clock_icon from "./svg/clock_icon.svg";
 import house_icon from "./svg/house_icon.svg";
 
@@ -51,6 +58,7 @@ import robot from "./robot.png";
 import bg from "./bg.png";
 
 export {
+  first, second, third,
   logo,
   downarrow,
   facebook,

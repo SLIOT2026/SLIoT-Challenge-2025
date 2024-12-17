@@ -1,3 +1,7 @@
+
+import Prizes from "@/components/section/Prizes";
+
+
 import Gallery from "@/components/Gallery";
 import About from "../components/About";
 import Spotlight from "@/components/Spotlight";
@@ -10,11 +14,15 @@ const Home = () => {
       <About />
       <Gallery />
       <Spotlight />
+
+     <Prizes />
+
       <TimeLine/>
       <ShiftingCountdown/>
    
     </div>
   );
+
 };
 
 export default Home;

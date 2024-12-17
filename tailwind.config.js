@@ -292,5 +292,6 @@ export default {
       });
     }),
     require("tailwindcss-animate"),
+    require('tailwindcss-animated')
   ],
 };
