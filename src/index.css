@@ -14,6 +14,7 @@
 
 @layer base {
   body {
+
     @apply font-sans bg-n-1 text-n-8 text-base;
     background: linear-gradient(
       90deg,
@@ -24,6 +25,7 @@
       rgba(59, 0, 38, 1) 100%,
       rgba(9, 6, 18, 1) 100%
     );
+
   }
 
   :root {
