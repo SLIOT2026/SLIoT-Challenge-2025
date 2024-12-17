@@ -53,48 +53,33 @@ const Prizes = () => {
         </button>
       </div>
 
-      <div className="w-full flex flex-wrap-reverse justify-center items-center text-center mt-6 px-4 md:px-0">
-        <div className="product order-3 md:order-2">
-          <div className="effect-1"></div>
-          <div className="effect-2"></div>
-          <div className="content">
-            <div class="image-wrapper shine">
-              <img src={first} alt="trophy" className="w-[550px]" />
-            </div>
+      <div className="w-full flex flex-wrap-reverse justify-center items-center text-center mt-6 px-4 md:px-0 gap-x-4 md:gap-x-10">
+        <div className="order-3 md:order-2">
+          <div class="image-wrapper shine scale-75 transform transition duration-80 hover:scale-90">
+            <img src={first} alt="trophy" className="h-[350px]" />
           </div>
           <span className="text-4xl font-bold">
             {prizes[category][0]}
           </span>
         </div>
-        <div className="bg"></div>
 
-        <div className="product order-2 md:order-3">
-          <div className="effect-1"></div>
-          <div className="effect-2"></div>
-          <div className="content">
-            <div class="image-wrapper shine">
-              <img src={second} alt="trophy" className="w-[550px]" />
-            </div>
+        <div className="order-2 md:order-1">
+          <div class="image-wrapper shine scale-75 transform transition duration-80 hover:scale-90">
+            <img src={second} alt="trophy" className="h-[335px]" />
           </div>
           <span className="text-4xl font-bold">
             {prizes[category][1]}
           </span>
         </div>
-        <div className="bg"></div>
 
-        <div className="product order-1 md:order-1">
-          <div className="effect-1"></div>
-          <div className="effect-2"></div>
-          <div className="content">
-            <div class="image-wrapper shine">
-              <img src={third} alt="trophy" className="w-[550px]" />
-            </div>
+        <div className="order-1 md:order-3">
+          <div class="image-wrapper shine scale-75 transform transition duration-80 hover:scale-90">
+            <img src={third} alt="trophy" className="h-[320px]" />
           </div>
           <span className="text-4xl font-bold">
             {prizes[category][2]}
           </span>
         </div>
-        <div className="bg"></div>
       </div>
 
       <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
