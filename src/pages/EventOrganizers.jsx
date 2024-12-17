@@ -43,7 +43,7 @@ const EventOrganizers = () => {
         </div>
 
         {/* Logos */}
-        <div className="glass-card flex flex-wrap justify-center items-center gap-20 mt-8 w-full border py-8 rounded-3xl">
+        <div className="glass-card flex flex-wrap justify-center items-center gap-20 mt-8 w-full border py-8 rounded-3xl bg-white bg-opacity-5">
             <img
             src={cse} // Replace with CSE Logo URL
             alt="CSE Logo"

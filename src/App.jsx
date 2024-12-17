@@ -6,6 +6,7 @@ import OurTeam from "./pages/OurTeam";
 import Events from "./pages/Events";
 import Footer from "./components/Footer";
 import EventOrganizers from "./pages/EventOrganizers"
+import Contactus from "./pages/Contactus"
 
 const App = () => {
   return (
@@ -18,7 +19,8 @@ const App = () => {
             <Route path="/aboutus" element={<AboutUs />} />
             <Route path="/ourteam" element={<OurTeam />} />
             <Route path="/events" element={<Events />} />
-            <Route path="/EventOrganizers" element={<EventOrganizers />} />
+            <Route path="/eventOrganizers" element={<EventOrganizers />} />
+            <Route path="/contactus" element={<Contactus />} />
           </Routes>
         </div>
         <Footer className="mt-auto" />
