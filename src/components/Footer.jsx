@@ -6,11 +6,11 @@ const Footer = () => {
   return (
     <>
       <div className="bg-slate-950 backdrop-blur-md bg-opacity-40 backdrop-brightness-75 flex flex-col md:flex-row px-[5%] lg:px-[10%] mt-10 py-[2rem] gap-4 justify-center items-center">
-        <div className="py-3 w-full flex justify-between items-center">
+        <div className="py-3 w-full flex justify-between items-center flex-col sm:flex-row gap-6">
           <div className="flex items-center">
-          <p className="text-sm mt-2 text-n-1">
-            © 2024 SLIoT Challenge. All rights reserved.
-          </p>
+            <p className="text-sm mt-2 text-n-1">
+              © 2024 SLIoT Challenge. All rights reserved.
+            </p>
           </div>
           <ul className="flex gap-5 flex-wrap">
             {socials.map((item) => (

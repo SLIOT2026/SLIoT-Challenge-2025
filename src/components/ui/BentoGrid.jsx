@@ -175,7 +175,7 @@ export const BentoGridItem = ({
       </div>
       {isModalOpen && link && (
         <div className="fixed inset-0 z-50 flex items-center justify-center">
-          <div className="relative w-full h-full flex flex-col items-center justify-center bg-black bg-opacity-40 backdrop-blur-md backdrop-brightness-75">
+          <div className="relative w-full h-full flex flex-col items-center justify-center bg-black bg-opacity-40 backdrop-blur-md backdrop-brightness-75 p-4 md:p-8 lg:p-12">
             {/* Close button */}
             <button
               className="absolute top-2 right-2 text-white hover:text-gray-400 text-4xl font-bold"
@@ -183,22 +183,21 @@ export const BentoGridItem = ({
             >
               ×
             </button>
-
+        
             {/* Video Title */}
-            <h2 className="text-center font-semibold text-n-1 text-2xl mb-4">
+            <h2 className="text-center font-semibold text-n-1 text-2xl md:text-3xl lg:text-4xl mb-4">
               {title}
             </h2>
             {/* Embedded YouTube Video */}
-            <div className="aspect-w-16 aspect-h-9 z-50">
+            <div className="w-full max-w-2xl lg:max-w-4xl aspect-video z-50">
               <iframe
-                width="928"
-                height="522"
                 src="https://www.youtube.com/embed/v6wOjQGANsE"
                 title={title}
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen
+                className="w-full h-full"
               ></iframe>
             </div>
           </div>

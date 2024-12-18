@@ -22,10 +22,10 @@ const Prizes = () => {
   }
 
   return (
-    <div className="mt-20 w-full mx-auto text-white body-container">
+    <div className="mt-20 w-full mx-auto text-white body-container" id="categories">
       <h1 className="text-5xl text-center">PRIZES</h1>
 
-      <div className="flex w-full items-center justify-center gap-10 mt-10">
+      <div className="flex flex-col md:flex-row w-full items-center justify-center gap-10 mt-10 px-[5%]">
         {categories.map((card) => (
           <Button 
               key={card.id}
@@ -88,7 +88,7 @@ const Prizes = () => {
       </div> */}
 
       <div className={`w-full flex flex-wrap-reverse justify-center items-center text-center mt-6 px-4 md:px-0 gap-x-4 md:gap-x-10 ${categoryChange && "animate-fade-up animate-once animate-duration-895 anianimate-linear"}`}>
-        <div className="order-3 md:order-2">
+        <div className="order-3 md:order-3 lg:order-2">
           <div class="image-wrapper shine scale-75 transform transition duration-80 hover:scale-90">
             <img src={first} alt="trophy" className="h-[350px]" />
           </div>
@@ -97,7 +97,7 @@ const Prizes = () => {
           </span>
         </div>
 
-        <div className="order-2 md:order-1">
+        <div className="order-2 md:order-1 lg:order-1">
           <div class="image-wrapper shine scale-75 transform transition duration-80 hover:scale-90">
             <img src={second} alt="trophy" className="h-[335px]" />
           </div>
@@ -106,7 +106,7 @@ const Prizes = () => {
           </span>
         </div>
 
-        <div className="order-1 md:order-3">
+        <div className="order-1 md:order-1 lg:order-3">
           <div class="image-wrapper shine scale-75 transform transition duration-80 hover:scale-90">
             <img src={third} alt="trophy" className="h-[320px]" />
           </div>

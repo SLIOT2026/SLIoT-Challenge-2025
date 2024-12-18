@@ -121,7 +121,7 @@ export default function TimeLine() {
   // }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center w-screen min-h-screen align-middle bg-transparent">
+    <div className="flex flex-col items-center justify-center w-screen min-h-screen align-middle bg-transparent" id="timeline">
       <motion.h1
       initial={{opacity:0,y:100}}
       whileInView={{opacity:1, y:0,  transition: {
@@ -130,7 +130,7 @@ export default function TimeLine() {
       
       
       
-      className="py-2 mt-20 mb-10 text-3xl font-semibold text-white sm:text-5xl font-poppins" >EVENT TIMELINE</motion.h1>
+      className="py-2 mt-20 mb-10 text-4xl text-white sm:text-5xl font-poppins" >EVENT TIMELINE</motion.h1>
       <div className="space-y-8 w-[60%] relative mx-10 my-5 before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
         {events.map((event, index) => (
             <TimeLineCard key={index} event={event} index={index} />

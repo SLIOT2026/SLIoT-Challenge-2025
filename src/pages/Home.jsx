@@ -15,16 +15,14 @@ const Home = () => {
   return (
     <div className="w-full">
       <About />
-      <Gallery />
-      <Spotlight />
-
       <Prizes />
       <Details />
       <TimeLine/>
       <ShiftingCountdown/>
+      <Gallery />
+      <Spotlight />
       <EventOrganizers />
       <ContactUs />
-   
     </div>
   );
 

@@ -49,7 +49,7 @@ const ShiftingCountdown = () => {
       
       
       
-      className="flex justify-center py-2 mt-20 mb-10 font-poppins text-2xl text-center text-white sm:text-5xl uppercase" >Registration Closes In</motion.h1>
+      className="flex justify-center py-2 mt-20 mb-10 font-poppins text-4xl text-center text-white sm:text-5xl uppercase" >Registration Closes In</motion.h1>
       <div className="flex items-center justify-center w-full mx-auto md:gap-10 ">
         <CountdownItem unit="Day" text="days" />
         <CountdownItem unit="Hour" text="hours" />

@@ -5,16 +5,16 @@ import { bg } from "@/assets";
 
 const Spotlight = () => {
   return (
-    <div className="w-full justify-center items-center text-n-1 mt-20">
-      <h2 className="text-5xl text-n-1 text-center">SLIoT IN THE SPOTLIGHT</h2>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-x-24">
-        {spotlight.map(({ id, title, des, img, link }) => (
+    <div className="w-full justify-center items-center text-n-1 mt-20" id="spotlight">
+      <h2 className="text-4xl text-white sm:text-5xl font-poppins text-center">SLIoT IN THE SPOTLIGHT</h2>
+      <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
+        {spotlight.map(({ id, title, des, des2, img, link }) => (
           <div
             key={id}
-            className="sm:h-[30rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
+            className="xxs:h-[24rem] xs:h-[28rem] sm:h-[31rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
           >
             <PinContainer title={link} href={link}>
-              <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden h-[30vh] sm:h-[40vh] mb-5">
+              <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden mb-10">
                 <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162D]">
                   <img src={bg} alt="bg-img" />
                 </div>
@@ -35,6 +35,9 @@ const Spotlight = () => {
 
               <p className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2">
                 {des}
+              </p>
+              <p className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2">
+                {des2}
               </p>
             </PinContainer>
           </div>

@@ -244,6 +244,15 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
     },
+    screens: {
+      'xxs': '400px',
+      'xs': '500px',
+      'sm': '640px',  // Small screens and above
+      'md': '768px',  // Medium screens and above
+      'lg': '1024px', // Large screens and above
+      'xl': '1280px', // Extra large screens and above
+      '2xl': '1536px', // 2x Extra large screens and above
+    },
   },
   plugins: [
     plugin(function ({ addBase, addComponents, addUtilities }) {
