@@ -88,47 +88,6 @@ export const navigation = [
   },
 ];
 
-export const heroIcons = [];
-
-export const notificationImages = [];
-
-export const companyLogos = [];
-
-export const collabText =
-  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
-
-export const collabContent = [
-  {
-    id: "0",
-    title: "$10 Million in Public Liability Insurance",
-  },
-  {
-    id: "1",
-    title: "Flexible Pick-up and Delivery options",
-  },
-  {
-    id: "2",
-    title: "On-site supervision available",
-  },
-  {
-    id: "3",
-    title: "Design and Build service for custom courses",
-  },
-  {
-    id: "4",
-    title:
-      "Portable fencing, scorecards, pencils, and golfer certificates provided",
-  },
-];
-
-export const collabApps = [];
-
-export const pricing = [];
-
-export const benefits = [];
-
-export const special_benefits = [];
-
 export const socials = [
   {
     id: "0",
@@ -155,10 +114,6 @@ export const socials = [
     url: "#",
   },
 ];
-
-export const topbarLinks = [];
-
-export const paymentmethods = [];
 
 export const aboutGridItems = [
   {

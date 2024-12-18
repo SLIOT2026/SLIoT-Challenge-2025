@@ -2,10 +2,8 @@ import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { navigation } from "../constants";
 import MenuSvg from "../assets/svg/MenuSvg";
-import { HamburgerMenu } from "./design/Header";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import logo from "../assets/svg/sliot-logo.svg";
-import MagicButton from "./ui/MagicButton";
 
 const Header = () => {
   const pathname = useLocation();

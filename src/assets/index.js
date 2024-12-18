@@ -1,5 +1,4 @@
 import logo from "./logo.png";
-import downarrow from "./downarrow.png";
 
 import facebook from "./socials/facebook.svg";
 import instagram from "./socials/instagram.svg";
@@ -65,7 +64,6 @@ import bg from "./bg.png";
 export {
   first, second, third,
   logo,
-  downarrow,
   facebook,
   instagram,
   telegram,

@@ -1,13 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./pages/Home";
-import AboutUs from "./pages/AboutUs";
-import OurTeam from "./pages/OurTeam";
-import Events from "./pages/Events";
-import Partners from "./pages/Partners";
 import Footer from "./components/Footer";
-import EventOrganizers from "./pages/EventOrganizers"
-import Contactus from "./pages/Contactus"
 import SLIoTHeroSection from "./components/SLIoTHeroSection";
 
 const App = () => {
@@ -19,12 +13,6 @@ const App = () => {
         <div className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/aboutus" element={<AboutUs />} />
-            <Route path="/ourteam" element={<OurTeam />} />
-            <Route path="/events" element={<Events />} />
-            <Route path="/eventOrganizers" element={<EventOrganizers />} />
-            <Route path="/contactus" element={<Contactus />} />
-            <Route path ="/Partners" element={<Partners />} />
           </Routes>
         </div>
         <Footer className="mt-auto" />
