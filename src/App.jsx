@@ -28,7 +28,7 @@ const App = () => {
 
   return (
     <>
-      <div className="flex flex-col min-h-screen  bg-black pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
+      <div className="flex flex-col min-h-screen  bg-transparent pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
         <Header />
         <SLIoTHeroSection />
         <div className="flex-grow">
