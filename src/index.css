@@ -17,13 +17,13 @@
 }
 
 * {
-  /* scroll-behavior: smooth; */
+  /* scroll-behavior: true; */
 }
 
 @layer base {
   body {
 
-    @apply font-sans text-n-8 text-base;
+    @apply font-sans text-base text-n-8;
     background: linear-gradient(
       90deg,
       rgba(22, 26, 49, 1) 0%,

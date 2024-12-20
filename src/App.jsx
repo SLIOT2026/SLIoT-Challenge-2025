@@ -3,30 +3,37 @@ import Header from "./components/Header";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import Lenis from "@studio-freight/lenis";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Loader from "./components/Loader";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 
 const App = () => {
 
+  const lenisRef = useRef(null);
+
   useEffect(() => {
-    (async () => {
-      const LocomotiveScroll = (await import("locomotive-scroll")).default;
-  
-      const scroll = new LocomotiveScroll({
-        el: document.querySelector("[data-scroll-container]"),
-        smooth: true,
-      });
-  
-      // Clean up on component unmount
-      return () => {
-        if (scroll) scroll.destroy();
-      };
-    })();
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    });
+
+    lenisRef.current = lenis;
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+
+    return () => {
+      lenis.destroy();
+    };
   }, []);
   return (
+
+    
     <>
-      <div data-scroll-container className="flex flex-col min-h-screen bg-transparent pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
+      <div  className="flex flex-col min-h-screen bg-transparent pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
         <Loader />
         <Header />
         <div className="flex-grow">
