@@ -3,6 +3,7 @@ import { navigation } from "../constants";
 import MenuSvg from "../assets/svg/MenuSvg";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import logo from "../assets/svg/sliot-logo.svg";
+import { closeMenu, openMenu } from "./animations";
 
 const Header = () => {
   const [openNavigation, setOpenNavigation] = useState(false);
@@ -10,9 +11,11 @@ const Header = () => {
 
   const toggleNavigation = () => {
     if (openNavigation) {
+      closeMenu();
       setOpenNavigation(false);
       enablePageScroll();
     } else {
+      openMenu();
       setOpenNavigation(true);
       disablePageScroll();
     }
@@ -50,6 +53,7 @@ const Header = () => {
   const handleClick = (id) => {
     if (openNavigation) {
       enablePageScroll();
+      closeMenu();
       setOpenNavigation(false);
     }
     smoothScroll(id, 1500);
@@ -77,41 +81,33 @@ const Header = () => {
 
   return (
     <div className="flex flex-col items-center justify-center">
-      <div className="flex items-center justify-center">
+      {/* <div className="flex items-center justify-center"> */}
         <div
-          className={`fixed top-0 w-full px-[5%] xl:px-[6%] mx-auto z-40 shadow-xl backdrop-blur-lg`}
+          className={`fixed top-0 w-full px-[5%] xl:px-[6%] mx-auto z-40 shadow-xl backdrop-blur-lg backdrop-brightness-75 nav-primary`}
         >
-          <div className="flex items-center justify-between px-5 lg:px-7.5 xl:px-10 max-xl:py-4">
+          <div className={`flex xl:items-center xl:justify-between px-5 lg:px-7.5 xl:px-10 max-xl:py-4 ${openNavigation ? "flex-col justify-start items-start " : "justify-between items-center"}`}>
             <a
-              className={`flex items-center w-[12rem] xl:mr-8 ${
-                openNavigation ? "hidden" : ""
+              className={`flex items-center xl:mr-8 ${
+                openNavigation ? "" : "w-[12rem]"
               }`}
               href="/"
             >
               <img src={logo} width={100} height={100} alt="sliot" />
             </a>
             <button
-              className={`xl:hidden ${openNavigation ? "hidden" : ""}`}
+              className={`xl:hidden ${openNavigation ? "z-6 absolute top-9 right-[8%]" : ""}`}
               onClick={toggleNavigation}
             >
-              <MenuSvg />
-            </button>
-            <button
-              className={`z-6 absolute top-4 right-6 text-white hover:text-gray-400 text-4xl font-semibold ${
-                openNavigation ? "flex" : "hidden"
-              }`}
-              onClick={toggleNavigation}
-            >
-              ×
+              <MenuSvg openNavigation={openNavigation} />
             </button>
             <nav
               className={`${
                 openNavigation
-                  ? "flex backdrop-blur h-screen justify-center items-center"
+                  ? "flex h-screen justify-center items-center"
                   : "hidden"
               } rounded-lg xl:static xl:flex xl:bg-transparent`}
             >
-              <div className="relative flex flex-col items-center justify-center m-auto text-center z-2 xl:flex-row backdrop-blur-lg backdrop-brightness-75 xl:bg-transparent xl:px-0 rounded-xl">
+              <div className="relative flex flex-col items-start justify-center m-auto text-center z-2 xl:flex-row xl:bg-transparent xl:px-0 rounded-xl nav-link">
                 {navigation.map((item) => (
                   <button
                     key={item.id}
@@ -142,7 +138,7 @@ const Header = () => {
             </button>
           </div>
         </div>
-      </div>
+      {/* </div> */}
     </div>
   );
 };
