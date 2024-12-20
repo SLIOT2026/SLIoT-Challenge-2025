@@ -33,7 +33,7 @@
       rgba(59, 0, 38, 1) 100%,
       rgba(9, 6, 18, 1) 100%
     );
-
+    background-attachment: fixed;
   }
 
   :root {

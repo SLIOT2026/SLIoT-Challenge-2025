@@ -33,7 +33,7 @@ const App = () => {
 
     
     <>
-      <div  className="flex flex-col min-h-screen bg-transparent pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
+      <div  className="flex flex-col min-h-screen bg-transparent pt-[4.75rem] lg:pt-[5.25rem] overflow-x-hidden ">
         <Loader />
         <Header />
         <div className="flex-grow">
