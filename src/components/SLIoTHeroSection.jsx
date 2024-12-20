@@ -13,21 +13,23 @@ const SLIoTHeroSection = () => {
         <Spotlight className='sm:top-10 md:top-28 left-80 h-screen sm:w-[50vw]' fill='blue' />
       </div>
       <section
-        className="flex flex-col md:flex-row items-center justify-center px-4 md:px-6 lg:px-[6%] gap-4 lg:gap-0 relative antialiased"
+        className="flex flex-col md:flex-row items-center justify-center px-4 md:px-6 lg:px-[6%] md:gap-0 relative antialiased"
         style={{ fontFamily: "Arial, sans-serif" }}
       >
         <div className="container flex flex-col items-center mx-auto md:flex-row">
-          <div className="text-left">
+          <div className="text-center md:text-left">
             <div className="p-4 md:p-6">
-              <TextGenerateEffect 
-                  className='relative z-10 max-w-[400px] lg:max-w-[550px] mt-15 sm:mt-0'
-                  words='SLIoT Challenge 2025' 
-              />
+              <div className="flex flex-col items-center">
+                <TextGenerateEffect 
+                    className='relative z-10 max-w-[400px] lg:max-w-[550px] mt-15 md:mt-0 text-center md:text-left'
+                    words='SLIoT Challenge 2025' 
+                />
+              </div>
               {/* <h1 className="relative z-10 text-6xl tracking-wide text-transparent md:text-7xl lg:text-8xl font-nicoMoji bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-400">
                 SLIoT 
               </h1>
               <h2 className="relative z-10 text-4xl text-pink-500 lg:text-5xl font-nicoMoji">Challenge 2025</h2> */}
-              <p className="relative mt-4 md:mt-6 text-xs xs:text-sm lg:text-sm text-n-1 leading-relaxed mb-6 md:mb-10 max-w-full md:max-w-[540px] z-10">
+              <p className="relative mt-4 md:mt-6 text-xs xs:text-sm lg:text-sm text-n-1 leading-relaxed mb-6 md:mb-10 max-w-full md:max-w-[540px] z-10 text-justify xs:text-center md:text-left">
                 The SLIoT Challenge is a competition that aims to provide a platform
                 for students to showcase their innovative ideas and solutions in the
                 field of Internet of Things (IoT). The competition is open to all
@@ -62,7 +64,7 @@ const SLIoTHeroSection = () => {
           </div>
         </div>
         <CardContainer className="relative z-10 inter-var">
-          <CardBody className="group/card w-auto sm:w-[20rem] md:w-[24rem] lg:w-[30rem] h-auto z-10 relative">
+          <CardBody className="group/card w-auto sm:w-[20rem] md:w-[22rem] lg:w-[30rem] h-auto z-10 relative">
             <CardItem translateZ="100" className="relative z-10 w-full mt-4">
               <img
                 src={robot}

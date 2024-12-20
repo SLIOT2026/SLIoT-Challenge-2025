@@ -95,7 +95,7 @@ export const closeMenu = () => {
   })
     .to([".nav-primary", ".nav-secondary"], {
       duration: 0.8,
-      height: "0",
+      height: "80px",
       transformOrigin: "right top",
       stagger: {
         amount: 0.1,
