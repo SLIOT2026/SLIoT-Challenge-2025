@@ -17,7 +17,7 @@
 }
 
 * {
-  /* scroll-behavior: true; */
+  scroll-behavior: true;
 }
 
 @layer base {
@@ -33,7 +33,7 @@
       rgba(59, 0, 38, 1) 100%,
       rgba(9, 6, 18, 1) 100%
     );
-
+    background-attachment: fixed;
   }
 
   :root {

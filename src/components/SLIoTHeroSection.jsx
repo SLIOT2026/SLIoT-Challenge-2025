@@ -19,46 +19,73 @@ const SLIoTHeroSection = () => {
         <div className="container flex flex-col items-center mx-auto md:flex-row">
           <div className="text-center md:text-left">
             <div className="p-4 md:p-6">
-              <div className="flex flex-col items-center">
+              <motion.div
+              
+              initial={{ y: 100,opacity:0 }}
+        animate={{opacity:1, y:0}}
+                
+              transition={{duration:0.5,delay:3,ease:'easeInOut'}}
+              className="flex flex-col items-center">
                 <TextGenerateEffect 
                     className='relative z-10 max-w-[400px] lg:max-w-[550px] mt-15 md:mt-0 text-center md:text-left'
                     words='SLIoT Challenge 2025' 
                 />
-              </div>
+              </motion.div>
               {/* <h1 className="relative z-10 text-6xl tracking-wide text-transparent md:text-7xl lg:text-8xl font-nicoMoji bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-400">
                 SLIoT 
               </h1>
               <h2 className="relative z-10 text-4xl text-pink-500 lg:text-5xl font-nicoMoji">Challenge 2025</h2> */}
-              <p className="relative mt-4 md:mt-6 text-xs xs:text-sm lg:text-sm text-n-1 leading-relaxed mb-6 md:mb-10 max-w-full md:max-w-[540px] z-10 text-justify xs:text-center md:text-left">
+              <motion.p
+
+              
+initial={{ y: 40,opacity:0 }}
+animate={{opacity:1, y:0}}
+        
+      transition={{duration:0.5,delay:3,ease:'easeInOut'}}
+              
+              className="relative mt-4 md:mt-6 text-xs xs:text-sm lg:text-sm text-n-1 leading-relaxed mb-6 md:mb-10 max-w-full md:max-w-[540px] z-10 text-justify xs:text-center md:text-left">
                 The SLIoT Challenge is a competition that aims to provide a platform
                 for students to showcase their innovative ideas and solutions in the
                 field of Internet of Things (IoT). The competition is open to all
                 undergraduate students from universities and higher education
                 institutes in Sri Lanka.
-              </p>
-              <div className="text-center md:text-left">
+              </motion.p>
+              <motion.div
+              
+              initial={{ y: 0,opacity:0 }}
+        animate={{opacity:1, y:0,type:'spring'}}
+                
+              transition={{duration:0.5,delay:4,ease:'anticipate'}}
+              className="text-center md:text-left">
                 <motion.div
-                initial={{ scale: 1,opacity:0 }}
+                initial={{ scale: 1, }}
                 whileTap={{ scale: 0.9 }}
-                    animate={{scale:1,opacity:1}}
+                  
                 transition={{duration:0.2}}
                 className="relative inline-block">
                   <div className="absolute inset-0 translate-x-1 translate-y-1 border-2 border-gray-400 lg:translate-y-2 lg:translate-x-2 rounded-xl"></div>
-                  <button className="relative z-10 px-4 sm:px-8 py-2 text-base text-white transition duration-300 shadow-lg lg:px-10 lg:py-3 lg:text-lg font-nicoMoji rounded-xl bg-gradient-to-r from-pink-500 to-purple-600">
+                  <button className="relative z-10 px-4 py-2 text-base text-white transition duration-300 shadow-lg sm:px-8 lg:px-10 lg:py-3 lg:text-lg font-nicoMoji rounded-xl bg-gradient-to-r from-pink-500 to-purple-600">
                     Join Now
                   </button>
                 </motion.div>
-              </div>
+              </motion.div>
               
               <div className="relative flex items-end justify-center gap-6 mt-6 md:justify-end md:mt-10 lg:-mt-10 md:gap-10">
-                <div className="relative z-10 flex flex-col items-center mt-4 text-sm font-bold text-n-1 md:items-end md:mt-8">
+                <motion.div
+                
+              initial={{ y: 0,opacity:0 }}
+              animate={{opacity:1, y:0}}
+                      
+                    transition={{duration:1.5,delay:5,ease:'circIn'}}
+                
+                className="relative z-10 flex flex-col items-center mt-4 text-sm font-bold text-n-1 md:items-end md:mt-8">
                   Powered By
                   <img 
                     src={sltLogo}
                     alt="SLT-Mobitel-logo"
-                    className="relative w-32 h-auto md:w-48"
+                    className="relative w-32 h-auto md:w-48 "
                   />
-                </div>
+                </motion.div>
               </div>
             </div>
           </div>
@@ -66,11 +93,23 @@ const SLIoTHeroSection = () => {
         <CardContainer className="relative z-10 inter-var">
           <CardBody className="group/card w-auto sm:w-[20rem] md:w-[22rem] lg:w-[30rem] h-auto z-10 relative">
             <CardItem translateZ="100" className="relative z-10 w-full mt-4">
-              <img
-                src={robot}
-                className="relative z-10 object-cover w-full rounded-xl"
-                alt="thumbnail"
-              />
+            <motion.img
+      src={robot}
+      className="relative z-10 object-cover w-full rounded-xl"
+      alt="thumbnail"
+      loading="eager"
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        duration: 0.8,
+        ease: "easeInOut",
+      }}
+      whileHover={{
+        scale: 1.05,
+        rotate: 2, // Slight rotation on hover
+        transition: { duration: 0.3 },
+      }}
+    />
             </CardItem>
           </CardBody>
         </CardContainer>
