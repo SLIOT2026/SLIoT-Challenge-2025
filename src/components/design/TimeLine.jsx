@@ -123,9 +123,9 @@ export default function TimeLine() {
   return (
     <div className="flex flex-col items-center justify-center w-screen min-h-screen align-middle bg-transparent" id="timeline">
       <motion.h1
-      initial={{opacity:0,y:100}}
+      initial={{opacity:0,y:50}}
       whileInView={{opacity:1, y:0,  transition: {
-        duration: 3 // Animation duration
+        duration: 2 // Animation duration
       }}}
       
       

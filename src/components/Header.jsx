@@ -27,8 +27,8 @@ const Header = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center">
-      <div className="flex justify-center items-center">
+    <div className="flex flex-col items-center justify-center">
+      <div className="flex items-center justify-center">
         <div
           className={`fixed top-0 w-full px-[5%] xl:px-[6%] mx-auto z-50 shadow-xl backdrop-blur-lg `}
         >
@@ -53,7 +53,7 @@ const Header = () => {
                 openNavigation ? "flex backdrop-blur h-screen justify-center items-center" : "hidden"
               } rounded-lg xl:static xl:flex xl:bg-transparent`}
             >
-              <div className="relative z-2 flex flex-col items-center justify-center m-auto xl:flex-row backdrop-blur-lg backdrop-brightness-75 xl:bg-transparent xl:px-0 rounded-xl text-center">
+              <div className="relative flex flex-col items-center justify-center m-auto text-center z-2 xl:flex-row backdrop-blur-lg backdrop-brightness-75 xl:bg-transparent xl:px-0 rounded-xl">
                 {navigation.map((item) => (
                   <a
                     key={item.id}
@@ -77,7 +77,7 @@ const Header = () => {
               onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
             >
               <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#2b0091_0%,#393BB2_50%,#ff00a4_100%)]" />
-              <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-2xl bg-slate-950 px-12 text-sm font-medium text-n-1 backdrop-blur-3xl gap-2">
+              <span className="inline-flex items-center justify-center w-full h-full gap-2 px-12 text-sm font-medium cursor-pointer rounded-2xl bg-slate-950 text-n-1 backdrop-blur-3xl">
                 Contact
               </span>
             </button>

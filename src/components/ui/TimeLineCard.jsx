@@ -14,7 +14,7 @@ initial={{
     opacity: 0,
     // if odd index card,slide from right instead of left
     // x: index % 2 === 0 ? 100 : -50
-    y:100
+    y:50
   }}
   whileInView={{
     opacity: 1,
