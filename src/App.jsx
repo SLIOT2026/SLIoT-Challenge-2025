@@ -2,9 +2,9 @@ import { Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
-import SLIoTHeroSection from "./components/SLIoTHeroSection";
 import Lenis from "@studio-freight/lenis";
 import { useEffect } from "react";
+import Loader from "./components/Loader";
 
 const App = () => {
 
@@ -28,9 +28,9 @@ const App = () => {
 // 
   return (
     <>
-      <div className="flex flex-col min-h-screen  bg-transparent pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
+      <div className="flex flex-col min-h-screen bg-transparent pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
+        <Loader />
         <Header />
-        <SLIoTHeroSection />
         <div className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />

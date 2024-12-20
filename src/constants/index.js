@@ -37,53 +37,57 @@ import {
   sliot2019_9,
   sliot2019_10,
   sliot2019_11,
+  uom,
+  cse,
+  iesl,
+  sltLogo,
 } from "../assets";
 
 export const navigation = [
   {
     id: "1",
     title: "Home",
-    url: "#",
+    url: "home",
   },
   {
     id: "2",
     title: "About",
-    url: "#about",
+    url: "about",
   },
   {
     id: "3",
     title: "Categories",
-    url: "#categories",
+    url: "categories",
   },
   {
     id: "4",
     title: "Challenge",
-    url: "#challenge",
+    url: "challenge",
   },
    {
     id: "5",
     title: "Timeline",
-    url: "#timeline",
+    url: "timeline",
    },
   {
     id: "6",
     title: "Gallery",
-    url: "#gallery",
+    url: "gallery",
   },
   {
     id: "7",
     title: "Spotlight",
-    url: "#spotlight",
+    url: "spotlight",
   },
   {
     id: "8",
     title: "Partners",
-    url: "#partners",
+    url: "partners",
   },
   {
     id: "9",
     title: "Contact",
-    url: "#contact",
+    url: "contact",
     onlyMobile: true,
   },
 ];
@@ -426,3 +430,26 @@ export const categories = [
   //   thumbnail: "/exp4.svg",
   // },
 ];
+
+export const organizers = [
+  {
+    id: 1,
+    img: iesl,
+    className: "w-36",
+  },
+  {
+    id: 2,
+    img: cse,
+    className: "w-52",
+  },
+  {
+    id: 3,
+    img: sltLogo,
+    className: "w-60",
+  },
+  {
+    id: 4,
+    img: uom,
+    className: "w-36",
+  },
+]; 

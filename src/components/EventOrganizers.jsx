@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { cse, iesl, sltLogo, uom } from "@/assets";
+import { CardCarousel } from "./ui/CardCarousel";
+import { organizers } from "@/constants";
 
 const EventOrganizers = () => {
     useEffect(() => {
@@ -42,7 +43,7 @@ const EventOrganizers = () => {
                     </div>
                 </div>
             </div>
-            <div className="glass-card flex flex-wrap justify-center items-center gap-20  w-screen py-8  bg-gradient-to-r from-[rgba(255,255,255,0.2)] via-transparent to-[rgba(255,255,255,0.2)] bg-white bg-opacity-10 ">
+            {/* <div className="glass-card flex flex-wrap justify-center items-center gap-20  w-screen py-8  bg-gradient-to-r from-[rgba(255,255,255,0.2)] via-transparent to-[rgba(255,255,255,0.2)] bg-white bg-opacity-10 ">
                 <img
                     src={cse} 
                     alt="CSE Logo"
@@ -63,7 +64,12 @@ const EventOrganizers = () => {
                     alt="UoM Logo"
                     className="w-36"
                     data-aos="fade-up" />
-            </div>
+            </div> */}
+            <CardCarousel 
+                items={organizers}
+                direction='right'
+                speed='slow'
+            />
         </div>
         
     );

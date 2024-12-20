@@ -56,7 +56,7 @@ import robot from "./robot.png";
 
 import sltLogo from "./SLT-Mobitel.png"
 import cse from "./cse.jpg";
-import iesl from "./iesl.gif";
+import iesl from "./iesl.jpg";
 import uom from "./uom.gif";
 
 import bg from "./bg.png";

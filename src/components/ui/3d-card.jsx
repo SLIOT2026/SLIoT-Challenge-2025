@@ -106,9 +106,9 @@ export const CardItem = ({
 
   useEffect(() => {
     let animationFrameId;
-    const maxRotation = 30; // Set the maximum rotation in degrees
+    const maxRotation = 20; // Set the maximum rotation in degrees
     const minRotation = 0; // Minimum rotation
-    const rotationSpeed = 0.2; // Adjust speed by changing this value
+    const rotationSpeed = 0.1; // Adjust speed by changing this value
     let direction = 1; // 1 for clockwise, -1 for anticlockwise
 
     const animate = () => {

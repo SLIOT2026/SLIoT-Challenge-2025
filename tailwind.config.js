@@ -102,6 +102,7 @@ export default {
         poppins: ["Poppins", "sans-serif"],
         robotoMono: ["'Roboto Mono'", "monospace"],
         nicoMoji: ["'NicoMoji'", "sans-serif"],
+        sans: ['Quattrocento Sans', 'sans-serif'],
       },
       letterSpacing: {
         tagline: ".15em",
@@ -153,8 +154,14 @@ export default {
         third: "moveInCircle 40s linear infinite",
         fourth: "moveHorizontal 40s ease infinite",
         fifth: "moveInCircle 20s ease infinite",
-        scroll:
-          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+        scroll: "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+        blur1: 'blur 1.5s 0s infinite linear alternate',
+        blur2: 'blur 1.5s 0.2s infinite linear alternate',
+        blur3: 'blur 1.5s 0.4s infinite linear alternate',
+        blur4: 'blur 1.5s 0.6s infinite linear alternate',
+        blur5: 'blur 1.5s 0.8s infinite linear alternate',
+        blur6: 'blur 1.5s 1s infinite linear alternate',
+        blur7: 'blur 1.5s 1.2s infinite linear alternate',
       },
       keyframes: {
         pulse: {
@@ -236,6 +243,10 @@ export default {
           to: {
             transform: "translate(calc(-50% - 0.5rem))",
           },
+        },
+        blur: {
+          '0%': { filter: 'blur(0px)' },
+          '100%': { filter: 'blur(4px)' },
         },
       },
       borderRadius: {
