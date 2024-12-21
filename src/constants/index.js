@@ -41,6 +41,7 @@ import {
   cse,
   iesl,
   sltLogo,
+  chairman,
 } from "../assets";
 
 export const navigation = [
@@ -344,7 +345,7 @@ export const spotlight = [
   {
     id: 1,
     title: "What is IoT?",
-    des: "Explained by Prof. Chandana Gamage",
+    des: "Explained by Prof. Chandana Gamage | SLIoT Challenge 2025",
     des2: "SLIoT Challenge 2025",
     img: "/p1.svg",
     link: "https://www.youtube.com/embed/mIJdCAKL71I",
@@ -359,7 +360,7 @@ export const spotlight = [
   {
     id: 3,
     title: "How to start an IoT Project?",
-    des: "Explained by Dr. Kutila Gunasekara",
+    des: "Explained by Dr. Kutila Gunasekara | SLIoT Challenge 2025",
     des2: "SLIoT Challenge 2025",
     img: "/p3.svg",
     link: "https://www.youtube.com/embed/vVw2Q92ydsc",
@@ -367,7 +368,7 @@ export const spotlight = [
   {
     id: 4,
     title: "Communication between Embedded Devices",
-    des: "Explained by Dr. Sulochana Sooriyaarachchi",
+    des: "Explained by Dr. Sulochana Sooriyaarachchi | SLIoT Challenge 2025",
     des2: "SLIoT Challenge 2025",
     img: "/p4.svg",
     link: "https://www.youtube.com/embed/eiyhMLFVdMU",
@@ -375,7 +376,7 @@ export const spotlight = [
   {
     id: 5,
     title: "Value of Security for IoT Solutions",
-    des: "Explained by Dr. Sunimal Rathnayaka",
+    des: "Explained by Dr. Sunimal Rathnayaka | SLIoT Challenge 2025",
     des2: "SLIoT Challenge 2025",
     img: "/p1.svg",
     link: "https://www.youtube.com/embed/Gw6NmLdHqiA",
@@ -383,7 +384,7 @@ export const spotlight = [
   {
     id: 6,
     title: "Applications of IoT",
-    des: "Explained by Prof. Chandana Gamage",
+    des: "Explained by Prof. Chandana Gamage | SLIoT Challenge 2025",
     des2: "SLIoT Challenge 2025",
     img: "/p2.svg",
     link: "https://www.youtube.com/embed/LJnJDyBk4_4",
@@ -391,15 +392,15 @@ export const spotlight = [
   {
     id: 7,
     title: "IOT Sensors",
-    des: "Explained by Dr. Chathuranga Hettiarachchi",
+    des: "Explained by Dr. Chathuranga Hettiarachchi | SLIoT Challenge 2025",
     des2: "SLIoT Challenge 2025",
     img: "/p3.svg",
     link: "https://www.youtube.com/embed/MHwnCB3-kzA",
   },
   {
     id: 8,
-    title: "what is AIOT?",
-    des: "Explained By Dr. Thanuja Ambegoda",
+    title: "What is AIOT?",
+    des: "Explained By Dr. Thanuja Ambegoda | SLIoT Challenge 2025",
     des2: "SLIoT Challenge 2025",
     img: "/p4.svg",
     link: "https://www.youtube.com/embed/UVdn4ZTJ3_Q",
@@ -453,3 +454,22 @@ export const organizers = [
     className: "w-36",
   },
 ]; 
+
+export const contact = [
+  {
+    id: 1,
+    img: chairman,
+    name: "Pavan Epa",
+    position: "Event Chairman",
+    link: "mailto:pavan.22@cse.mrt.ac.lk",
+    mail: "pavan.22@cse.mrt.ac.lk",
+  },
+  {
+    id: 2,
+    img: chairman,
+    name: "Kaveesha Kapuruge",
+    position: "Event Vice Chairman",
+    link: "mailto:kaveesha.22@cse.mrt.ac.lk",
+    mail: "kaveesha.22@cse.mrt.ac.lk",
+  },
+];
