@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="flex flex-col items-center justify-between w-full gap-6 py-3 sm:flex-row">
           <div className="flex items-center">
             <p className="mt-2 text-sm text-n-1">
-              © 2024 SLIoT Challenge. All rights reserved.
+              © 2025 SLIoT Challenge. All rights reserved.
             </p>
           </div>
           <ul className="flex flex-wrap gap-5">

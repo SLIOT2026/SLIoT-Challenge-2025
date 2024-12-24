@@ -40,7 +40,7 @@ const Details = () => {
             }}
             className="mt-6 text-white text-[14px] md:text-[16px] sm:px-6 md:px-10"
         >
-            You can participate in SLIoT Challenge 2023 as teams or as individuals. Initially you can register as an expression of interest. We will be conducting an online introductory session to inform more about the competition and team forming. After that you need to submit a proposal for your idea along with team details. The maximum size of a team is 5 members. A participant can only be in one team. Each team should appoint a leader, and the organizers of SLIoT Challenge will communicate to the leaders directly regarding any announcements in the competition. The contestants can participate in the school category, undergraduate category or the open category.
+            You can participate in SLIoT Challenge 2025 as teams or as individuals. Initially you can register as an expression of interest. We will be conducting an online introductory session to inform more about the competition and team forming. After that you need to submit a proposal for your idea along with team details. The maximum size of a team is 5 members. A participant can only be in one team. Each team should appoint a leader, and the organizers of SLIoT Challenge will communicate to the leaders directly regarding any announcements in the competition. The contestants can participate in the school category, undergraduate category or the open category.
         </motion.p>
         <motion.p
             initial={{ opacity: 0.5, y: 100 }}
