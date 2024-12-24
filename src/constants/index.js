@@ -3,6 +3,7 @@ import {
   instagram,
   telegram,
   facebook,
+  youtube,
   house_icon,
   clock_icon,
   SLIoT2023_1,
@@ -94,12 +95,12 @@ export const navigation = [
 ];
 
 export const socials = [
-  {
-    id: "0",
-    title: "Twitter",
-    iconUrl: twitter,
-    url: "#",
-  },
+  // {
+  //   id: "0",
+  //   title: "Twitter",
+  //   iconUrl: twitter,
+  //   url: "#",
+  // },
   {
     id: "1",
     title: "Instagram",
@@ -108,15 +109,15 @@ export const socials = [
   },
   {
     id: "2",
-    title: "Telegram",
-    iconUrl: telegram,
-    url: "#",
+    title: "YouTube",
+    iconUrl: youtube,
+    url: "https://www.youtube.com/@SLIOT-Challenge",
   },
   {
     id: "3",
     title: "Facebook",
     iconUrl: facebook,
-    url: "#",
+    url: "https://web.facebook.com/srilankaIoTchallenge",
   },
 ];
 
