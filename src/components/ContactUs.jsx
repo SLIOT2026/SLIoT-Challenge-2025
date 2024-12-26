@@ -2,7 +2,7 @@
 
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card-new";
-import { chairman, uom } from "@/assets";
+import { chairman, uom, viceChairman } from "@/assets";
 import { motion } from "framer-motion";
 
 const ContactUs = () => {
@@ -51,7 +51,7 @@ const ContactUs = () => {
                     className="rounded-3xl bg-transparent relative group/card border-slate-800 w-full md:max-w-[30rem] lg:max-w-[35rem] h-auto p-6 border shadow-lg shadow-black">
                     <CardItem translateZ="100" rotateX={20} rotateZ={-10} className="w-full mt-4 mb-2 flex justify-center">
                         <img
-                        src={chairman}
+                        src={viceChairman}
                         className="h-40 w-40 md:h-60 md:w-60 object-cover rounded-full group-hover/card:shadow-xl items-center border-1 border-n-1"
                         alt="thumbnail" />
                     </CardItem>
