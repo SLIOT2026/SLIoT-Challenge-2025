@@ -44,11 +44,7 @@ animate={{opacity:1, y:0}}
       transition={{duration:0.5,delay:3,ease:'easeInOut'}}
               
               className="relative mt-4 md:mt-6 text-xs xs:text-sm lg:text-sm text-n-1 leading-relaxed mb-6 md:mb-10 max-w-full md:max-w-[540px] z-10 text-justify xs:text-center md:text-left">
-                The SLIoT Challenge is a competition that aims to provide a platform
-                for students to showcase their innovative ideas and solutions in the
-                field of Internet of Things (IoT). The competition is open to all
-                undergraduate students from universities and higher education
-                institutes in Sri Lanka.
+           The SLIoT Challenge is a premier competition designed to inspire and empower undergraduate students across Sri Lanka to showcase their creativity, technical skills and innovative solutions in the rapidly evolving field of the Internet of Things (IoT). Open to students from universities and higher education institutes island-wide, the competition provides a unique platform to transform ideas into impactful IoT projects.
               </motion.p>
               <motion.div
               

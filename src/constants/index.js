@@ -123,18 +123,11 @@ export const aboutGridItems = [
   {
     id: 1,
     title: "What is the SLIoT Challenge?",
-    description: `The SLIoT Challenge 2023 is an annual IoT competition organized by the Department of Computer Science & Engineering, University of Moratuwa, in collaboration with SLT-MOBITEL and The Institution of Engineers Sri Lanka (IESL).
-
-The goal of this competition is to raise awareness about the "Internet of Things" (IoT) and encourage its usage among Sri Lankans.
-
-The organizers aim to evaluate IoT-based solutions developed to meet industrial-level standards, addressing major global issues. Each year, a theme is announced to define the problem scenario.
-
-We aspire to ignite imagination and creativity by providing a competitive platform for talented and curious participants. Ideas will be evaluated based on creativity, value, benefits, and technologies used. Winners will be selected from the best ideas and performance on the event day.
-
-This year's theme is *Industry 4.0*, and the competition will be held in three categories: 
-- School Category 
-- Undergraduate Category 
-- Open Category.`,
+    description: `The SLIoT Challenge 2025 is a prestigious annual competition focused on the Internet of Things (IoT), organized by the Department of Computer Science & Engineering, University of Moratuwa, in collaboration with SLT-MOBITEL and The Institution of Engineers Sri Lanka (IESL).
+This competition aims to increase awareness and adoption of IoT technologies among Sri Lankans while fostering innovation and problem-solving skills. By encouraging participants to develop IoT solutions that meet industrial standards, the challenge addresses pressing global issues and showcases the potential of IoT to transform industries and communities.
+We inspire the participants to create innovative, impactful and technologically advanced solutions. Projects will be evaluated on creativity, value, benefits and the technologies utilized. The most outstanding ideas and performances will be rewarded on the event day.
+The competition offers opportunities for the participants from three categories: - School Category - Undergraduate Category - Open Category.
+`,
     className:
       "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh] text-n-1",
     imgClassName: "",
