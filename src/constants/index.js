@@ -43,6 +43,7 @@ import {
   iesl,
   sltLogo,
   chairman,
+  viceChairman,
 } from "../assets";
 
 export const navigation = [
@@ -103,18 +104,12 @@ export const socials = [
   // },
   {
     id: "1",
-    title: "Instagram",
-    iconUrl: instagram,
-    url: "#",
-  },
-  {
-    id: "2",
     title: "YouTube",
     iconUrl: youtube,
     url: "https://www.youtube.com/@SLIOT-Challenge",
   },
   {
-    id: "3",
+    id: "2",
     title: "Facebook",
     iconUrl: facebook,
     url: "https://web.facebook.com/srilankaIoTchallenge",
@@ -469,7 +464,7 @@ export const contact = [
   },
   {
     id: 2,
-    img: chairman,
+    img: viceChairman,
     name: "Kaveesha Kapuruge",
     position: "Event Vice Chairman",
     link: "mailto:kaveesha.22@cse.mrt.ac.lk",

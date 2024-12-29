@@ -96,7 +96,11 @@ const Prizes = () => {
         </button>
       </div> */}
 
-      <div className={`w-full flex flex-wrap-reverse justify-center items-center text-center mt-6 px-4 md:px-0 gap-x-4 md:gap-x-10 ${categoryChange && "animate-fade-up animate-once animate-duration-895 anianimate-linear"}`}>
+      <div
+        className={`w-full flex flex-wrap-reverse justify-center items-center text-center mt-6 px-4 md:px-0 gap-x-4 md:gap-x-10 ${
+          categoryChange && "animate-fade-up"
+        }`}
+      >
         <div className="order-3 md:order-3 lg:order-2">
           <div class="image-wrapper shine scale-75 transform transition duration-80 hover:scale-90">
             <img src={first} alt="trophy" className="h-[350px]" />

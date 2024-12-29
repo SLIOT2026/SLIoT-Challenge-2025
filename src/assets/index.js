@@ -61,6 +61,7 @@ import iesl from "./iesl.jpg";
 import uom from "./uom.gif";
 
 import chairman from "./pavan.png";
+import viceChairman from "./kaveesha.jpg";
 
 import bg from "./bg.png";
 
@@ -113,5 +114,6 @@ export {
   iesl,
   uom,
   chairman,
+  viceChairman,
   bg,
 };

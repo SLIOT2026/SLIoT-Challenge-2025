@@ -7,7 +7,7 @@ import { useEffect, useRef, useState } from "react";
 import MagicButton from '../ui/MagicButton';
 
 // NOTE: Change this date to whatever date you want to countdown to :)
-const COUNTDOWN_FROM = "2024-12-25";
+const COUNTDOWN_FROM = "2024-12-31";
 
 const SECOND = 1000;
 const MINUTE = SECOND * 60;
@@ -57,13 +57,9 @@ const ShiftingCountdown = () => {
         <CountdownItem unit="Minute" text="minutes" />
         <CountdownItem unit="Second" text="seconds" />
       </div>
-
-      <div className="flex mt-5">
-        
-      <MagicButton  title="Register Now" />
-      </div>
-
-
+      <a className='mt-4' href='https://forms.gle/7Z8Q6Z8Q7Z8Q6Z8Q7' target='_blank'>
+        <MagicButton title="Register Now" />
+      </a>
     </div>
   );
 };

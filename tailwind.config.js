@@ -162,6 +162,7 @@ export default {
         blur5: 'blur 1.5s 0.8s infinite linear alternate',
         blur6: 'blur 1.5s 1s infinite linear alternate',
         blur7: 'blur 1.5s 1.2s infinite linear alternate',
+        'fade-up': 'fadeUp 0.895s linear',
       },
       keyframes: {
         pulse: {
@@ -247,6 +248,10 @@ export default {
         blur: {
           '0%': { filter: 'blur(0px)' },
           '100%': { filter: 'blur(4px)' },
+        },
+        fadeUp: {
+          '0%': { opacity: 0, transform: 'translateY(20px)' },
+          '100%': { opacity: 1, transform: 'translateY(0)' },
         },
       },
       borderRadius: {
