@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from "framer-motion";
-
+import { IoNotifications } from "react-icons/io5";
 import { gsap } from "gsap";
 import { FaCalendarAlt } from "react-icons/fa";
 import { FaCheck } from "react-icons/fa";
@@ -20,7 +20,7 @@ initial={{
     opacity: 1,
     y: 0, // Slide in to its original position
     transition: {
-      duration: 1 // Animation duration
+      duration: 0.5,ease:'easeInOut' // Animation duration
     }
   }}
   viewport={{ once: true }}

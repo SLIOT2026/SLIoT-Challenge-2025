@@ -14,7 +14,7 @@ export const LampContainer = ({
         className
       )}>
       <div
-        className="relative flex w-full flex-1 scale-y-125 items-center justify-center isolate z-0 ">
+        className="relative z-0 flex items-center justify-center flex-1 w-full scale-y-125 isolate ">
         <motion.div
           initial={{ opacity: 0.5, width: "15rem" }}
           whileInView={{ opacity: 1, width: "30rem" }}
@@ -52,7 +52,7 @@ export const LampContainer = ({
         <div
           className="absolute top-1/2 h-48 w-full translate-y-12 scale-x-150 bg-slate-900/[0.8] blur-2xl"></div>
         <div
-          className="absolute top-1/2 z-50 h-48 w-full bg-transparent opacity-10 backdrop-blur-md"></div>
+          className="absolute z-50 w-full h-48 bg-transparent top-1/2 opacity-10 backdrop-blur-md"></div>
         <div
           className="absolute inset-auto z-50 h-36 w-[28rem] -translate-y-1/2 rounded-full bg-pink-500 opacity-50 blur-3xl"></div>
         <motion.div
@@ -77,7 +77,7 @@ export const LampContainer = ({
         <div
           className="absolute inset-auto z-40 h-44 w-full -translate-y-[12.5rem] bg-slate-900/[0.8] "></div>
       </div>
-      <div className="relative z-50 flex -translate-y-2 xxs:-translate-y-12 xs:-translate-y-52 sm:-translate-y-60 md:-translate-y-28 lg:-translate-y-72 flex-col items-center px-5">
+      <div className="relative z-50 flex flex-col items-center px-5 -translate-y-2 xxs:-translate-y-12 xs:-translate-y-52 sm:-translate-y-60 md:-translate-y-28 lg:-translate-y-72">
         {children}
       </div>
     </div>)

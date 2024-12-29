@@ -16,7 +16,7 @@ const EventOrganizers = () => {
         <div className="flex flex-col" id="partners">
             <hr className="border-t-2 border-gray-300 mx-[10%] mb-4 mt-20 animate-grow" />
             <div className=" text-white  py-12 text-center w-full px-[5%] lg:px-[4%] xl:px-[10%] mx-auto">
-                <div className="lg:flex gap-10 h-max items-center ">
+                <div className="items-center gap-10 lg:flex h-max ">
                     <div className="items-center">
                         <motion.h2
                         initial={{opacity:0,x:50}}
@@ -24,28 +24,29 @@ const EventOrganizers = () => {
                         transition: {
                             duration: 2 
                         }}} 
-                        className="text-4xl text-white sm:text-5xl font-poppins uppercase mb-6">
-                            Event <span className="text-[#c20c8a]">Organizers</span> 
+                        className="mb-6 text-4xl text-white uppercase sm:text-5xl font-poppins">
+                            Meet the  <span className="text-[#c20c8a]">Organizers</span> 
                         </motion.h2>
                     </div>
                     <div className="max-w-full mx-auto text-lg leading-relaxed text-start">
                         <p>
-                            This competition is organized by the Department of Computer Science & Engineering,
-                            University of Moratuwa in collaboration with SLT Mobitel and The Institution of Engineers Sri Lanka (IESL).
+                        The SLIoT Challenge 2025 is proudly organized by the Department of Computer Science & Engineering, University of Moratuwa, in collaboration with SLT-MOBITEL and The Institution of Engineers Sri Lanka (IESL).
+
                         </p>
                         <p className="mt-4">
-                            University of Moratuwa is a leading university in Sri Lanka which consists of six faculties.
-                            The Department of Computer Science & Engineering that belongs to the Faculty of Engineering
-                            is one of the prominent departments in Sri Lanka to offer an engineering degree in computer science.
+                        The University of Moratuwa is one of Sri Lanka’s premier universities, recognized for excellence in education, research and innovation. Among its faculties, the Department of Computer Science & Engineering within the Faculty of Engineering stands out as a leader in offering world-class education and producing highly skilled professionals in the field of Computer Science and Engineering.
                         </p>
                         <p className="mt-4">
-                            SLT-MOBITEL is the Leading Digital Service provider and the No. 1{" "}
-                            broadband and backbone infrastructure services provider
-                            in the country. For more information, visit{" "}
+                        SLT-MOBITEL is Sri Lanka’s leading digital service provider and the nation’s top broadband and backbone infrastructure services provider. With a commitment to advancing digital transformation, SLT-MOBITEL plays a vital role in empowering the nation through innovative solutions. For more details, visit{" "}
                             <a href="https://sltmobitel.lk" target="_blank" rel="noopener noreferrer"
                                 className="text-[#c20c8a] underline">
                                 sltmobitel.lk
                             </a>.
+                        </p>
+
+                        <p className="mt-4">
+                        The Institution of Engineers Sri Lanka (IESL) is the professional body for engineers in Sri Lanka, dedicated to promoting the advancement of engineering practices and contributing to national development. Their support underscores the importance of bridging engineering and innovation for societal benefit.
+
                         </p>
                     </div>
                 </div>
