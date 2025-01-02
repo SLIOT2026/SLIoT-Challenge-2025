@@ -69,7 +69,7 @@ const ContactUs = () => {
                     as="p"
                     translateZ="60"
                     className="text-neutral-200 text-sm md:text-base max-w-sm mt-2 dark:text-neutral-300">
-                        Department of Computer Science & Engineering, University of Moratuwa<br />kaveesha.22@cse.mrt.ac.lk
+                        Department of Computer Science & Engineering, University of Moratuwa<br />kaveeshakapuruge.22@cse.mrt.ac.lk
                     </CardItem>
                 </CardBody>
             </CardContainer>
