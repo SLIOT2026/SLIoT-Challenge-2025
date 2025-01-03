@@ -7,7 +7,7 @@ import { useEffect, useRef, useState } from "react";
 import MagicButton from '../ui/MagicButton';
 
 // NOTE: Change this date to whatever date you want to countdown to :)
-const COUNTDOWN_FROM = "2025-01-20";
+const COUNTDOWN_FROM = "2025-01-08";
 
 const SECOND = 1000;
 const MINUTE = SECOND * 60;

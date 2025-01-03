@@ -13,7 +13,7 @@ export default function TimeLine() {
       isActive: true,
     },
     {
-      date: "05 Jan 2025",
+      date: "06 Jan 2025",
       title: "Introductory Session",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
