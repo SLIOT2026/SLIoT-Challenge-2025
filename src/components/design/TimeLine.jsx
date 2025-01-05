@@ -21,7 +21,7 @@ export default function TimeLine() {
       isActive: true,
     },
     {
-      date: "To Be Decided",
+      date: "10 Jan 2025",
       title: "Open Proposal Submission",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",

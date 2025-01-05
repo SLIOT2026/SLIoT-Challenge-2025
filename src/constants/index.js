@@ -121,7 +121,7 @@ export const aboutGridItems = [
     id: 1,
     title: "What is the SLIoT Challenge?",
 
-    description: `The SLIoT Challenge is an annual IoT competition organized by the Department of Computer Science & Engineering, University of Moratuwa, in collaboration with SLT-MOBITEL and The Institution of Engineers Sri Lanka (IESL). The goal of this competition is to raise awareness about the "Internet of Things" (IoT) and encourage its usage among Sri Lankans. The organizers aim to evaluate IoT-based solutions developed to meet industrial-level standards, addressing major local and global issues. We aspire to ignite imagination and creativity by providing a competitive platform for talented and curious participants. Ideas will be evaluated based on creativity, value, benefits, and technologies used. Winners will be selected from the best ideas and performance on the event day. The competition will be held in three categories: - School Category - Undergraduate Category - Open Category.`,
+    description: `The SLIoT Challenge is an annual IoT competition organized by the Department of Computer Science & Engineering, University of Moratuwa, in collaboration with SLT-MOBITEL and The Institution of Engineers Sri Lanka (IESL). The goal of this competition is to raise awareness about the "Internet of Things" (IoT) and encourage its usage among Sri Lankans. The organizers aim to evaluate IoT-based solutions developed to meet industrial-level standards, addressing major local and global issues. We aspire to ignite imagination and creativity by providing a competitive platform for talented and curious participants. Ideas will be evaluated based on creativity, value, benefits, and technologies used. Winners will be selected from the best ideas and performance on the event day. The competition will be held in three categories: School, Undergraduate and Open.`,
 
     className:
       "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh] text-n-1",
@@ -143,7 +143,7 @@ export const aboutGridItems = [
   {
     id: 3,
     title: "When",
-    description: `To be decided <br> Check the Timeline for more details `,
+    description: `Registrations Open <br> Check the Timeline for more details `,
     className: "lg:col-span-2 md:col-span-3 md:row-span-2 text-n-1",
     imgClassName: "mt-5 ml-5 h-20 w-20",
     titleClassName: "justify-end items-end text-end",
