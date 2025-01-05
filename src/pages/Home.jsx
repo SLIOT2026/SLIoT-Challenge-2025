@@ -18,7 +18,7 @@ const Home = () => {
       <Prizes />
       <Details />
       <TimeLine/>
-      <ShiftingCountdown/>
+      {/* <ShiftingCountdown/> */}
       <Gallery />
       <SpotlightNew />
       <EventOrganizers />

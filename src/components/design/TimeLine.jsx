@@ -5,7 +5,7 @@ import TimeLineCard from "../ui/TimeLineCard";
 export default function TimeLine() {
   const events = [
     {
-      date: "26 Dec 2024",
+      date: "To Be Decided",
       title: "Registrations Opening (Expression of Interest)",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
@@ -13,7 +13,7 @@ export default function TimeLine() {
       isActive: true,
     },
     {
-      date: "06 Jan 2025",
+      date: "08 Jan 2025",
       title: "Introductory Session",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
@@ -21,7 +21,7 @@ export default function TimeLine() {
       isActive: true,
     },
     {
-      date: "08 Jan 2025",
+      date: "10 Jan 2025",
       title: "Open Proposal Submission",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
@@ -29,7 +29,7 @@ export default function TimeLine() {
       isActive: true,
     },
     {
-      date: "20 Jan 2025",
+      date: "To Be Decided",
       title: "Proposal Submission Deadline",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
@@ -45,7 +45,7 @@ export default function TimeLine() {
     //   isActive: false,
     // },
     {
-      date: "24 Jan 2025",
+      date: "To Be Decided",
       title: "School Category Workshop",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
@@ -53,7 +53,7 @@ export default function TimeLine() {
       isActive: false,
     },
     {
-      date: "03 Feb 2025",
+      date: "To Be Decided",
       title: "University & Open Category Workshop",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
@@ -61,7 +61,7 @@ export default function TimeLine() {
       isActive: false,
     },
     {
-      date: "07 Feb 2025",
+      date: "To Be Decided",
       title: "Progress Evaluation / Video Submission",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
@@ -69,7 +69,7 @@ export default function TimeLine() {
       isActive: false,
     },
     {
-      date: "16 Feb 2025",
+      date: "To Be Decided",
       title: "University & Open Category Semifinals",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
@@ -77,7 +77,7 @@ export default function TimeLine() {
       isActive: false,
     },
     {
-      date: "23 Feb 2025",
+      date: "To Be Decided",
       title: "School Category Semifinals",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
@@ -93,7 +93,7 @@ export default function TimeLine() {
     //   isActive: false,
     // },
     {
-      date: "16 Mar 2025",
+      date: "To Be Decided",
       title: "Grand Finale",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
