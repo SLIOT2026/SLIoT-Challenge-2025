@@ -5,7 +5,7 @@ import TimeLineCard from "../ui/TimeLineCard";
 export default function TimeLine() {
   const events = [
     {
-      date: "To Be Decided",
+      date: "26 Dec 2024",
       title: "Registrations Opening (Expression of Interest)",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
