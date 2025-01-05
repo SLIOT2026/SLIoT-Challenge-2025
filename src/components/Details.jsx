@@ -26,7 +26,7 @@ const Details = () => {
             duration: 0.8,
             ease: "easeInOut",
             }}
-            className="mt-8 text-white text-[16px] md:text-[16px] sm:px-6 md:px-10"
+            className="mt-8 text-white text-[14px] md:text-[16px] sm:px-6 md:px-10"
         >
            In a world driven by rapid technological advancements, the power to shape a better tomorrow lies in our hands. The SLIoT Challenge is not just a competition - it's a call to action for innovators, creators and changemakers to craft solutions that bridge technology and real-world challenges. Together, we can envision a future where innovation meets purpose and where smart solutions create lasting positive impacts on society and the environment.
         </motion.p>

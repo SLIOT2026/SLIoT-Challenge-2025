@@ -191,7 +191,7 @@ export const BentoGridItem = ({
             {/* Embedded YouTube Video */}
             <div className="w-full max-w-2xl lg:max-w-4xl aspect-video z-50">
               <iframe
-                src="https://www.youtube.com/embed/v6wOjQGANsE"
+                src={link}
                 title={title}
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
