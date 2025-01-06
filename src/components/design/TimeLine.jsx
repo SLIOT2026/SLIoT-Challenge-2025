@@ -29,7 +29,7 @@ export default function TimeLine() {
       isActive: true,
     },
     {
-      date: "To Be Decided",
+      date: "End of January",
       title: "Proposal Submission Deadline",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
@@ -45,7 +45,7 @@ export default function TimeLine() {
     //   isActive: false,
     // },
     {
-      date: "To Be Decided",
+      date: "End of January",
       title: "School Category Workshop",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
@@ -53,7 +53,7 @@ export default function TimeLine() {
       isActive: false,
     },
     {
-      date: "To Be Decided",
+      date: "Start of Feb",
       title: "University & Open Category Workshop",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
@@ -61,7 +61,7 @@ export default function TimeLine() {
       isActive: false,
     },
     {
-      date: "To Be Decided",
+      date: "Start of Feb",
       title: "Progress Evaluation / Video Submission",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
@@ -69,7 +69,7 @@ export default function TimeLine() {
       isActive: false,
     },
     {
-      date: "To Be Decided",
+      date: "3rd Week of Feb",
       title: "University & Open Category Semifinals",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
@@ -77,7 +77,7 @@ export default function TimeLine() {
       isActive: false,
     },
     {
-      date: "To Be Decided",
+      date: "End of Feb",
       title: "School Category Semifinals",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
@@ -93,7 +93,7 @@ export default function TimeLine() {
     //   isActive: false,
     // },
     {
-      date: "To Be Decided",
+      date: "2nd Week of March",
       title: "Grand Finale",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
