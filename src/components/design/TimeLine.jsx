@@ -53,7 +53,7 @@ export default function TimeLine() {
       isActive: false,
     },
     {
-      date: "Start of Feb",
+      date: "Start of February",
       title: "University & Open Category Workshop",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
@@ -61,7 +61,7 @@ export default function TimeLine() {
       isActive: false,
     },
     {
-      date: "Start of Feb",
+      date: "Start of February",
       title: "Progress Evaluation / Video Submission",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
@@ -69,7 +69,7 @@ export default function TimeLine() {
       isActive: false,
     },
     {
-      date: "3rd Week of Feb",
+      date: "3rd Week of February",
       title: "University & Open Category Semifinals",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
@@ -77,7 +77,7 @@ export default function TimeLine() {
       isActive: false,
     },
     {
-      date: "End of Feb",
+      date: "End of February",
       title: "School Category Semifinals",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
