@@ -56,6 +56,7 @@ const Details = () => {
           To support participants in reaching their full potential, we will conduct a series of workshops at University of Moratuwa (or near Colombo) and online. These sessions are designed to provide guidance and enhance competitors' skills. The competition will consist of multiple elimination rounds, culminating in the final round, to be held physically at the University of Moratuwa. The most outstanding teams and individuals will be rewarded with exciting prizes for their creativity, innovation and impact.
 
         </motion.p>
+        
        </LampContainer>
     </div>
   )

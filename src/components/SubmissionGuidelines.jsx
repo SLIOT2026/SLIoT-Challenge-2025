@@ -3,24 +3,25 @@ import { motion } from "framer-motion";
 import { idea, point } from "@/assets";
 import { guidelines } from "@/constants";
 import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
+import GuilineHeader from "./GuideLineHeader";
 
 // const Card = ({ title, description, image }) => {
 //   return (
 //     <motion.div
-//       className="bg-gray-900 text-white rounded-lg p-6 shadow-lg flex flex-col items-center justify-between"
+//       className="flex flex-col items-center justify-between p-6 text-white bg-gray-900 rounded-lg shadow-lg"
 //       whileHover={{ scale: 1.05 }}
 //       whileTap={{ scale: 0.95 }}
 //     >
 //       <div className="mb-4">
-//         <h3 className="text-3xl font-normal mb-8 text-center">{title}</h3>
-//         <ul className="text-center text-sm leading-relaxed list-disc list-inside">
+//         <h3 className="mb-8 text-3xl font-normal text-center">{title}</h3>
+//         <ul className="text-sm leading-relaxed text-center list-disc list-inside">
 //           {description.map((item, index) => (
 //             <li
 //               key={index}
-//               className="flex items-start gap-4 text-gray-200 mt-2"
+//               className="flex items-start gap-4 mt-2 text-gray-200"
 //             >
-//               <img src={point} alt="point" className="h-4 w-4 mt-1" />
-//               <p className="text-start text-lg">{item}</p>
+//               <img src={point} alt="point" className="w-4 h-4 mt-1" />
+//               <p className="text-lg text-start">{item}</p>
 //             </li>
 //           ))}
 //         </ul>
@@ -31,22 +32,26 @@ import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
 
 const SubmissionGuidelines = () => {
   return (
+    <>
+      <GuilineHeader />
     <div className="min-h-screen flex flex-col items-center py-10 px-[4%] md:px-[5%] lg:px-[10%]">
       {/* <motion.h1
-        className="text-6xl font-poppins text-white text-center mb-8"
+        className="mb-8 text-6xl text-center text-white font-poppins"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
         SLIoT 2025 Submission Guidelines
       </motion.h1> */}
+
+    
       <motion.h2
         initial={{opacity:0,y:50}}
         whileInView={{opacity:1, y:0,  
         transition: {
             duration: 2 
         }}} 
-        className="text-4xl text-white sm:text-5xl font-poppins text-center my-10">
+        className="my-10 text-4xl text-center text-white sm:text-5xl font-poppins">
           SLIoT 2025 Submission Guidelines
       </motion.h2>
       <BentoGrid>
@@ -80,6 +85,7 @@ const SubmissionGuidelines = () => {
         )}
       </BentoGrid>
     </div>
+    </>
   );
 };
 
