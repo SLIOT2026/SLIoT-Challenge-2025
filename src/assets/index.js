@@ -63,6 +63,9 @@ import uom from "./uom.gif";
 import chairman from "./pavan.png";
 import viceChairman from "./kaveesha.jpg";
 
+import idea from "./idea.png";
+import point from "./checked.png";
+
 import bg from "./bg.png";
 
 export {
@@ -115,5 +118,7 @@ export {
   uom,
   chairman,
   viceChairman,
+  idea,
+  point,
   bg,
 };

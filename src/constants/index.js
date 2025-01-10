@@ -152,6 +152,59 @@ export const aboutGridItems = [
   },
 ];
 
+export const guidelines = [
+  {
+    id: 21,
+    title: "What is This Stage?",
+    description: "",
+    descriptionItems: [
+      "Each team should pitch their idea as a proposal in this stage.",
+      "Teams with approved proposals will go to the next stage and should start developing their solution.",
+      "Workshops will be conducted to empower the teams."
+    ],
+    className:
+      "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh] text-n-1",
+    imgClassName: "",
+    titleClassName: "justify-start",
+    img: "",
+    spareImg: "",
+  },
+  {
+    id: 22,
+    title: "Proposal Template",
+    description: "",
+    descriptionItems: [
+      "The proposal must be created according to the given template.",
+      "A panel of judges will shortlist the teams based on the proposals.",
+      "The participants will be shortlisted separately for school,university and open categories."
+    ],
+    className:
+      "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh] text-n-1",
+    imgClassName: "",
+    titleClassName: "justify-start",
+    img: "",
+    spareImg: "",
+  },
+  {
+    id: 23,
+    title: "Proposal Guidelines",
+    description: "",
+    descriptionItems: [
+      "Language of Use - English.",
+      "Make a Copy of the Proposal template and fill your details in the necessary slides.",
+      "The proposal content should not exceed 06 pages.",
+      'The proposal should be named "[Team Name]_proposal".',
+      'Teams must ensure that their proposal in pdf format.',
+    ],
+    className:
+      "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh] text-n-1",
+    imgClassName: "",
+    titleClassName: "justify-start",
+    img: "",
+    spareImg: "",
+  },
+];
+
 export const previousSLIoTShowcases = [
   {
     id: 8,
