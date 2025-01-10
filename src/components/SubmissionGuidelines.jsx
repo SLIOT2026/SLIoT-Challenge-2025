@@ -186,10 +186,11 @@ const SubmissionGuidelines = () => {
       
       <a
         className="mt-4"
-        href="https://docs.google.com/document/d/1hzR5YcGs0SMnwx3LDH3HnkEQBzKDXcguVPOQCQxtMYs"
+        href="/SLIOT Challenge 2025 - Rules and Regulations.pdf"
         target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Open guidelines in a new tab"
+  rel="noopener noreferrer"
+  download
+  aria-label="Download guidelines"
       >
         <MagicButton title="Rules and Regulations" />
       </a>
