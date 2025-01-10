@@ -14,6 +14,15 @@ const GuideLines = () => {
       >
         <MagicButton title="Submission Guidelines" />
       </a>
+      <a
+        className="mt-4"
+        href="https://docs.google.com/document/d/1hzR5YcGs0SMnwx3LDH3HnkEQBzKDXcguVPOQCQxtMYs"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Open guidelines in a new tab"
+      >
+        <MagicButton title="Rules and Regulations" />
+      </a>
     </div>
   );
 };

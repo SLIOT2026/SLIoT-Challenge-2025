@@ -7,6 +7,7 @@ import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
 import GuilineHeader from "./GuideLineHeader";
 
 import DownloadPDFButton from "./DownloadPDFButton";
+import MagicButton from './ui/MagicButton';
 
 // const Card = ({ title, description, image }) => {
 //   return (
@@ -102,6 +103,8 @@ const SubmissionGuidelines = () => {
         className="mt-10 text-4xl text-center text-white sm:text-5xl font-poppins md:my-10">
           Download PDFs
       </motion.h2>
+
+
       {/* <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
         {pdfs.map((pdf, index) => (
           <div
@@ -180,6 +183,16 @@ const SubmissionGuidelines = () => {
         <DownloadPDFButton link="/SLIoT_Challenge_2025_Sample_Project_Proposal_01.pdf" title="Sample Project Proposal 01" download="SLIoT_Challenge_2025_Sample_Project_Proposal_01" />
         <DownloadPDFButton link="/SLIoT_Challenge_2025_Sample_Project_Proposal_02.pdf" title="Sample Project Proposal 02" download="SLIoT_Challenge_2025_Sample_Project_Proposal_02" />
       </div>
+      
+      <a
+        className="mt-4"
+        href="https://docs.google.com/document/d/1hzR5YcGs0SMnwx3LDH3HnkEQBzKDXcguVPOQCQxtMYs"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Open guidelines in a new tab"
+      >
+        <MagicButton title="Rules and Regulations" />
+      </a>
     </div>
     </>
   );
