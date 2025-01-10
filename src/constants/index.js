@@ -163,7 +163,7 @@ export const guidelines = [
       "Workshops will be conducted to empower the teams."
     ],
     className:
-      "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh] text-n-1",
+      "col-span-6 text-n-1",
     imgClassName: "",
     titleClassName: "justify-start",
     img: "",
@@ -179,7 +179,7 @@ export const guidelines = [
       "The participants will be shortlisted separately for school,university and open categories."
     ],
     className:
-      "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh] text-n-1",
+      "col-span-6 text-n-1",
     imgClassName: "",
     titleClassName: "justify-start",
     img: "",
@@ -197,7 +197,7 @@ export const guidelines = [
       'Teams must ensure that their proposal in pdf format.',
     ],
     className:
-      "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh] text-n-1",
+      "col-span-6 text-n-1",
     imgClassName: "",
     titleClassName: "justify-start",
     img: "",

@@ -31,21 +31,31 @@ import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
 
 const SubmissionGuidelines = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center py-10">
-      <motion.h1
+    <div className="min-h-screen flex flex-col items-center py-10 px-[4%] md:px-[5%] lg:px-[10%]">
+      {/* <motion.h1
         className="text-6xl font-poppins text-white text-center mb-8"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
         SLIoT 2025 Submission Guidelines
-      </motion.h1>
+      </motion.h1> */}
+      <motion.h2
+        initial={{opacity:0,y:50}}
+        whileInView={{opacity:1, y:0,  
+        transition: {
+            duration: 2 
+        }}} 
+        className="text-4xl text-white sm:text-5xl font-poppins text-center my-10">
+          SLIoT 2025 Submission Guidelines
+      </motion.h2>
       <BentoGrid>
         {guidelines.map(
           ({
             id,
             title,
             description,
+            descriptionItems,
             className,
             img,
             imgClassName,
@@ -58,6 +68,7 @@ const SubmissionGuidelines = () => {
               key={id}
               title={title}
               description={description}
+              descriptionItems={descriptionItems}
               className={className}
               img={img}
               imgClassName={imgClassName}

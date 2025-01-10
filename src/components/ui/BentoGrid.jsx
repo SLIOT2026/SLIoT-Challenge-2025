@@ -7,6 +7,7 @@ import animationData from "../../constants/confetti.json";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
 import ImageSlider from "../ImageSlider";
+import { point } from "@/assets";
 
 export const BentoGrid = ({ className, children }) => {
   return (
@@ -25,6 +26,7 @@ export const BentoGridItem = ({
   className,
   title,
   description,
+  descriptionItems,
   id,
   img,
   imgClassName,
@@ -119,6 +121,16 @@ export const BentoGridItem = ({
           </div>
 
           {id === 1 && <GlobeDemo />}
+          {(id === 21 || id === 22 || id === 23) && (
+            <div className="font-sans font-extralight text-white text-sm md:text-xs lg:text-base z-5 mt-2">
+              {descriptionItems.map((item, index) => (
+                <div key={index} className="flex items-start gap-2 mt-2">
+                  <img src={point} alt="point" className="h-4 w-4 lg:mt-1" />
+                  <span>{item}</span>
+                </div>
+              ))}
+            </div>
+          )}
 
           {id === 7 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2 lg:justify-center">
