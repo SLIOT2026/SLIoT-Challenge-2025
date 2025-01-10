@@ -1,10 +1,7 @@
-import { useState, useEffect } from "react";
-import { navigation } from "../constants";
-import MenuSvg from "../assets/svg/MenuSvg";
-import { disablePageScroll, enablePageScroll } from "scroll-lock";
-import logo from "../assets/svg/sliot-logo.svg";
-import { closeMenu, openMenu } from "./animations";
 
+import logo from "../assets/svg/sliot-logo.svg";
+
+import { FaCircleArrowLeft } from "react-icons/fa6";
 const GuilineHeader = () => {
   
 
@@ -12,7 +9,7 @@ const GuilineHeader = () => {
 
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-40">
+    <div className="flex flex-col items-center justify-center ">
       
      
         <div
@@ -25,17 +22,23 @@ const GuilineHeader = () => {
             >
               <img src={logo} width={100} height={100} alt="sliot" />
             </a>
-            <div className="flex items-center justify-center gap-4">
-              
+            <div    className="flex items-center justify-center gap-4">
+       <a  href="/">
       <button
-              className="hidden xl:inline-flex relative h-12 overflow-hidden rounded-2xl p-[1px] focus:outline-none"
-             
+              className=" inline-flex relative h-10 md:h-12 overflow-hidden rounded-2xl p-[1px] focus:outline-none"
+           
             >
               <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#2b0091_0%,#393BB2_50%,#ff00a4_100%)]" />
-              <span className="inline-flex items-center justify-center w-full h-full gap-2 px-12 text-sm font-medium cursor-pointer rounded-2xl bg-slate-950 text-n-1 backdrop-blur-3xl">
-               Back
+              <span className="inline-flex items-center justify-center w-full h-full gap-2 px-12 text-sm font-medium cursor-pointer rounded-2xl bg-slate-950 text-n-4 backdrop-blur-3xl">
+            <FaCircleArrowLeft className="w-6 h-6 text-white bg-transparent" />
               </span>
             </button>
+        </a>       
+
+
+
+
+        
             </div>
         </div>
    
