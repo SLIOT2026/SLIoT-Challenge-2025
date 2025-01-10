@@ -12,7 +12,7 @@ const GuideLines = () => {
         rel="noopener noreferrer"
         aria-label="Open guidelines in a new tab"
       >
-        <MagicButton title="Submission Guidelines" />
+        <MagicButton title="Proposal Submission Guidelines" />
       </a>
       <a
         className="mt-4"
