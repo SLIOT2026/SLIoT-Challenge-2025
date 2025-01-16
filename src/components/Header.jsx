@@ -4,10 +4,12 @@ import MenuSvg from "../assets/svg/MenuSvg";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import logo from "../assets/svg/sliot-logo.svg";
 import { closeMenu, openMenu } from "./animations";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [openNavigation, setOpenNavigation] = useState(false);
   const [activeSection, setActiveSection] = useState("");
+  const navigate = useNavigate();
 
   const toggleNavigation = () => {
     if (openNavigation) {
@@ -50,11 +52,15 @@ const Header = () => {
     requestAnimationFrame(animation);
   };
 
-  const handleClick = (id) => {
+  const handleClick = (id, isExternal) => {
     if (openNavigation) {
       enablePageScroll();
       closeMenu();
       setOpenNavigation(false);
+    }
+    if (isExternal) {
+      navigate(id);
+      return;
     }
     smoothScroll(id, 1500);
   };
@@ -111,8 +117,8 @@ const Header = () => {
                 {navigation.map((item) => (
                   <button
                     key={item.id}
-                    onClick={() => handleClick(item.url)}
-                    className={`relative font-poppins text-base transition-colors px-5 py-6 md:py-8 lg:text-sm lg:font-normal ${
+                    onClick={() => handleClick(item.url, item.isExternal)}
+                    className={`relative font-poppins text-base transition-colors px-5 py-6 md:py-8 xl:px-3 lg:text-sm lg:font-normal ${
                       item.onlyMobile ? "lg:hidden" : ""
                     } ${
                       activeSection === item.url

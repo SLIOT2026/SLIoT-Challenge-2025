@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 import { motion } from "framer-motion";
 import GuilineHeader from "./GuideLineHeader";
 
-const FAQAccordion = ({ title, content }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
+const FAQAccordion = ({ title, content, isOpen, onClick }) => {
   return (
     <motion.div 
       initial={{ opacity: 0, y: 20 }}
@@ -13,10 +11,10 @@ const FAQAccordion = ({ title, content }) => {
       className="w-full border-b border-white/20"
     >
       <button
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={onClick}
         className="flex items-center justify-between w-full py-4 text-left"
       >
-        <span className="font-medium text-white">{title}</span>
+        <span className="font-semibold text-white">{title}</span>
         <motion.span
           animate={{ rotate: isOpen ? 180 : 0 }}
           transition={{ duration: 0.3 }}
@@ -43,6 +41,8 @@ const FAQAccordion = ({ title, content }) => {
 };
 
 const FAQs = () => {
+  const [openIndex, setOpenIndex] = useState(null);
+
   const faqData = [
     {
       title: "What is SLIoT 2025?",
@@ -89,6 +89,8 @@ const FAQs = () => {
               key={index}
               title={faq.title}
               content={faq.content}
+              isOpen={openIndex === index}
+              onClick={() => setOpenIndex(openIndex === index ? null : index)}
             />
           ))}
         </div>

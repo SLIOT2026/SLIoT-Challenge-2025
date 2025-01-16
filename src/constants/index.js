@@ -89,6 +89,12 @@ export const navigation = [
   },
   {
     id: "9",
+    title: "FAQs",
+    url: "/faqs",
+    isExternal: true,
+  },
+  {
+    id: "10",
     title: "Contact",
     url: "contact",
     onlyMobile: true,
