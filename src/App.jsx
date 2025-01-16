@@ -7,7 +7,8 @@ import { useEffect, useRef } from "react";
 import Loader from "./components/Loader";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 import SubmissionGuidelines from "./components/SubmissionGuidelines";
-import Rules from "./components/Rules";
+
+import FAQs from "./components/Rules";
 
 
 const App = () => {
@@ -43,7 +44,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/guidelines" element={<SubmissionGuidelines />} />
-            <Route path="/rulesandregulations" element={<Rules/>} />
+            <Route path="/faqs" element={<FAQs/>} />
            
           </Routes>
         </div>

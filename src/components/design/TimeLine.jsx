@@ -29,7 +29,7 @@ export default function TimeLine() {
       isActive: true,
     },
     {
-      date: "End of January",
+      date: "31 Jan 2025",
       title: "Proposal Submission Deadline",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
@@ -45,7 +45,7 @@ export default function TimeLine() {
     //   isActive: false,
     // },
     {
-      date: "End of January",
+      date: "08 Feb 2025",
       title: "School Category Workshop",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
@@ -53,7 +53,7 @@ export default function TimeLine() {
       isActive: false,
     },
     {
-      date: "Start of February",
+      date: "09 Feb 2025",
       title: "University & Open Category Workshop",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
@@ -61,7 +61,7 @@ export default function TimeLine() {
       isActive: false,
     },
     {
-      date: "Start of February",
+      date: "2nd Week of February",
       title: "Progress Evaluation / Video Submission",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
