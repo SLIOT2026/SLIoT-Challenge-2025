@@ -35,15 +35,15 @@ const FAQAccordion = ({ title, content, points, link, isOpen, onClick }) => {
       >
         <div className="pb-4 text-gray-300">
           {content}
-          <ul className="list-disc pl-6 mt-2">
+          <ul className="pl-6 mt-2 list-disc">
             {points && points.map((point, index) => (
               <li key={index} className="flex items-start xxs:items-center">
-                <img src={point_icon} alt="point" className="w-4 h-4 mr-2 mt-1 xxs:mt-0" />
+                <img src={point_icon} alt="point" className="w-4 h-4 mt-1 mr-2 xxs:mt-0" />
                 <span>{point}</span>
               </li>
             ))}
           </ul>
-          {link && <a href={link} target="_blank" rel="noreferrer" className="text-blue-500 text-sm underline">Click here to submit your proposal</a>}
+          {link && <a href={link} target="_blank" rel="noreferrer" className="text-sm text-blue-500 underline">Click here to submit your proposal</a>}
         </div>
       </motion.div>
     </motion.div>
@@ -87,11 +87,7 @@ const FAQs = () => {
       title: "Will certificates be provided for selected proposals and semifinalists?",
       content: "Yes, certificates will be awarded based on the stage you reach in the competition."
     },
-    {
-      title: "Will there be workshops or sessions for participants?",
-      content: "Yes, workshops will be conducted as follows:",
-      points: [ "School Category: February 8th", "University & Open Categories: February 9th" ]
-    },
+   
   ];
 
   return (
