@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import GuilineHeader from "./GuideLineHeader";
 import point_icon from '../assets/checked.png';
 
-const FAQAccordion = ({ title, content, points, isOpen, onClick }) => {
+const FAQAccordion = ({ title, content, points, link, isOpen, onClick }) => {
   return (
     <motion.div 
       initial={{ opacity: 0, y: 20 }}
@@ -37,12 +37,13 @@ const FAQAccordion = ({ title, content, points, isOpen, onClick }) => {
           {content}
           <ul className="list-disc pl-6 mt-2">
             {points && points.map((point, index) => (
-              <li key={index} className="flex items-center">
-                <img src={point_icon} alt="point" className="w-4 h-4 mr-2" />
+              <li key={index} className="flex items-start xxs:items-center">
+                <img src={point_icon} alt="point" className="w-4 h-4 mr-2 mt-1 xxs:mt-0" />
                 <span>{point}</span>
               </li>
             ))}
           </ul>
+          {link && <a href={link} target="_blank" rel="noreferrer" className="text-blue-500 text-sm underline">Click here to submit your proposal</a>}
         </div>
       </motion.div>
     </motion.div>
@@ -55,7 +56,8 @@ const FAQs = () => {
   const faqData = [
     {
       title: "How can I register my team and submit the proposal?",
-      content: "You can register your team and submit the proposal through the following link."
+      content: "You can register your team and submit the proposal through the following link.",
+      link: "https://tinyurl.com/SLIoT-Proposal"
     },
     {
       title: "What is the deadline for proposal submission?",
@@ -88,7 +90,7 @@ const FAQs = () => {
     {
       title: "Will there be workshops or sessions for participants?",
       content: "Yes, workshops will be conducted as follows:",
-      points: [ "School Category: January 8th", "University & Open Categories: January 9th" ]
+      points: [ "School Category: February 8th", "University & Open Categories: February 9th" ]
     },
   ];
 
@@ -112,6 +114,7 @@ const FAQs = () => {
               title={faq.title}
               content={faq.content}
               points={faq.points}
+              link={faq.link}
               isOpen={openIndex === index}
               onClick={() => setOpenIndex(openIndex === index ? null : index)}
             />
