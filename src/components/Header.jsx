@@ -109,16 +109,16 @@ const Header = () => {
             <nav
               className={`${
                 openNavigation
-                  ? "flex h-screen justify-center items-center"
+                  ? "flex h-screen justify-start align-top   items-start"
                   : "hidden"
               } rounded-lg xl:static xl:flex xl:bg-transparent`}
             >
-              <div className="relative flex flex-col items-start justify-center m-auto text-center z-2 xl:flex-row xl:bg-transparent xl:px-0 rounded-xl nav-link">
+              <div className="relative flex flex-col items-start justify-center mt-5 text-center z-2 xl:flex-row xl:bg-transparent xl:px-0 rounded-xl nav-link">
                 {navigation.map((item) => (
                   <button
                     key={item.id}
                     onClick={() => handleClick(item.url, item.isExternal)}
-                    className={`relative font-poppins text-base transition-colors px-5 py-6 md:py-8 xl:px-3 lg:text-sm lg:font-normal ${
+                    className={`relative font-poppins text-base transition-colors px-5  py-4 md:py-6 xl:px-3 lg:text-sm lg:font-normal ${
                       item.onlyMobile ? "lg:hidden" : ""
                     } ${
                       activeSection === item.url
