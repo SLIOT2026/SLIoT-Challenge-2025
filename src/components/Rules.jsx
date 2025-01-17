@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { motion } from "framer-motion";
 import GuilineHeader from "./GuideLineHeader";
+import point_icon from '../assets/checked.png';
 
-const FAQAccordion = ({ title, content, isOpen, onClick }) => {
+const FAQAccordion = ({ title, content, points, isOpen, onClick }) => {
   return (
     <motion.div 
       initial={{ opacity: 0, y: 20 }}
@@ -34,6 +35,14 @@ const FAQAccordion = ({ title, content, isOpen, onClick }) => {
       >
         <div className="pb-4 text-gray-300">
           {content}
+          <ul className="list-disc pl-6 mt-2">
+            {points && points.map((point, index) => (
+              <li key={index} className="flex items-center">
+                <img src={point_icon} alt="point" className="w-4 h-4 mr-2" />
+                <span>{point}</span>
+              </li>
+            ))}
+          </ul>
         </div>
       </motion.div>
     </motion.div>
@@ -45,29 +54,42 @@ const FAQs = () => {
 
   const faqData = [
     {
-      title: "What is SLIoT 2025?",
-      content: "SLIoT 2025 is a premier IoT challenge that brings together innovators, developers, and entrepreneurs to showcase their IoT solutions and contribute to technological advancement."
+      title: "How can I register my team and submit the proposal?",
+      content: "You can register your team and submit the proposal through the following link."
     },
     {
-      title: "Who can participate?",
-      content: "The challenge is open to students, professionals, startups, and established companies. Participants can join individually or as teams of up to 4 members."
+      title: "What is the deadline for proposal submission?",
+      content: "The deadline for proposal submission is January 31st."
     },
     {
-      title: "What are the key dates?",
-      content: "Proposal submission deadline: March 31, 2025\nFirst round evaluation: April 15, 2025\nFinal presentation: May 30, 2025"
+      title: "Is there a specific theme for this year's competition?",
+      content: "No, there is no specific theme for this year's competition."
     },
     {
-      title: "What should the proposal include?",
-      content: "Your proposal should include a project overview, technical implementation details, innovation aspects, potential impact, and team information. Detailed guidelines are available in the submission portal."
+      title: "Can I choose any team name if I'm competing individually?",
+      content: "Yes, you are free to use your name or any code name as the team name."
     },
     {
-      title: "How are proposals evaluated?",
-      content: "Proposals are evaluated based on innovation (30%), technical feasibility (25%), impact (25%), and presentation (20%). A panel of industry experts and academics will review all submissions."
+      title: "When will the finals take place?",
+      content: "The finals are scheduled to be held in March."
     },
     {
-      title: "Is there any entry fee?",
-      content: "No, participation in SLIoT 2025 is completely free. We aim to encourage innovation and provide a platform for showcasing talent without any financial barriers."
-    }
+      title: "If I'm registering under the school category, do all team members need to be from the same school?",
+      content: "Yes, all team members must be from the same school to compete in the school category."
+    },
+    {
+      title: "What category should we select if team members are from different schools or universities?",
+      content: "If team members are from different schools or universities, select the Open Category."
+    },
+    {
+      title: "Will certificates be provided for selected proposals and semifinalists?",
+      content: "Yes, certificates will be awarded based on the stage you reach in the competition."
+    },
+    {
+      title: "Will there be workshops or sessions for participants?",
+      content: "Yes, workshops will be conducted as follows:",
+      points: [ "School Category: January 8th", "University & Open Categories: January 9th" ]
+    },
   ];
 
   return (
@@ -89,6 +111,7 @@ const FAQs = () => {
               key={index}
               title={faq.title}
               content={faq.content}
+              points={faq.points}
               isOpen={openIndex === index}
               onClick={() => setOpenIndex(openIndex === index ? null : index)}
             />
