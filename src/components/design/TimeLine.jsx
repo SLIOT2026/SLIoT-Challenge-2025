@@ -45,7 +45,7 @@ export default function TimeLine() {
     //   isActive: false,
     // },
     {
-      date: "08 Feb 2025",
+      date: "Start of February",
       title: "School Category Workshop",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
@@ -53,7 +53,7 @@ export default function TimeLine() {
       isActive: false,
     },
     {
-      date: "09 Feb 2025",
+      date: "Start of February",
       title: "University & Open Category Workshop",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
