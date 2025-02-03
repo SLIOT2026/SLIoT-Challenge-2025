@@ -60,7 +60,7 @@ import cse from "./cse.jpg";
 import iesl from "./iesl.jpg";
 import uom from "./uom.gif";
 
-import chairman from "./pavan.png";
+import chairman from "./pavan.jpg";
 import viceChairman from "./kaveesha.jpg";
 
 import idea from "./idea.png";

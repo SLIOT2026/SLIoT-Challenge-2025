@@ -29,7 +29,7 @@ export default function TimeLine() {
       isActive: true,
     },
     {
-      date: "31 January 2025 (Will be extended)",
+      date: "16 February 2025",
       title: "Proposal Submission Deadline",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
@@ -45,15 +45,7 @@ export default function TimeLine() {
     //   isActive: false,
     // },
     {
-      date: "Start of February",
-      title: "School Category Workshop",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
-      imgSrc: "assets/3.png",
-      isActive: false,
-    },
-    {
-      date: "Start of February",
+      date: "23 February 2025",
       title: "University & Open Category Workshop",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
@@ -61,7 +53,15 @@ export default function TimeLine() {
       isActive: false,
     },
     {
-      date: "2nd Week of February",
+      date: "02 March 2025",
+      title: "School Category Workshop",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
+      imgSrc: "assets/3.png",
+      isActive: false,
+    },
+    {
+      date: "09 March 2025",
       title: "Progress Evaluation / Video Submission",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
@@ -69,7 +69,7 @@ export default function TimeLine() {
       isActive: false,
     },
     {
-      date: "3rd Week of February",
+      date: "3rd Week of March",
       title: "University & Open Category Semifinals",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
@@ -77,7 +77,7 @@ export default function TimeLine() {
       isActive: false,
     },
     {
-      date: "End of February",
+      date: "3rd Week of March",
       title: "School Category Semifinals",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
@@ -93,7 +93,7 @@ export default function TimeLine() {
     //   isActive: false,
     // },
     {
-      date: "2nd Week of March",
+      date: "End of March",
       title: "Grand Finale",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
