@@ -57,7 +57,7 @@ const FAQs = () => {
     {
       title: "How can I register my team and submit the proposal?",
       content: "You can register your team and submit the proposal through the following link.",
-      link: "https://forms.gle/MD9WLWwD2fPFLCPY8"
+      link: "https://forms.gle/THZYm7Vfsa95epvG7"
     },
     {
       title: "What is the deadline for proposal submission?",

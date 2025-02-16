@@ -71,7 +71,7 @@ const SLIoTHeroSection = () => {
                   className="relative inline-block"
                 >
                   <div className="absolute inset-0 translate-x-1 translate-y-1 border-2 border-gray-400 lg:translate-y-2 lg:translate-x-2 rounded-xl"></div>
-                  <a href="https://forms.gle/MD9WLWwD2fPFLCPY8" target='_blank' className="z-20">
+                  <a href="https://forms.gle/THZYm7Vfsa95epvG7" target='_blank' className="z-20">
                     <button className="relative z-10 px-4 py-2 text-base text-white transition duration-300 shadow-lg sm:px-8 lg:px-4 lg:py-3 lg:text-lg font-nicoMoji rounded-xl bg-gradient-to-r from-pink-500 to-purple-600">
                       Submit Proposal
                     </button>
