@@ -216,7 +216,7 @@ export const BentoGridItem = ({
         </div>
       )}
 
-      {isModalOpen && imageArray && (
+      {isModalOpen && imageArray.length > 0 && (
         <div className="fixed inset-0 z-50 flex items-center justify-center">
           <div className="relative w-full h-full flex flex-col items-center justify-center bg-black bg-opacity-40 backdrop-blur-md backdrop-brightness-75">
             {/* Close button */}
