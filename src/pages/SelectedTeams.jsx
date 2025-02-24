@@ -153,7 +153,7 @@ const SelectedTeams = () => {
           </div>
         )) : (
           <div className="col-span-1 md:col-span-2 text-center py-6 text-gray-500">
-            No teams selected for this category yet.
+            No teams have been selected for this category yet.
           </div>
         )}
       </div>
