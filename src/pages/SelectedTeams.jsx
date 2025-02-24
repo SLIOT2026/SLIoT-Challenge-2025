@@ -101,10 +101,10 @@ const SelectedTeams = () => {
           Selected Teams
         </motion.h2>
       {/* Tabs */}
-      <div className="flex space-x-1 mb-5">
+      <div className="flex flex-wrap justify-center gap-2 mb-5">
         <button
           onClick={() => setActiveTab('school')}
-          className={`px-5 py-2 rounded-t-lg font-medium text-sm transition-colors ${
+          className={`px-4 py-2 rounded-lg font-medium text-sm transition-colors ${
             activeTab === 'school' ? 'bg-[#393185] text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
           }`}
         >
@@ -112,7 +112,7 @@ const SelectedTeams = () => {
         </button>
         <button
           onClick={() => setActiveTab('university')}
-          className={`px-5 py-2 rounded-t-lg font-medium text-sm transition-colors ${
+          className={`px-4 py-2 rounded-lg font-medium text-sm transition-colors ${
             activeTab === 'university' ? 'bg-[#ff00a4] text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
           }`}
         >
@@ -120,7 +120,7 @@ const SelectedTeams = () => {
         </button>
         <button
           onClick={() => setActiveTab('open')}
-          className={`px-5 py-2 rounded-t-lg font-medium text-sm transition-colors ${
+          className={`px-4 py-2 rounded-lg font-medium text-sm transition-colors ${
             activeTab === 'open' ? 'bg-[#2b0091] text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
           }`}
         >
@@ -128,14 +128,14 @@ const SelectedTeams = () => {
         </button>
       </div>
 
-      {/* Teams Display - Two Column Layout */}
-      <div className="grid md:grid-cols-2 gap-3">
+      {/* Teams Display - Responsive Layout */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         {teams[activeTab].length > 0 ? splitTeams(teams[activeTab]).map((columnTeams, colIndex) => (
           <div key={colIndex} className="space-y-2">
             {columnTeams.map((team, index) => (
-              <div key={index} className="flex items-stretch rounded overflow-hidden shadow-sm ">
+              <div key={index} className="flex flex-col md:flex-row items-stretch rounded overflow-hidden shadow-sm">
                 <div 
-                  className="w-2/5 py-2 px-3 text-white font-medium text-sm"
+                  className="md:w-2/5 w-full py-2 px-3 text-white font-medium text-sm text-center md:text-left"
                   style={{
                     backgroundColor: activeTab === 'school' ? '#393185' : 
                                   activeTab === 'university' ? '#ff00a4' : '#2b0091'
@@ -143,8 +143,8 @@ const SelectedTeams = () => {
                 >
                   <div className="line-clamp-1 hover:line-clamp-none">{team.name}</div>
                 </div>
-                <div className="w-3/5 py-2 px-3 bg-white">
-                  <div className="text-gray-700 text-sm line-clamp-1 hover:line-clamp-none">
+                <div className="md:w-3/5 w-full py-2 px-3 bg-white">
+                  <div className="text-gray-700 text-sm line-clamp-1 hover:line-clamp-none text-center md:text-left">
                     {team.school}
                   </div>
                 </div>
@@ -152,7 +152,7 @@ const SelectedTeams = () => {
             ))}
           </div>
         )) : (
-          <div className="col-span-2 text-center py-6 text-gray-500">
+          <div className="col-span-1 md:col-span-2 text-center py-6 text-gray-500">
             No teams selected for this category yet.
           </div>
         )}
