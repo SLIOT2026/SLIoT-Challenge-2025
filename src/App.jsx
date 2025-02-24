@@ -9,6 +9,7 @@ import "locomotive-scroll/dist/locomotive-scroll.css";
 import SubmissionGuidelines from "./components/SubmissionGuidelines";
 
 import FAQs from "./components/Rules";
+import SelectedTeams from "./pages/SelectedTeams";
 
 
 const App = () => {
@@ -45,6 +46,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/guidelines" element={<SubmissionGuidelines />} />
             <Route path="/faqs" element={<FAQs/>} />
+            <Route path="/selected-teams" element={<SelectedTeams />} />
            
           </Routes>
         </div>
