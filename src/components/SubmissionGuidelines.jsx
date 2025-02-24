@@ -58,7 +58,7 @@ const SubmissionGuidelines = () => {
             duration: 2 
         }}} 
         className="my-10 text-4xl text-center text-white sm:text-5xl font-poppins">
-          SLIoT 2025 Proposal Submission Guideline
+          SLIoT 2025 Proposal Submission Guidelines
       </motion.h2>
       <BentoGrid>
         {guidelines.map(
@@ -198,7 +198,7 @@ const SubmissionGuidelines = () => {
 
       <a
         className="mt-4"
-        href="https://forms.gle/3Hhpjj3iW6u2YSLB6"
+        href="https://forms.gle/MD9WLWwD2fPFLCPY8"
         target="_blank"
   rel="noopener noreferrer"
 

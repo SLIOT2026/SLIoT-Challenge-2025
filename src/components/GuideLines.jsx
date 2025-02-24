@@ -18,7 +18,6 @@ const GuideLines = () => {
       <a
         className="mt-4"
         href="/guidelines"
-        target="_blank"
         rel="noopener noreferrer"
         aria-label="Open guidelines in a new tab"
       >

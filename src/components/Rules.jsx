@@ -43,7 +43,7 @@ const FAQAccordion = ({ title, content, points, link, isOpen, onClick }) => {
               </li>
             ))}
           </ul>
-          {link && <a href={link} target="_blank" rel="noreferrer" className="text-sm text-blue-500 underline">Click here to submit your proposal</a>}
+          {link && <a href={link} target="_blank" rel="noreferrer" className="text-sm text-blue-500 underline">Click here</a>}
         </div>
       </motion.div>
     </motion.div>
@@ -57,11 +57,11 @@ const FAQs = () => {
     {
       title: "How can I register my team and submit the proposal?",
       content: "You can register your team and submit the proposal through the following link.",
-      link: "https://tinyurl.com/SLIoT-Proposal"
+      link: "https://forms.gle/MD9WLWwD2fPFLCPY8"
     },
     {
       title: "What is the deadline for proposal submission?",
-      content: "The deadline for proposal submission is January 31st."
+      content: "The new deadline for proposal submission is February 16th."
     },
     {
       title: "Is there a specific theme for this year's competition?",
@@ -87,7 +87,11 @@ const FAQs = () => {
       title: "Will certificates be provided for selected proposals and semifinalists?",
       content: "Yes, certificates will be awarded based on the stage you reach in the competition."
     },
-   
+    {
+      title: "Where can I get the announcements regarding the competition?",
+      content: "By joining this Whatsapp group",
+      link:"https://chat.whatsapp.com/HfCCiDdYdmcDbm86AI9RO1"
+    },
   ];
 
   return (
