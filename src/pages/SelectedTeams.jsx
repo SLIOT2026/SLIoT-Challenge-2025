@@ -136,7 +136,7 @@ const SelectedTeams = () => {
       { name: "7X Labs", school: "University of Moratuwa" }, ///
       // { name: "Q_Bee", school: "University of Ruhuna" },
       { name: "TechVision", school: "University of Jaffna" }, ///
-      { name: "Hydro Sense", school: "University of Moratuwa" }, ///
+      // { name: "Hydro Sense", school: "University of Moratuwa" },
       // { name: "FutureSync", school: "University of Moratuwa" },
       // { name: "Revolt", school: "University of Moratuwa" },
       // { name: "Team JASPERN", school: "University of Moratuwa" },
@@ -157,7 +157,7 @@ const SelectedTeams = () => {
       // { name: "TechTronics", school: "Uva Wellassa University" },
       // { name: "Byte_Me", school: "University of Moratuwa" },
       // { name: "IOTRONS", school: "Rajarata University of Sri Lanka" },
-      // { name: "HydroSense", school: "University of Kelaniya" },
+      { name: "Hydro Sense", school: "University of Kelaniya" }, ///
       { name: "Syntech-IoT", school: "University of Moratuwa" }, ///
       // { name: "Tech Titans", school: "Sri Lanka Technology Campus (SLTC)" },
       // { name: "StarkTech", school: "University of Moratuwa" },
