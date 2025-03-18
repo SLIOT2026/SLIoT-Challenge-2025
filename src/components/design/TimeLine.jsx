@@ -87,16 +87,16 @@ export default function TimeLine() {
       isActive: false,
     },
     {
-      date: "15 March 2025",
-      title: "University & Open Category Semifinals(physical)",
+      date: "22 March 2025",
+      title: "School Category Semifinals(online)",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
       imgSrc: "assets/3.png",
       isActive: false,
     },
     {
-      date: "16 March 2025",
-      title: "School Category Semifinals(online)",
+      date: "23 March 2025",
+      title: "University & Open Category Semifinals(physical)",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
       imgSrc: "assets/3.png",
