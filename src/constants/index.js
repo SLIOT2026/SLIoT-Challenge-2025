@@ -376,11 +376,11 @@ export const currentSLIoTShowcases = [
   {
     id: 16,
     title: "Open & Uni Semi Finals",
-    description: "Coming Soon",
+    description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "w-full h-full object-cover",
     titleClassName: "justify-start",
-    img: "",
+    img: "sliot2025_semi_15",
     spareImg: "",
     imageArray: [
       sliot2025_semi_1,
