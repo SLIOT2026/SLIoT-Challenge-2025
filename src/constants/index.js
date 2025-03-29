@@ -409,7 +409,7 @@ export const currentSLIoTShowcases = [
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "w-full h-full object-cover",
     titleClassName: "justify-start",
-    img: "sliot2025_uniworkshop_3",
+    img: sliot2025_uniworkshop_3,
     spareImg: "",
     imageArray: [
       sliot2025_uniworkshop_1,
@@ -445,7 +445,7 @@ export const currentSLIoTShowcases = [
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "w-full h-full object-cover",
     titleClassName: "justify-start",
-    img: "sliot2025_schoolworkshop_3",
+    img: sliot2025_schoolworkshop_3,
     spareImg: "",
     imageArray: [
       sliot2025_schoolworkshop_1,
@@ -488,7 +488,7 @@ export const currentSLIoTShowcases = [
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "w-full h-full object-cover",
     titleClassName: "justify-start",
-    img: "sliot2025_semi_15",
+    img: sliot2025_semi_15,
     spareImg: "",
     imageArray: [
       sliot2025_semi_1,

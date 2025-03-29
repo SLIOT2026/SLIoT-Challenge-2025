@@ -88,7 +88,7 @@ export const BentoGridItem = ({
               className={cn(imgClassName, "object-cover object-center")}
             />
           )}
-          <div className={cn(overlayClassName, "absolute inset-0 ")} />
+          <div className={cn(overlayClassName, "absolute inset-0 bg-black bg-opacity-25")} />
         </div>
         <div
           className={`absolute right-0 -bottom-5 ${
@@ -103,7 +103,7 @@ export const BentoGridItem = ({
             />
           )}
         </div>
-        {(id === 14 || id === 15 || id === 16 || id === 17 || id === 18) && (
+        {(id === 17 || id === 18) && (
           <BackgroundGradientAnimation />
         )}
 
