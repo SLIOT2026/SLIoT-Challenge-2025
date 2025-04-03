@@ -16,7 +16,7 @@ const SelectedTeams = () => {
         // { name: "REVORA", school: "R/Kuruwita Central College" },
         // { name: "Pathsence", school: "R/Kuruwita Central College (National School)" }, ///
         // { name: "Online Voting Hub", school: "R/Kuruwita Central College (National School)" },
-        { name: "Hydro Team", school: "G/Sacred Heart Convent" }, ///
+        { name: "Hydro Teams", school: "G/Sacred Heart Convent" }, ///
         // { name: "Smart Pouch", school: "R/Kuruwita Central College (National School)" },
         // { name: "ROBO X EXPLORES", school: "R/EMB/President's College" }, ///
         // { name: "W.S.A.Randunu Bandara", school: "A/Thabuthegama National College" },
@@ -41,7 +41,7 @@ const SelectedTeams = () => {
         // { name: "Wellfocus", school: "Dr. Richard Pathirana College" },
         // { name: "Miyuru Sathsara (Leader)", school: "Sathsara MadhubahanaKa/Dhe/Ruwanwella Royal College" },
         // { name: "Batti Royal Kings", school: "Bt/Bt Methodist Central College" },
-        { name: "Uro Tech (R.J.W. Sineth Induwara)", school: "H/Meegahawela K.V" }, ///
+        { name: "Uro Tech", school: "H/Meegahawela K.V" }, ///
         // { name: "Crew X", school: "Nalanda College" },
         // { name: "Innovative Minders", school: "Mahinda Rajapaksha Maha Vidyalaya, Matara" },
         // { name: "DPN OF ROBOTECH", school: "H/Ambalantota N.S" },
@@ -204,7 +204,7 @@ const SelectedTeams = () => {
       // // { name: "Agri Nexters", school: "University of Moratuwa" },
     ],
     open: [
-      // { name: "wheelorbi", school: "Kalutara" }, ///
+      { name: "wheelorbi", school: "Kalutara" }, ///
       { name: "SypherLink", school: "Kegalle" }, ////
       { name: "AURA", school: "Colombo" }, ////
       { name: "Synop", school: "Colombo" },  ///
