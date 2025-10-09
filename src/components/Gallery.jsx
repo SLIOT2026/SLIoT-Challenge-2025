@@ -70,7 +70,7 @@ const Gallery = () => {
           )}
         </div>
       </section>
-      <h3 className="text-2xl text-n-4 text-start mt-10 mb-6">SLIoT 2025 Showcases</h3>
+      <h3 className="text-2xl text-n-4 text-start mt-10 mb-6">SLIoT 2026 Showcases</h3>
       <section id="gallery">
         <BentoGrid>
           {currentSLIoTShowcases.map(

@@ -37,14 +37,14 @@ const SLIoTHeroSection = () => {
                 {showSpotlights && (
                 <TextGenerateEffect 
                     className='relative z-10 max-w-[400px] lg:max-w-[550px] mt-15 md:mt-0 text-center md:text-left'
-                    words='SLIoT Challenge 2025' 
+                    words='SLIoT Challenge 2026' 
                 />
                 )}
               </div>
               {/* <h1 className="relative z-10 text-6xl tracking-wide text-transparent md:text-7xl lg:text-8xl font-nicoMoji bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-400">
                 SLIoT 
               </h1>
-              <h2 className="relative z-10 text-4xl text-pink-500 lg:text-5xl font-nicoMoji">Challenge 2025</h2> */}
+              <h2 className="relative z-10 text-4xl text-pink-500 lg:text-5xl font-nicoMoji">Challenge 2026</h2> */}
               <motion.p
               initial={{ y: 40,opacity:0 }}
               animate={{opacity:1, y:0}}

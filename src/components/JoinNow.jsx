@@ -25,7 +25,7 @@ const JoinNow = () => {
         }}}
         className="max-w-4xl mx-auto mt-10 text-center">
         <p className="text-neutral-200 text-lg md:text-xl mb-8 leading-relaxed">
-          Ready to revolutionize the future with IoT? The SLIoT Challenge 2025 invites you to develop
+          Ready to revolutionize the future with IoT? The SLIoT Challenge 2026 invites you to develop
           innovative IoT solutions that address major local and global challenges. Organized by the
           University of Moratuwa in collaboration with SLT-MOBITEL and IESL, this competition provides
           a competitive platform to showcase your creativity and technical expertise. Compete in School,
