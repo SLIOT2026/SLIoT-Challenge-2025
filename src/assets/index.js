@@ -147,8 +147,8 @@ import iesl from "./iesl.jpg";
 import uom from "./uom.gif";
 
 import chairman from "./buwaneka.avif";
-import viceChairman1 from "./gishan.avif";
-import viceChairman2 from "./yasiru.avif";
+import viceChairman2 from "./gishan.avif";
+import viceChairman1 from "./yasiru.avif";
 
 import idea from "./idea.png";
 import point from "./checked.png";
