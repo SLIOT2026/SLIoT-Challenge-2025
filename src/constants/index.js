@@ -119,8 +119,6 @@ import {
   cse,
   iesl,
   sltLogo,
-  chairman,
-  viceChairman,
 } from "../assets";
 
 export const navigation = [
@@ -657,22 +655,3 @@ export const organizers = [
     className: "w-36",
   },
 ]; 
-
-export const contact = [
-  {
-    id: 1,
-    img: chairman,
-    name: "Pavan Epa",
-    position: "Event Chairman",
-    link: "mailto:pavan.22@cse.mrt.ac.lk",
-    mail: "pavan.22@cse.mrt.ac.lk",
-  },
-  {
-    id: 2,
-    img: viceChairman,
-    name: "Kaveesha Kapuruge",
-    position: "Event Vice Chairman",
-    link: "mailto:kaveesha.22@cse.mrt.ac.lk",
-    mail: "kaveesha.22@cse.mrt.ac.lk",
-  },
-];

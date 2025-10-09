@@ -6,7 +6,7 @@ import { Button } from "../ui/MovingBorders";
 import { motion } from "framer-motion";
 
 const Prizes = () => {
-  const [category, setCategory] = React.useState("school");
+  const [category, setCategory] = React.useState("university");
   const [categoryChange, setCategoryChange] = React.useState(false);
 
   const prizes = {
