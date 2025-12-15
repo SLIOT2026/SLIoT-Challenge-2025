@@ -4,6 +4,7 @@ import {
   telegram,
   facebook,
   youtube,
+  linkedin,
   house_icon,
   clock_icon,
   SLIoT2023_1,
@@ -133,11 +134,6 @@ export const navigation = [
     url: "about",
   },
   {
-    id: "3",
-    title: "Categories",
-    url: "categories",
-  },
-  {
     id: "4",
     title: "Challenge",
     url: "challenge",
@@ -194,6 +190,12 @@ export const socials = [
     title: "Facebook",
     iconUrl: facebook,
     url: "https://web.facebook.com/srilankaIoTchallenge",
+  },
+  {
+    id: "3",
+    title: "LinkedIn",
+    iconUrl: linkedin,
+    url: "https://www.linkedin.com/company/sliot/",
   },
 ];
 

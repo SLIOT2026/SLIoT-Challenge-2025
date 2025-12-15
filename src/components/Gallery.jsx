@@ -70,7 +70,7 @@ const Gallery = () => {
           )}
         </div>
       </section>
-      <h3 className="text-2xl text-n-4 text-start mt-10 mb-6">SLIoT 2026 Showcases</h3>
+      {/* <h3 className="text-2xl text-n-4 text-start mt-10 mb-6">SLIoT 2026 Showcases</h3>
       <section id="gallery">
         <BentoGrid>
           {currentSLIoTShowcases.map(
@@ -103,7 +103,7 @@ const Gallery = () => {
               />
             )
           )}
-        </BentoGrid>
+        </BentoGrid> */}
         {/* <div
           className="text-center max-w-fit max-h-fit mx-auto"
           onClick={toggleShowMore2}
@@ -114,7 +114,7 @@ const Gallery = () => {
             <MagicButton title="Show More" />
           )}
         </div> */}
-      </section>
+      {/* </section> */}
     </div>
   );
 };

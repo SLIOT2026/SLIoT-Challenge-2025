@@ -34,7 +34,7 @@ const JoinNow = () => {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <motion.a
-            href="https://forms.gle/csm98QcxGNSppdNQ9"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSd4YOrRO9PAbdBH_VaZxJRVwbRw2Z0jj3LmUmzvdpC8l7Jhhw/viewform?usp=header"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
