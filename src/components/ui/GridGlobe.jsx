@@ -7,15 +7,15 @@ const World = React.lazy(() =>
 export function GlobeDemo() {
   const globeConfig = {
     pointSize: 4,
-    globeColor: "#062056",
+    globeColor: "#001a3d",
     showAtmosphere: true,
     atmosphereColor: "#FFFFFF",
     atmosphereAltitude: 0.1,
-    emissive: "#062056",
+    emissive: "#001a3d",
     emissiveIntensity: 0.1,
     shininess: 0.9,
     polygonColor: "rgba(255,255,255,0.7)",
-    ambientLight: "#38bdf8",
+    ambientLight: "#1e3a8a",
     directionalLeftLight: "#ffffff",
     directionalTopLight: "#ffffff",
     pointLight: "#ffffff",
@@ -28,7 +28,7 @@ export function GlobeDemo() {
     autoRotateSpeed: 0.5,
   };
 
-  const colors = ["#06b6d4", "#3b82f6", "#6366f1"];
+  const colors = ["#1e40af", "#1e3a8a", "#1d4ed8"];
   const sampleArcs = [
     {
       order: 1,
@@ -394,9 +394,9 @@ export function GlobeDemo() {
 
   return (
     <div className="flex items-center justify-center absolute -left-5 top-36 md:top-40 w-full h-full">
-      <div className="max-w-7xl h-96 mx-auto w-full relative overflow-hidden px-4">
+      <div className="max-w-7xl h-[32rem] mx-auto w-full relative overflow-hidden px-4">
         {/* <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" /> */}
-        <div className="absolute w-full h-72 md:h-full z-0">
+        <div className="absolute w-full h-96 md:h-[32rem] z-0">
           <Suspense>
             <World data={sampleArcs} globeConfig={globeConfig} />
           </Suspense>

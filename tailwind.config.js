@@ -21,12 +21,12 @@ export default {
       
       colors: {
         color: {
-          1: "#AC6AFF",
+          1: "#46BC41",
           2: "#FFC876",
           3: "#FF776F",
           4: "#7ADB78",
-          5: "#858DFF",
-          6: "#FF98E2",
+          5: "#77FF00",
+          6: "#70FF50",
         },
         stroke: {
           1: "#26242C",
@@ -34,8 +34,8 @@ export default {
         n: {
           1: "#FFFFFF",
           2: "#CAC6DD",
-          3: "#2b0091", //blue
-          4: "#ff00a4", //pink
+          3: "#0a4d20", //green
+          4: "#77FF00", //green
           5: "#3F3A52",
           6: "#252134",
           7: "#15131D",
@@ -54,7 +54,7 @@ export default {
           20: "#32b57a",
           21: "#f5f5f5",
           22: "#e8e8e8",
-          23: "rgba(59, 0, 38, 1)",
+          23: "rgba(10, 40, 20, 1)",
           24:"rgba(9, 6, 18, 1) 100%"
         },
         background: "hsl(var(--background))",
@@ -103,6 +103,8 @@ export default {
         robotoMono: ["'Roboto Mono'", "monospace"],
         nicoMoji: ["'NicoMoji'", "sans-serif"],
         sans: ['Quattrocento Sans', 'sans-serif'],
+        audiowide: ["'Audiowide'", "sans-serif"],
+        alexandria: ["'Alexandria'", "sans-serif"],
       },
       letterSpacing: {
         tagline: ".15em",

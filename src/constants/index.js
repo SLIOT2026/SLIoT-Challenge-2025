@@ -4,6 +4,8 @@ import {
   telegram,
   facebook,
   youtube,
+  linkedin,
+  whatsapp,
   house_icon,
   clock_icon,
   SLIoT2023_1,
@@ -133,11 +135,6 @@ export const navigation = [
     url: "about",
   },
   {
-    id: "3",
-    title: "Categories",
-    url: "categories",
-  },
-  {
     id: "4",
     title: "Challenge",
     url: "challenge",
@@ -195,6 +192,18 @@ export const socials = [
     iconUrl: facebook,
     url: "https://web.facebook.com/srilankaIoTchallenge",
   },
+  {
+    id: "3",
+    title: "WhatsApp",
+    iconUrl: whatsapp,
+    url: "https://whatsapp.com/channel/0029Vb6sCXjIXnlnXpnoqT05",
+  },
+  {
+    id: "4",
+    title: "LinkedIn",
+    iconUrl: linkedin,
+    url: "https://www.linkedin.com/company/sliot/",
+  },
 ];
 
 export const aboutGridItems = [
@@ -202,33 +211,13 @@ export const aboutGridItems = [
     id: 1,
     title: "What is the SLIoT Challenge?",
 
-    description: `The SLIoT Challenge is an annual IoT competition organized by the Department of Computer Science & Engineering, University of Moratuwa, in collaboration with SLT-MOBITEL and The Institution of Engineers Sri Lanka (IESL). The goal of this competition is to raise awareness about the "Internet of Things" (IoT) and encourage its usage among Sri Lankans. The organizers aim to evaluate IoT-based solutions developed to meet industrial-level standards, addressing major local and global issues. We aspire to ignite imagination and creativity by providing a competitive platform for talented and curious participants. Ideas will be evaluated based on creativity, value, benefits, and technologies used. Winners will be selected from the best ideas and performance on the event day. The competition will be held in three categories: School, Undergraduate and Open.`,
+    description: `The SLIoT Challenge is the annual IoT competition organized by the Department of Computer Science & Engineering at the University of Moratuwa, in collaboration with SLT-MOBITEL and the Institution of Engineers, Sri Lanka (IESL). The competition provides a platform for innovators of Sri Lanka to showcase their ideas, which will be evaluated on creativity, value, impact, and technology, with winners selected based on overall performance on the event finals.`,
 
     className:
-      "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh] text-n-1",
+      "lg:col-span-6 md:col-span-6 md:row-span-4 lg:min-h-[60vh] ",
     imgClassName: "",
     titleClassName: "justify-start",
     img: "",
-    spareImg: "",
-  },
-  {
-    id: 2,
-    title: "Where",
-    description: "Final competition will be held at University of Moratuwa",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2 text-n-1",
-    imgClassName: "mt-5 ml-5 h-20 w-20",
-    titleClassName: "justify-end items-end text-end",
-    img: house_icon,
-    spareImg: "",
-  },
-  {
-    id: 3,
-    title: "When",
-    description: `Registrations Open <br> Check the Timeline for more details `,
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2 text-n-1",
-    imgClassName: "mt-5 ml-5 h-20 w-20",
-    titleClassName: "justify-end items-end text-end",
-    img: clock_icon,
     spareImg: "",
   },
 ];

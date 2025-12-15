@@ -57,7 +57,7 @@ const ShiftingCountdown = () => {
         <CountdownItem unit="Minute" text="minutes" />
         <CountdownItem unit="Second" text="seconds" />
       </div>
-      <a className='mt-4' href='https://bit.ly/sliot2025-register' target='_blank'>
+      <a className='mt-4' href='https://docs.google.com/forms/d/e/1FAIpQLSd4YOrRO9PAbdBH_VaZxJRVwbRw2Z0jj3LmUmzvdpC8l7Jhhw/viewform?usp=header' target='_blank'>
         <MagicButton title="Register Now" />
       </a>
     </div>

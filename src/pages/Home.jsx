@@ -23,7 +23,7 @@ const Home = () => {
       <Prizes />
       <Details />
       {/* <GuideLines /> */}
-      {/* <TimeLine/> */}
+      <TimeLine/>
       {/* <ShiftingCountdown/> */}
       <Gallery />
       <SpotlightNew />

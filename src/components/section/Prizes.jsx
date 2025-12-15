@@ -23,7 +23,8 @@ const Prizes = () => {
   }
 
   return (
-    <div className="mt-20 w-full mx-auto text-white body-container" id="categories">
+    <div className="mt-40 mb-30 w-full mx-auto text-white body-container" id="categories">
+      <div className="audiowide text-4xl sm:text-5xl my-20  text-center text-[#77FF00]">PRIZES</div>
       <motion.h2
       initial={{opacity:0,y:50}}
       whileInView={{opacity:1, y:0,  
@@ -31,7 +32,7 @@ const Prizes = () => {
         duration: 2 
       }}}
       className="text-5xl text-center">
-        PRIZES
+        
       </motion.h2>
 
       <div className="flex flex-col md:flex-row w-full items-center justify-center gap-10 mt-10 px-[5%]">

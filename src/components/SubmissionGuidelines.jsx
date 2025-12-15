@@ -113,7 +113,7 @@ const SubmissionGuidelines = () => {
             onMouseLeave={() => setHovered(null)}
             className={`relative p-6 rounded-lg transition-transform transform ${
               hovered === index ? "scale-[1.5] rotate-2" : "scale-100"
-            } bg-gradient-to-r from-pink-500 to-purple-600 shadow-md ${
+            } bg-gradient-to-r from-green-500 to-green-600 shadow-md ${
               hovered === index ? "shadow-2xl" : "shadow-lg"
             }`}
           >
@@ -121,7 +121,7 @@ const SubmissionGuidelines = () => {
               <div className="absolute flex items-center justify-center w-12 h-12 transition-transform transform bg-white rounded-full shadow-lg -top-6 -right-6 hover:scale-125">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-6 h-6 text-purple-600"
+                  className="w-6 h-6 text-green-600"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -138,8 +138,8 @@ const SubmissionGuidelines = () => {
                 <div
                   className={`w-16 h-16 flex items-center justify-center rounded-full shadow-lg transition-all ${
                     hovered === index
-                      ? "bg-gradient-to-tr from-pink-400 to-purple-500"
-                      : "bg-gradient-to-br from-pink-500 to-purple-600"
+                      ? "bg-gradient-to-tr from-green-400 to-green-500"
+                      : "bg-gradient-to-br from-green-500 to-green-600"
                   }`}
                 >
                   <svg

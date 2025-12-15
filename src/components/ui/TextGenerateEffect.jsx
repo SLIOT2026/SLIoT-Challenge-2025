@@ -33,7 +33,7 @@ export const TextGenerateEffect = ({
           <motion.span
             key={word + idx}
             className={`${
-              idx > 0 && idx < 3 ? "text-2xl xs:text-4xl text-pink-500 lg:text-5xl font-nicoMoji leading-none" : "text-7xl tracking-wide text-transparent md:text-7xl lg:text-8xl font-nicoMoji bg-clip-text bg-gradient-to-b from-[#e5e5e5] to-[#a3a3a3]"
+              idx > 0 && idx < 3 ? "text-2xl xs:text-4xl text-[#29FF08] lg:text-5xl font-audiowide leading-none uppercase" : "text-7xl tracking-wide text-transparent md:text-7xl lg:text-8xl font-audiowide bg-clip-text bg-gradient-to-b from-[#e5e5e5] to-[#a3a3a3] uppercase"
             } opacity-0`}
             style={{
               filter: filter ? "blur(10px)" : "none",

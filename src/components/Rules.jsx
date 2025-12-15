@@ -55,25 +55,21 @@ const FAQs = () => {
 
   const faqData = [
     {
-      title: "How can I register my team and submit the proposal?",
-      content: "You can register your team and submit the proposal through the following link.",
-      link: "https://forms.gle/MD9WLWwD2fPFLCPY8"
+      title: "How can I register my team?",
+      content: "You can register your team through the following link.",
+      link: "https://sliot.cse.mrt.ac.lk/register"
     },
     {
-      title: "What is the deadline for proposal submission?",
-      content: "The new deadline for proposal submission is February 16th."
+      title: "How many members can a team have?",
+      content: "A team can have 3-5 members."
     },
     {
       title: "Is there a specific theme for this year's competition?",
-      content: "No, there is no specific theme for this year's competition."
-    },
-    {
-      title: "Can I choose any team name if I'm competing individually?",
-      content: "Yes, you are free to use your name or any code name as the team name."
+      content: "This year's theme is \"Empowering SDGs through AIoT and Industry 5.0\" (Note that the theme only applies for the university and open categories)"
     },
     {
       title: "When will the finals take place?",
-      content: "The finals are scheduled to be held in March."
+      content: "The finals are scheduled to be held at the end of March."
     },
     {
       title: "If I'm registering under the school category, do all team members need to be from the same school?",
@@ -89,8 +85,8 @@ const FAQs = () => {
     },
     {
       title: "Where can I get the announcements regarding the competition?",
-      content: "By joining this Whatsapp group",
-      link:"https://chat.whatsapp.com/HfCCiDdYdmcDbm86AI9RO1"
+      content: "You can join the official WhatsApp channel",
+      link:"https://whatsapp.com/channel/0029Vb6sCXjIXnlnXpnoqT05"
     },
   ];
 

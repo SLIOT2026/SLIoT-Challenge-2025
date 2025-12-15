@@ -111,19 +111,19 @@ const Header = () => {
                 openNavigation
                   ? "flex h-screen justify-start align-top   items-start"
                   : "hidden"
-              } rounded-lg xl:static xl:flex xl:bg-transparent`}
+              } rounded-lg xl:static xl:flex xl:bg-transparent xl:items-center`}
             >
-              <div className="relative flex flex-col items-start justify-center mt-5 text-center z-2 xl:flex-row xl:bg-transparent xl:px-0 rounded-xl nav-link">
+              <div className="relative flex flex-col items-start justify-center my-3 text-center z-2 xl:flex-row xl:items-center xl:bg-transparent xl:px-0 rounded-xl nav-link">
                 {navigation.map((item) => (
                   <button
                     key={item.id}
                     onClick={() => handleClick(item.url, item.isExternal)}
-                    className={`relative font-poppins text-base transition-colors px-5  py-4 md:py-6 xl:px-3 lg:text-sm lg:font-normal ${
+                    className={`relative font-poppins text-base transition-colors px-5 alexandria py-4 md:py-6 xl:px-4 lg:text-sm lg:font-normal ${
                       item.onlyMobile ? "lg:hidden" : ""
                     } ${
                       activeSection === item.url
-                        ? "text-sky-500" 
-                        : "text-n-1 hover:text-n-4"
+                        ? "text-sky-500"
+                        : "text-n-1 hover:text-[#77FF00]"
                     }`}
                   >
                     {item.title}
@@ -132,12 +132,12 @@ const Header = () => {
               </div>
             </nav>
             <button
-              className="hidden xl:inline-flex relative h-12 overflow-hidden rounded-2xl p-[1px] focus:outline-none"
+              className="hidden alexandria xl:inline-flex relative h-12 overflow-hidden rounded-2xl p-[1px] focus:outline-none"
               onClick={() =>
-                smoothScroll("contact", 1500) 
+                smoothScroll("contact", 1500)
               }
             >
-              <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#2b0091_0%,#393BB2_50%,#ff00a4_100%)]" />
+              <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#46BC41_0%,#01688E_50%,#46BC41_100%)]" />
               <span className="inline-flex items-center justify-center w-full h-full gap-2 px-12 text-sm font-medium cursor-pointer rounded-2xl bg-slate-950 text-n-1 backdrop-blur-3xl">
                 Contact
               </span>

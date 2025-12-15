@@ -5,116 +5,90 @@ import TimeLineCard from "../ui/TimeLineCard";
 export default function TimeLine() {
   const events = [
     {
-      date: "26 Dec 2024",
-      title: "Registrations Opening (Expression of Interest)",
+      date: "DECEMBER",
+      title: "Start Accepting Registrations",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
+        "Registration opens for all categories. Teams can register and express their interest in participating in the challenge.",
       imgSrc: "assets/completed.png",
       isActive: true,
     },
     {
-      date: "08 Jan 2025",
-      title: "Introductory Session",
+      date: "DECEMBER",
+      title: "Introductory Session (Online)",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
+        "An online introductory session to familiarize participants with the competition guidelines, rules, and expectations.",
+      imgSrc: "assets/completed.png",
+      isActive: true,
+    },
+    {
+      date: "DECEMBER",
+      title: "Opening Proposal Acceptance",
+      description:
+        "Teams can start submitting their project proposals for evaluation by the judging panel.",
+      imgSrc: "assets/completed.png",
+      isActive: true,
+    },
+    {
+      date: "JANUARY",
+      title: "SLIoT Innovation Tour",
+      description:
+        "An innovation tour to inspire participants and showcase the potential of IoT solutions in real-world applications.",
       imgSrc: "assets/3.png",
       isActive: true,
     },
     {
-      date: "10 Jan 2025",
-      title: "Open Proposal Submission",
+      date: "JANUARY",
+      title: "University/Open Category Online Workshops",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
+        "Online workshops specifically designed for university and open category participants to enhance their technical skills.",
       imgSrc: "assets/3.png",
       isActive: true,
     },
     {
-      date: "16 February 2025",
-      title: "Proposal Submission Deadline",
+      date: "FEBRUARY",
+      title: "Close Proposal Acceptance",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
+        "Final deadline for all teams to submit their project proposals. No proposals will be accepted after this date.",
       imgSrc: "assets/3.png",
-      isActive: true,
+      isActive: false,
     },
-    // {
-    //   date: "20 Jan 2023",
-    //   title: "Announcement of Elimination Round Winners",
-    //   description:
-    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
-    //   imgSrc: "assets/3.png",
-    //   isActive: false,
-    // },
     {
-      date: "23 Feb 2025",
+      date: "FEBRUARY",
       title: "School Category Workshop",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
-      imgSrc: "assets/3.png",
-      isActive: false,
-    },
-   
-    
-    {
-      date: "23 Feb 2025",
-      title: "Video Submission open for All Categories",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
+        "Dedicated workshop for school category participants to help them develop their projects and prepare for evaluation.",
       imgSrc: "assets/3.png",
       isActive: false,
     },
     {
-      date: "02 March 2025",
-      title: "University & Open Category Workshop",
+      date: "FEBRUARY",
+      title: "Progress Evaluation (Video Submission)",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
+        "Teams must submit video presentations demonstrating their project progress for evaluation by the judges.",
       imgSrc: "assets/3.png",
       isActive: false,
     },
     {
-      date: "03 March 2025",
-      title: "School Video Submission closes",
+      date: "MARCH",
+      title: "University/Open Category Exclusive Workshops for Semi Finalists",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
+        "Intensive workshops for semi-finalists to refine their projects and prepare for the final stages of the competition.",
       imgSrc: "assets/3.png",
       isActive: false,
     },
     {
-      date: "07 March 2025",
-      title: "open/university Video Submission closes",
+      date: "MARCH",
+      title: "Semi-Finals",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
+        "Semi-final rounds where shortlisted teams present their projects. Top teams will advance to the grand finale.",
       imgSrc: "assets/3.png",
       isActive: false,
     },
     {
-      date: "22 March 2025",
-      title: "School Category Semifinals(online)",
+      date: "MARCH",
+      title: "Grand Finale & Awards Ceremony",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
-      imgSrc: "assets/3.png",
-      isActive: false,
-    },
-    {
-      date: "23 March 2025",
-      title: "University & Open Category Semifinals(physical)",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
-      imgSrc: "assets/3.png",
-      isActive: false,
-    },
-    // {
-    //   date: "To be decided",
-    //   title: "Announcing Finalists",
-    //   description:
-    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
-    //   imgSrc: "assets/3.png",
-    //   isActive: false,
-    // },
-    {
-      date: "27 April 2025",
-      title: "Grand Finale",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
+        "The final competition where finalists present their projects. Winners will be announced and awarded during the ceremony.",
       imgSrc: "assets/3.png",
       isActive: false,
     },
