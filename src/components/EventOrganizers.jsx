@@ -30,7 +30,7 @@ const EventOrganizers = () => {
                     </div>
                     <div className="max-w-full mx-auto text-lg leading-loose text-justify lg:text-start">
                         <p>
-                        The SLIoT Challenge 2025 is proudly organized by the Department of Computer Science & Engineering, University of Moratuwa, in collaboration with SLT-MOBITEL and The Institution of Engineers Sri Lanka (IESL).
+                        The SLIoT Challenge 2026 is proudly organized by the Department of Computer Science & Engineering, University of Moratuwa, in collaboration with SLT-MOBITEL and The Institution of Engineers Sri Lanka (IESL).
 
                         </p>
                         <p className="mt-6">

@@ -44,6 +44,16 @@ const JoinNow = () => {
           </motion.a>
 
           <motion.a
+            href="https://drive.google.com/drive/folders/1MJiaOs2xG6MSGquUGd1DLvnY2fj_KToz"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="inline-block text-white font-bold text-xl px-12 border-4 border-white py-4 rounded-full shadow-lg shadow-white/50 hover:shadow-white/75 transition-all duration-300">
+            Delegates Booklet
+          </motion.a>
+
+          <motion.a
             href="https://whatsapp.com/channel/0029Vb6sCXjIXnlnXpnoqT05"
             target="_blank"
             rel="noopener noreferrer"
