@@ -34,7 +34,7 @@ const EventOrganizers = () => {
 
                         </p>
                         <p className="mt-6">
-                        The University of Moratuwa is one of Sri Lanka’s premier universities, recognized for excellence in education, research and innovation. Among its faculties, the Department of Computer Science & Engineering within the Faculty of Engineering stands out as a leader in offering world-class education and producing highly skilled professionals in the field of Computer Science and Engineering.
+                        University of Moratuwa is one of Sri Lanka's premier universities, recognized for excellence in education, research and innovation. The Department of Computer Science & Engineering within the Faculty of Engineering at UoM stands out as a leader in offering world-class education and producing highly skilled professionals in the field of Computer Science and Engineering.
                         </p>
                         <p className="mt-6">
                         SLT-MOBITEL is Sri Lanka’s leading digital service provider and the nation’s top broadband and backbone infrastructure services provider. With a commitment to advancing digital transformation, SLT-MOBITEL plays a vital role in empowering the nation through innovative solutions. For more details, visit{" "}

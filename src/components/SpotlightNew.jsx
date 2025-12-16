@@ -7,9 +7,18 @@ import { ChevronDown } from "lucide-react";
 
 export function SpotlightNew() {
   const [expandedId, setExpandedId] = useState(null);
+  const [modalVideo, setModalVideo] = useState(null);
 
   const toggleExpand = (id) => {
     setExpandedId(expandedId === id ? null : id);
+  };
+
+  const openVideoModal = (video) => {
+    setModalVideo(video);
+  };
+
+  const closeVideoModal = () => {
+    setModalVideo(null);
   };
 
   const getVideoThumbnail = (link) => {
@@ -71,11 +80,9 @@ export function SpotlightNew() {
                   className="overflow-hidden"
                 >
                   <div className="p-5 pt-0 border-t border-white/10">
-                    <a
-                      href={link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block group"
+                    <div
+                      onClick={() => openVideoModal({ title, link })}
+                      className="block group cursor-pointer"
                     >
                       <div className="relative aspect-video rounded-lg overflow-hidden shadow-2xl">
                         <img
@@ -97,9 +104,9 @@ export function SpotlightNew() {
                         </div>
                       </div>
                       <p className="mt-3 text-center text-white/60 text-sm group-hover:text-green-300 transition-colors">
-                        Click to watch on YouTube
+                        Click to watch video
                       </p>
-                    </a>
+                    </div>
                   </div>
                 </motion.div>
               )}
@@ -107,6 +114,38 @@ export function SpotlightNew() {
           </motion.div>
         ))}
       </div>
+
+      {/* Video Modal */}
+      {modalVideo && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center">
+          <div className="relative w-full h-full flex flex-col items-center justify-center bg-black bg-opacity-40 backdrop-blur-md backdrop-brightness-75 p-4 md:p-8 lg:p-12">
+            {/* Close button */}
+            <button
+              className="absolute top-2 right-2 text-white hover:text-gray-400 text-4xl font-bold z-50"
+              onClick={closeVideoModal}
+            >
+              ×
+            </button>
+
+            {/* Video Title */}
+            <h2 className="text-center font-semibold text-n-1 text-2xl md:text-3xl lg:text-4xl mb-4">
+              {modalVideo.title}
+            </h2>
+            {/* Embedded YouTube Video */}
+            <div className="w-full max-w-2xl lg:max-w-4xl aspect-video z-50">
+              <iframe
+                src={modalVideo.link}
+                title={modalVideo.title}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+                className="w-full h-full"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

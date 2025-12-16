@@ -32,7 +32,7 @@ const Details = () => {
         <li>Each participant can only be part of one team and each team should appoint a leader and the organizing committee will communicate to the leaders directly regarding any announcements in the competition.</li>
         <li>To support participants in reaching their full potential, a series of workshops will be conducted at University of Moratuwa (or near Colombo) and online.</li>
         <li>The competition will consist of multiple elimination rounds, leading up to the final round, which will be held physically at the University of Moratuwa.</li>
-        <li>The most outstanding teams and individuals will be rewarded with exciting prizes for their creativity, innovation and impact.</li>
+        <li>The most outstanding projects will be rewarded with exciting prizes for their creativity, innovation and impact.</li>
       </motion.ul>
     </div>
   )
