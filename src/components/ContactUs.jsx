@@ -13,8 +13,8 @@ const ContactUs = () => {
         transition: {
             duration: 2
         }}}
-        className="text-4xl text-white sm:text-5xl font-poppins text-center mt-10 lg:mt-20">
-            <div className="audiowide text-4xl sm:text-5xl mt-32 mb-24 text-center text-[#77FF00]">CONTACT US</div>
+        className="text-4xl text-white sm:text-5xl font-poppins text-center lg:mt-20">
+            <div className="audiowide text-4xl sm:text-5xl mb-24 text-center text-[#77FF00]">CONTACT US</div>
         </motion.h2>
         <div className="flex flex-col md:flex-row justify-center items-center md:items-end w-full md:gap-8">
             {/* Chairman - First on Mobile, Middle on Desktop */}

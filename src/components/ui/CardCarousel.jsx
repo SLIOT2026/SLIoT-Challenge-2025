@@ -68,7 +68,7 @@ export const CardCarousel = ({
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20 w-screen overflow-hidden",
+        "scroller relative z-20 py-20 w-screen overflow-hidden",
         className
       )}
     >
