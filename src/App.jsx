@@ -9,6 +9,7 @@ import SubmissionGuidelines from "./components/SubmissionGuidelines";
 
 import FAQs from "./components/Rules";
 import SelectedTeams from "./pages/SelectedTeams";
+import Snowfall from "./components/Snowfall";
 
 
 const App = () => {
@@ -35,8 +36,9 @@ const App = () => {
   }, []);
   return (
 
-    
+
     <>
+      <Snowfall />
       <div  className="flex flex-col min-h-screen bg-transparent pt-[4.75rem] lg:pt-[5.25rem] overflow-x-hidden ">
         <div className="flex-grow">
           <Routes>
@@ -44,7 +46,7 @@ const App = () => {
             <Route path="/guidelines" element={<SubmissionGuidelines />} />
             <Route path="/faqs" element={<FAQs/>} />
             <Route path="/finalists" element={<SelectedTeams />} />
-           
+
           </Routes>
         </div>
         <Footer className="mt-auto" />
