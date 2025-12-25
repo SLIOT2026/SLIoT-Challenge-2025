@@ -10,6 +10,7 @@ import SubmissionGuidelines from "./components/SubmissionGuidelines";
 import FAQs from "./components/Rules";
 import SelectedTeams from "./pages/SelectedTeams";
 import Snowfall from "./components/Snowfall";
+import christmasImage from "./assets/christmas.avif";
 
 
 const App = () => {
@@ -40,6 +41,18 @@ const App = () => {
     <>
       <Snowfall />
       <div  className="flex flex-col min-h-screen bg-transparent pt-[4.75rem] lg:pt-[5.25rem] overflow-x-hidden ">
+        <a
+          href="https://sliot.cse.mrt.ac.lk/memorynexus"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-full block"
+        >
+          <img
+            src={christmasImage}
+            alt="Christmas Banner"
+            className="w-full h-auto object-cover cursor-pointer"
+          />
+        </a>
         <div className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
