@@ -39,8 +39,8 @@ const App = () => {
 
 
     <>
-      <Snowfall />
-      <div  className="flex flex-col min-h-screen bg-transparent pt-[4.75rem] lg:pt-[5.25rem] overflow-x-hidden ">
+      {/* <Snowfall /> */}
+      {/* <div  className="flex flex-col min-h-screen bg-transparent pt-[4.75rem] lg:pt-[5.25rem] overflow-x-hidden ">
         <a
           href="https://sliot.cse.mrt.ac.lk/memorynexus"
           target="_blank"
@@ -52,7 +52,7 @@ const App = () => {
             alt="Christmas Banner"
             className="w-full h-auto object-cover cursor-pointer"
           />
-        </a>
+        </a> */}
         <div className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -63,7 +63,7 @@ const App = () => {
           </Routes>
         </div>
         <Footer className="mt-auto" />
-      </div>
+     
     </>
   );
 };
