@@ -53,7 +53,7 @@ const SLIoTHeroSection = () => {
                 className="relative mt-4 md:mt-6 text-xs xs:text-sm lg:text-xl text-n-1 leading-relaxed mb-6 md:mb-10 max-w-full md:max-w-[540px] z-10 text-justify xs:text-center md:text-left alexandria">
 
 
-                Welcome to the biggest IoT competition in Sri Lank, <br></br>Open to school students, university undergraduates and innovators across the island.
+                Welcome to the biggest IoT competition in Sri Lanka, <br></br>Open to school students, university undergraduates and innovators across the island.
 
               </motion.p>
 
