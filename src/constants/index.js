@@ -131,6 +131,7 @@ import {
 } from "../assets";
 
 export const navigation = [
+
   {
     id: "1",
     title: "Home",
@@ -146,11 +147,11 @@ export const navigation = [
     title: "Challenge",
     url: "challenge",
   },
-   {
+  {
     id: "5",
     title: "Timeline",
     url: "timeline",
-   },
+  },
   {
     id: "6",
     title: "Gallery",
@@ -176,6 +177,12 @@ export const navigation = [
     title: "Contact",
     url: "contact",
     onlyMobile: true,
+  },
+  {
+    id: "11",
+    title: "Innovation Tour",
+    url: "/innovation-tour",
+    isExternal: true,
   },
 ];
 

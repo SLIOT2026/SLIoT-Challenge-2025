@@ -9,6 +9,7 @@ import SubmissionGuidelines from "./components/SubmissionGuidelines";
 
 import FAQs from "./components/Rules";
 import SelectedTeams from "./pages/SelectedTeams";
+import InnovationTour from "./pages/InnovationTour";
 import Snowfall from "./components/Snowfall";
 import christmasImage from "./assets/christmas.avif";
 
@@ -53,17 +54,18 @@ const App = () => {
             className="w-full h-auto object-cover cursor-pointer"
           />
         </a> */}
-        <div className="flex-grow">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/guidelines" element={<SubmissionGuidelines />} />
-            <Route path="/faqs" element={<FAQs/>} />
-            <Route path="/finalists" element={<SelectedTeams />} />
+      <div className="flex-grow">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/innovation-tour" element={<InnovationTour />} />
+          <Route path="/guidelines" element={<SubmissionGuidelines />} />
+          <Route path="/faqs" element={<FAQs />} />
+          <Route path="/finalists" element={<SelectedTeams />} />
 
-          </Routes>
-        </div>
-        <Footer className="mt-auto" />
-     
+        </Routes>
+      </div>
+      <Footer className="mt-auto" />
+
     </>
   );
 };
