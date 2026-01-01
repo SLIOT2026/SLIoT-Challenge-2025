@@ -4,12 +4,13 @@ import MenuSvg from "../assets/svg/MenuSvg";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import logo from "../assets/svg/sliot-logo.svg";
 import { closeMenu, openMenu } from "./animations";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const Header = () => {
   const [openNavigation, setOpenNavigation] = useState(false);
   const [activeSection, setActiveSection] = useState("");
   const navigate = useNavigate();
+  const location = useLocation();
 
   const toggleNavigation = () => {
     if (openNavigation) {
@@ -58,10 +59,24 @@ const Header = () => {
       closeMenu();
       setOpenNavigation(false);
     }
+
+    // If it's marked as external (like /innovation-tour), just navigate
     if (isExternal) {
       navigate(id);
       return;
     }
+
+    // If we're not on the homepage, navigate to homepage first, then scroll
+    if (location.pathname !== '/') {
+      navigate('/');
+      // Wait for navigation to complete, then scroll
+      setTimeout(() => {
+        smoothScroll(id, 1500);
+      }, 100);
+      return;
+    }
+
+    // If we're already on homepage, just scroll
     smoothScroll(id, 1500);
   };
 
@@ -74,7 +89,7 @@ const Header = () => {
           }
         });
       },
-      { threshold: 0.3 } 
+      { threshold: 0.3 }
     );
 
     navigation.forEach((item) => {
@@ -88,62 +103,65 @@ const Header = () => {
   return (
     <div className="flex flex-col items-center justify-center">
       {/* <div className="flex items-center justify-center"> */}
-        <div
-          className={`fixed top-0 w-full px-[5%] xl:px-[6%] mx-auto z-40 shadow-xl backdrop-blur-lg backdrop-brightness-75 nav-primary`}
-        >
-          <div className={`flex xl:items-center xl:justify-between px-5 lg:px-7.5 xl:px-10 max-xl:py-4 ${openNavigation ? "flex-col justify-start items-start " : "justify-between items-center"}`}>
-            <a
-              className={`flex items-center xl:mr-8 ${
-                openNavigation ? "" : "w-[12rem]"
+      <div
+        className={`fixed top-0 w-full px-[5%] xl:px-[6%] mx-auto z-40 shadow-xl backdrop-blur-lg backdrop-brightness-75 nav-primary`}
+      >
+        <div className={`flex xl:items-center xl:justify-between px-5 lg:px-7.5 xl:px-10 max-xl:py-4 ${openNavigation ? "flex-col justify-start items-start " : "justify-between items-center"}`}>
+          <a
+            className={`flex items-center xl:mr-8 ${openNavigation ? "" : "w-[12rem]"
               }`}
-              href="/"
-            >
-              <img src={logo} width={100} height={100} alt="sliot" />
-            </a>
-            <button
-              className={`xl:hidden ${openNavigation ? "z-6 absolute top-9 right-[8%]" : ""}`}
-              onClick={toggleNavigation}
-            >
-              <MenuSvg openNavigation={openNavigation} />
-            </button>
-            <nav
-              className={`${
-                openNavigation
-                  ? "flex h-screen justify-start align-top   items-start"
-                  : "hidden"
+            href="/"
+          >
+            <img src={logo} width={100} height={100} alt="sliot" />
+          </a>
+          <button
+            className={`xl:hidden ${openNavigation ? "z-6 absolute top-9 right-[8%]" : ""}`}
+            onClick={toggleNavigation}
+          >
+            <MenuSvg openNavigation={openNavigation} />
+          </button>
+          <nav
+            className={`${openNavigation
+              ? "flex h-screen justify-start align-top   items-start"
+              : "hidden"
               } rounded-lg xl:static xl:flex xl:bg-transparent xl:items-center`}
-            >
-              <div className="relative flex flex-col items-start justify-center my-3 text-center z-2 xl:flex-row xl:items-center xl:bg-transparent xl:px-0 rounded-xl nav-link">
-                {navigation.map((item) => (
-                  <button
-                    key={item.id}
-                    onClick={() => handleClick(item.url, item.isExternal)}
-                    className={`relative font-poppins text-base transition-colors px-5 alexandria py-4 md:py-6 xl:px-4 lg:text-sm lg:font-normal ${
-                      item.onlyMobile ? "lg:hidden" : ""
-                    } ${
-                      activeSection === item.url
-                        ? "text-sky-500"
-                        : "text-n-1 hover:text-[#77FF00]"
+          >
+            <div className="relative flex flex-col items-start justify-center my-3 text-center z-2 xl:flex-row xl:items-center xl:bg-transparent xl:px-0 rounded-xl nav-link">
+              {navigation.map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => handleClick(item.url, item.isExternal)}
+                  className={`relative font-poppins text-base transition-colors px-5 alexandria py-4 md:py-6 xl:px-4 lg:text-sm lg:font-normal ${item.onlyMobile ? "lg:hidden" : ""
+                    } ${activeSection === item.url
+                      ? "text-sky-500"
+                      : "text-n-1 hover:text-[#77FF00]"
                     }`}
-                  >
-                    {item.title}
-                  </button>
-                ))}
-              </div>
-            </nav>
-            <button
-              className="hidden alexandria xl:inline-flex relative h-12 overflow-hidden rounded-2xl p-[1px] focus:outline-none"
-              onClick={() =>
-                smoothScroll("contact", 1500)
+                >
+                  {item.title}
+                </button>
+              ))}
+            </div>
+          </nav>
+          <button
+            className="hidden alexandria xl:inline-flex relative h-12 overflow-hidden rounded-2xl p-[1px] focus:outline-none"
+            onClick={() => {
+              if (location.pathname !== '/') {
+                navigate('/');
+                setTimeout(() => {
+                  smoothScroll("contact", 1500);
+                }, 100);
+              } else {
+                smoothScroll("contact", 1500);
               }
-            >
-              <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#46BC41_0%,#01688E_50%,#46BC41_100%)]" />
-              <span className="inline-flex items-center justify-center w-full h-full gap-2 px-12 text-sm font-medium cursor-pointer rounded-2xl bg-slate-950 text-n-1 backdrop-blur-3xl">
-                Contact
-              </span>
-            </button>
-          </div>
+            }}
+          >
+            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#46BC41_0%,#01688E_50%,#46BC41_100%)]" />
+            <span className="inline-flex items-center justify-center w-full h-full gap-2 px-12 text-sm font-medium cursor-pointer rounded-2xl bg-slate-950 text-n-1 backdrop-blur-3xl">
+              Contact
+            </span>
+          </button>
         </div>
+      </div>
       {/* </div> */}
     </div>
   );
