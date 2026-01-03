@@ -327,44 +327,8 @@ const InnovationTour = () => {
                 </div>
             </section>
 
-            {/* Timeline Overview Section */}
-            <section className="py-20 px-4">
-                <div className="container mx-auto max-w-6xl">
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
-                        transition={{ duration: 0.8 }}
-                        viewport={{ once: true }}
-                    >
-                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-12 text-center">
-                            Timeline Overview
-                        </h2>
-                        <div className="relative">
-                            {/* Timeline line */}
-                            <div className="absolute left-8 top-0 bottom-0 w-1 bg-gradient-to-b from-[#46BC41] via-[#01688E] to-[#46BC41]"></div>
-
-                            <div className="space-y-8">
-                                {timeline.map((item, index) => (
-                                    <motion.div
-                                        key={index}
-                                        initial={{ opacity: 0, x: -20 }}
-                                        whileInView={{ opacity: 1, x: 0 }}
-                                        transition={{ duration: 0.5, delay: index * 0.1 }}
-                                        viewport={{ once: true }}
-                                        className="relative pl-20"
-                                    >
-                                        <div className="absolute left-5 w-8 h-8 bg-gradient-to-br from-[#46BC41] to-[#01688E] rounded-full border-4 border-slate-950"></div>
-                                        <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-lg rounded-2xl p-6 border border-slate-700/50">
-                                            <p className="text-[#46BC41] font-bold text-lg mb-2">{item.date}</p>
-                                            <p className="text-gray-300">{item.task}</p>
-                                        </div>
-                                    </motion.div>
-                                ))}
-                            </div>
-                        </div>
-                    </motion.div>
-                </div>
-            </section>
+        
+        
 
             {/* Call to Action Section */}
             <section className="py-20 px-4 bg-gradient-to-r from-slate-900/30 to-slate-800/30">
