@@ -8,6 +8,8 @@ export default function DownloadPDFButton({ link, title, download}) {
       <a
         href = {link}
         download = {download}
+        target="_blank"
+        rel="noopener noreferrer"
         className ="relative flex items-center hover:scale-[1.1] hover:rotate-2 hover:z-20 transition-transform"
       >
         <div className="absolute z-10 flex items-center justify-center w-10 h-10 transition-transform transform border rounded-full shadow-lg -top-3 -right-3 bg-white/20 hover:scale-125">
