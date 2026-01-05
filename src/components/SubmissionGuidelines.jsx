@@ -58,7 +58,7 @@ const SubmissionGuidelines = () => {
             duration: 2 
         }}} 
         className="my-10 text-4xl text-center text-white sm:text-5xl font-poppins">
-          SLIoT 2025 Proposal Submission Guidelines
+          SLIoT 2026 Proposal Submission Guidelines
       </motion.h2>
       <BentoGrid>
         {guidelines.map(
@@ -179,9 +179,9 @@ const SubmissionGuidelines = () => {
     </div>
 
       <div className="flex flex-col md:flex-row md:gap-8">
-        <DownloadPDFButton link="/SLIoT Challenge - 2025 Project Proposal Template.docx" title="Project Proposal Template" download="SLIoT_Challenge_2025_Project_Proposal_Template" />
-        <DownloadPDFButton link="/SLIoT Challenge - 2025 Sample Project Proposal 01.docx" title="Sample Project Proposal 01" download="SLIoT_Challenge_2025_Sample_Project_Proposal_01" />
-        <DownloadPDFButton link="/SLIoT Challenge - 2025 Sample Project Proposal 02.docx" title="Sample Project Proposal 02" download="SLIoT_Challenge_2025_Sample_Project_Proposal_02" />
+        <DownloadPDFButton link="/SLIoT Challenge - 2026 Project Proposal Template.docx" title="Project Proposal Template" download="SLIoT_Challenge_2026_Project_Proposal_Template" />
+        <DownloadPDFButton link="https://sliot.cse.mrt.ac.lk/sample-proposal" title="Sample Project Proposal" />
+        <DownloadPDFButton link="https://sliot.cse.mrt.ac.lk/proposal-submission-guidelines" title="Guidelines Booklet" />
       </div>
       
       {/* <a
@@ -198,7 +198,7 @@ const SubmissionGuidelines = () => {
 
       <a
         className="mt-4"
-        href="https://forms.gle/MD9WLWwD2fPFLCPY8"
+        href="https://sliot.cse.mrt.ac.lk/proposal-submission"
         target="_blank"
   rel="noopener noreferrer"
 
