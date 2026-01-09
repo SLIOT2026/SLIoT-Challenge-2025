@@ -6,9 +6,9 @@ import ContactUs from "../components/ContactUs";
 
 const InnovationTour = () => {
     const locations = [
-        { name: "Colombo", date: "Jan 12" },
-        { name: "Galle", date: "Jan 13" },
-        { name: "Kegalle", date: "Jan 14" },
+        { name: "Colombo", date: "Jan 14" },
+        { name: "Galle", date: "Jan 16" },
+        { name: "Kegalle", date: "Jan 19" },
         { name: "Matara", date: "Jan 16" },
         { name: "Kandy", date: "Jan 19" },
         { name: "Kurunegala", date: "Jan 20" },
