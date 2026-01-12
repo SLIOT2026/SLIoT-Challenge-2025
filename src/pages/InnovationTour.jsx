@@ -35,8 +35,22 @@ const InnovationTour = () => {
         <div className="flex flex-col min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 overflow-x-hidden">
             <Header />
 
+      
+
             {/* Hero Section */}
             <section className="min-h-screen flex items-center justify-center pt-[4.75rem] lg:pt-[5.25rem] px-4">
+               
+                     {/* Postponement Notice */}
+            <section className="w-full pt-[4.75rem] lg:pt-[5.25rem] px-4 py-8 flex items-center justify-center min-h-[50vh]">
+                <div className="container mx-auto max-w-3xl">
+                    <div className="bg-gradient-to-r from-red-600/15 to-red-500/15 backdrop-blur-lg rounded-3xl p-10 border border-red-600/50 shadow-lg">
+                        <p className="text-xl md:text-2xl lg:text-3xl text-red-200 text-center font-bold leading-tight">
+                            🔴 All Innovation Tour sessions are postponed due to unavoidable circumstances. We apologize for the inconvenience. We encourage all participants to focus on their project proposals and upcoming sessions. Thank you for your understanding.
+                        </p>
+                    </div>
+                </div>
+            </section>
+               
                 <div className="container mx-auto text-center">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
