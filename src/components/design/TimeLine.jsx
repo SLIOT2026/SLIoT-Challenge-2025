@@ -54,7 +54,7 @@ export default function TimeLine() {
       isActive: true,
     },
     {
-      date: "FEBRUARY",
+      date: "FEBRUARY - 02",
       title: "Close Proposal Acceptance",
       description:
         "Final deadline for all teams to submit their project proposals. No proposals will be accepted after this date.",
