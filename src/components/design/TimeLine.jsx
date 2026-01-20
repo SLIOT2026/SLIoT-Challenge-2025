@@ -11,6 +11,7 @@ export default function TimeLine() {
         "Registration opens for all categories. Teams can register and express their interest in participating in the challenge.",
       imgSrc: "assets/completed.png",
       isActive: true,
+      isDone: true,
     },
     {
       date: "JANUARY - 03",
@@ -19,6 +20,7 @@ export default function TimeLine() {
         "An online introductory session to familiarize participants with the competition guidelines, rules, and expectations.",
       imgSrc: "assets/completed.png",
       isActive: true,
+      isDone: true,
     },
     {
       date: "JANUARY - 05",
@@ -27,6 +29,7 @@ export default function TimeLine() {
         "Teams can start submitting their project proposals for evaluation by the judging panel.",
       imgSrc: "assets/completed.png",
       isActive: true,
+      isDone: true,
     },
     {
       date: "JANUARY - 12",
@@ -35,6 +38,7 @@ export default function TimeLine() {
         "An innovation tour to inspire participants and showcase the potential of IoT solutions in real-world applications.",
       imgSrc: "assets/3.png",
       isActive: true,
+      isDone: true,
     },
 
        {
@@ -44,6 +48,7 @@ export default function TimeLine() {
         "Final date for teams to complete their registration for the challenge. No new registrations will be accepted after this date.",
       imgSrc: "assets/3.png",
       isActive: true,
+      isDone: false,
     },
     {
       date: "JANUARY",
@@ -52,6 +57,7 @@ export default function TimeLine() {
         "Online workshops specifically designed for university and open category participants to enhance their technical skills.",
       imgSrc: "assets/3.png",
       isActive: true,
+      isDone: false,
     },
     {
       date: "FEBRUARY - 02",
@@ -60,6 +66,7 @@ export default function TimeLine() {
         "Final deadline for all teams to submit their project proposals. No proposals will be accepted after this date.",
       imgSrc: "assets/3.png",
       isActive: false,
+      isDone: false,
     },
     {
       date: "FEBRUARY",
@@ -68,6 +75,7 @@ export default function TimeLine() {
         "Dedicated workshop for school category participants to help them develop their projects and prepare for evaluation.",
       imgSrc: "assets/3.png",
       isActive: false,
+      isDone: false,
     },
     {
       date: "FEBRUARY",
@@ -76,6 +84,7 @@ export default function TimeLine() {
         "Teams must submit video presentations demonstrating their project progress for evaluation by the judges.",
       imgSrc: "assets/3.png",
       isActive: false,
+      isDone: false,
     },
     {
       date: "MARCH",
@@ -84,6 +93,7 @@ export default function TimeLine() {
         "Intensive workshops for semi-finalists to refine their projects and prepare for the final stages of the competition.",
       imgSrc: "assets/3.png",
       isActive: false,
+      isDone: false,
     },
     {
       date: "MARCH",
@@ -92,6 +102,7 @@ export default function TimeLine() {
         "Semi-final rounds where shortlisted teams present their projects. Top teams will advance to the grand finale.",
       imgSrc: "assets/3.png",
       isActive: false,
+      isDone: false,
     },
     {
       date: "MARCH",
@@ -100,6 +111,7 @@ export default function TimeLine() {
         "The final competition where finalists present their projects. Winners will be announced and awarded during the ceremony.",
       imgSrc: "assets/3.png",
       isActive: false,
+      isDone: false,
     },
   ];
 

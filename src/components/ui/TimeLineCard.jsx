@@ -24,8 +24,8 @@ initial={{
                     key={index}
                     className="relative flex items-center justify-between timeline-item rounded-3xl md:justify-normal md:odd:flex-row-reverse group"
                   >
-                    <div className="flex items-center justify-center w-8 h-8 rounded-full group-[.is-active]:bg-n-4 bg-n-4 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-6 md:group-even:translate-x-6">
-                     {index === 0 ? <FaCheckCircle /> : <FaCalendarAlt/>}
+                    <div className={`flex items-center justify-center w-8 h-8 rounded-full group-[.is-active]:bg-n-4 ${event.isDone ? 'bg-n-4' : 'bg-blue-500'} group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-6 md:group-even:translate-x-6`}>
+                     {event.isDone ? <FaCheckCircle /> : <FaCalendarAlt/>}
                     </div>
                     <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-transparent relative group z-0 rounded-2xl justify-center align-middle shadow-2xl shadow-black">
                       <div className="p-10 w-full bg-transparent border-sky-500 m-auto hover:border border  hover:border-n-4 hover:shadow-lg hover:shadow-black transition-all duration-700 rounded-[1em] overflow-hidden relative group z-0">
