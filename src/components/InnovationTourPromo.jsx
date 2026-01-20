@@ -38,7 +38,7 @@ const InnovationTourPromo = () => {
                                 viewport={{ once: true }}
                                 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4"
                             >
-                                SLIoT Innovation Tour 2026
+                                SLIoT Innovation Tour
                             </motion.h3>
                             <motion.p
                                 initial={{ opacity: 0, x: -20 }}

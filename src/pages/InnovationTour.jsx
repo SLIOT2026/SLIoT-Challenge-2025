@@ -6,12 +6,12 @@ import ContactUs from "../components/ContactUs";
 
 const InnovationTour = () => {
     const locations = [
-        { name: "Colombo", date: "Jan 14" },
-        { name: "Galle", date: "Jan 16" },
-        { name: "Kegalle", date: "Jan 19" },
-        { name: "Matara", date: "Jan 16" },
-        { name: "Kandy", date: "Jan 19" },
-        { name: "Kurunegala", date: "Jan 20" },
+        { name: "Colombo" },
+        { name: "Galle" },
+        { name: "Kegalle" },
+        { name: "Matara" },
+        { name: "Kandy" },
+        { name: "Kurunegala" },
     ];
 
     const objectives = [
@@ -23,12 +23,12 @@ const InnovationTour = () => {
     ];
 
     const timeline = [
-        { date: "08 December 2025", task: "Reaching out to the Ministry of Education" },
-        { date: "10-12 December 2025", task: "Sending letters to school principals inviting them to participate" },
-        { date: "10-12 December 2025", task: "Sending letters to possible-centered schools asking about the possibility of holding the workshops" },
-        { date: "20-22 December 2025", task: "Awaiting replies from schools" },
-        { date: "01 January 2026", task: "Confirming schools again via telephone calls or emails" },
-        { date: "12-16 January 2026", task: "Proposed dates for the workshop series" },
+        { task: "Reaching out to the Ministry of Education" },
+        { task: "Sending letters to school principals inviting them to participate" },
+        { task: "Sending letters to possible-centered schools asking about the possibility of holding the workshops" },
+        { task: "Awaiting replies from schools" },
+        { task: "Confirming schools again via telephone calls or emails" },
+        { task: "Planning proposed time window for the workshop series" },
     ];
 
     return (
@@ -37,20 +37,19 @@ const InnovationTour = () => {
 
       
 
-            {/* Hero Section */}
-            <section className="min-h-screen flex items-center justify-center pt-[4.75rem] lg:pt-[5.25rem] px-4">
-               
-                     {/* Postponement Notice */}
-            <section className="w-full pt-[4.75rem] lg:pt-[5.25rem] px-4 py-8 flex items-center justify-center min-h-[50vh]">
-                <div className="container mx-auto max-w-3xl">
-                    <div className="bg-gradient-to-r from-red-600/15 to-red-500/15 backdrop-blur-lg rounded-3xl p-10 border border-red-600/50 shadow-lg">
-                        <p className="text-xl md:text-2xl lg:text-3xl text-red-200 text-center font-bold leading-tight">
+            {/* Postponement Notice (visible first on mobile) */}
+            <section className="w-full mt-40 md:mt-8 pt-4 md:pt-[4.75rem] px-4">
+                <div className="container mx-auto max-w-xl sm:max-w-3xl">
+                    <div className="bg-gradient-to-r from-red-600/15 to-red-500/15 backdrop-blur-lg rounded-3xl p-4 sm:p-6 md:p-8 border border-red-600/50 shadow-lg">
+                        <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-red-200 text-center font-semibold leading-tight">
                             🔴 All Innovation Tour sessions are postponed due to unavoidable circumstances. We apologize for the inconvenience. We encourage all participants to focus on their project proposals and upcoming sessions. Thank you for your understanding.
                         </p>
                     </div>
                 </div>
             </section>
-               
+
+            {/* Hero Section */}
+            <section className="min-h-[70vh] md:min-h-screen flex items-center justify-center pt-6 md:pt-[4.75rem] lg:pt-[5.25rem] px-4">
                 <div className="container mx-auto text-center">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
@@ -58,7 +57,7 @@ const InnovationTour = () => {
                         transition={{ duration: 0.8 }}
                     >
                         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#46BC41] via-[#01688E] to-[#46BC41] mb-6 animate-gradient">
-                            SLIoT Innovation Tour 2026
+                            SLIoT Innovation Tour
                         </h1>
                         <p className="text-xl md:text-2xl lg:text-3xl text-gray-300 mb-12 max-w-4xl mx-auto">
                             An island-wide IoT & AI awareness program for school students
@@ -66,7 +65,7 @@ const InnovationTour = () => {
                         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                             <a
                                 href="#about"
-                                className="group relative inline-flex h-14 overflow-hidden rounded-full p-[2px] focus:outline-none w-64"
+                                className="group relative inline-flex h-14 overflow-hidden rounded-full p-[2px] focus:outline-none w-full sm:w-64"
                             >
                                 <span className="absolute inset-[-1000%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#46BC41_0%,#01688E_50%,#46BC41_100%)]" />
                                 <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-8 text-lg font-medium text-white backdrop-blur-3xl transition-all group-hover:bg-slate-900">
@@ -75,11 +74,11 @@ const InnovationTour = () => {
                             </a>
                             <a
                                 href="/"
-                                className="group relative inline-flex h-14 overflow-hidden rounded-full p-[2px] focus:outline-none w-64"
+                                className="group relative inline-flex h-14 overflow-hidden rounded-full p-[2px] focus:outline-none w-full sm:w-64"
                             >
                                 <span className="absolute inset-[-1000%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#01688E_0%,#46BC41_50%,#01688E_100%)]" />
                                 <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-8 text-lg font-medium text-white backdrop-blur-3xl transition-all group-hover:bg-slate-900">
-                                    Join SLIoT Challenge 2026
+                                    Join SLIoT Challenge
                                 </span>
                             </a>
                         </div>
@@ -101,7 +100,7 @@ const InnovationTour = () => {
                         </h2>
                         <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-lg rounded-3xl p-8 md:p-12 border border-slate-700/50 shadow-2xl">
                             <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-6">
-                                The SLIoT Innovation Tour 2026 is an island-wide awareness and engagement program conducted alongside the SLIoT Challenge 2026 and SLIoT Labs initiatives.
+                                The SLIoT Innovation Tour is an island-wide awareness and engagement program conducted alongside the SLIoT Challenge and SLIoT Labs initiatives.
                             </p>
                             <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-6">
                                 The tour aims to create awareness among school students about the Internet of Things (IoT) and emerging technologies. We plan to guide students on how to use AI in their work, with particular emphasis on providing enhanced AI-related support for rural areas.
@@ -110,7 +109,7 @@ const InnovationTour = () => {
                                 Through this initiative, we intend to conduct interactive one-day workshops introducing the fundamentals of IoT, its real-world applications, and entrepreneurial opportunities within this emerging field.
                             </p>
                             <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
-                                The tour will also serve as a bridge between schools, universities, and industries, inspiring students to participate in the SLIoT Challenge 2026 and explore innovation-driven career paths.
+                                The tour will also serve as a bridge between schools, universities, and industries, inspiring students to participate in the SLIoT Challenge and explore innovation-driven career paths.
                             </p>
                         </div>
                     </motion.div>
@@ -263,7 +262,7 @@ const InnovationTour = () => {
                                 Workshops hosted at <span className="text-[#46BC41] font-bold">SLT-MOBITEL Regional Offices</span>
                             </p>
                         </div>
-                        <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-6">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
                             {locations.map((location, index) => (
                                 <motion.div
                                     key={index}
@@ -275,7 +274,6 @@ const InnovationTour = () => {
                                 >
                                     <div className="text-4xl mb-4">📍</div>
                                     <h3 className="text-xl font-bold text-white mb-2">{location.name}</h3>
-                                    <p className="text-[#46BC41] font-semibold">{location.date}</p>
                                 </motion.div>
                             ))}
                         </div>
@@ -359,7 +357,7 @@ const InnovationTour = () => {
                         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
                             <a
                                 href="#contact"
-                                className="group relative inline-flex h-16 overflow-hidden rounded-full p-[2px] focus:outline-none w-72"
+                                className="group relative inline-flex h-16 overflow-hidden rounded-full p-[2px] focus:outline-none w-full sm:w-72"
                             >
                                 <span className="absolute inset-[-1000%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#46BC41_0%,#01688E_50%,#46BC41_100%)]" />
                                 <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-8 text-lg font-medium text-white backdrop-blur-3xl transition-all group-hover:bg-slate-900">
@@ -368,7 +366,7 @@ const InnovationTour = () => {
                             </a>
                             <a
                                 href="#contact"
-                                className="group relative inline-flex h-16 overflow-hidden rounded-full p-[2px] focus:outline-none w-72"
+                                className="group relative inline-flex h-16 overflow-hidden rounded-full p-[2px] focus:outline-none w-full sm:w-72"
                             >
                                 <span className="absolute inset-[-1000%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#01688E_0%,#46BC41_50%,#01688E_100%)]" />
                                 <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-8 text-lg font-medium text-white backdrop-blur-3xl transition-all group-hover:bg-slate-900">
@@ -377,11 +375,11 @@ const InnovationTour = () => {
                             </a>
                             <a
                                 href="/"
-                                className="group relative inline-flex h-16 overflow-hidden rounded-full p-[2px] focus:outline-none w-72"
+                                className="group relative inline-flex h-16 overflow-hidden rounded-full p-[2px] focus:outline-none w-full sm:w-72"
                             >
                                 <span className="absolute inset-[-1000%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#46BC41_0%,#01688E_50%,#46BC41_100%)]" />
                                 <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-8 text-lg font-medium text-white backdrop-blur-3xl transition-all group-hover:bg-slate-900">
-                                    Join SLIoT Challenge 2026
+                                    Join SLIoT Challenge
                                 </span>
                             </a>
                         </div>
@@ -392,7 +390,7 @@ const InnovationTour = () => {
             {/* Contact Details Section */}
             <ContactUs />
 
-
+            <Footer />
         </div>
     );
 };
