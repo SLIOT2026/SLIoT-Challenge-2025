@@ -13,6 +13,7 @@ import InnovationTour from "./pages/InnovationTour";
 import Snowfall from "./components/Snowfall";
 import christmasImage from "./assets/christmas.avif";
 import NotFound from "./components/NotFound";
+import TechnicalWorkshop from "./pages/TechnicalWorkshop";
 
 
 const App = () => {
@@ -62,6 +63,7 @@ const App = () => {
           <Route path="/guidelines" element={<SubmissionGuidelines />} />
           <Route path="/faqs" element={<FAQs />} />
           <Route path="/finalists" element={<SelectedTeams />} />
+          <Route path="/session_1" element={<TechnicalWorkshop />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
