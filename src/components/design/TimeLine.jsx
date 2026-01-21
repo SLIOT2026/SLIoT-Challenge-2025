@@ -32,8 +32,8 @@ export default function TimeLine() {
       isDone: true,
     },
     {
-      date: "JANUARY - 12",
-      title: "SLIoT Innovation Tour",
+      date: "JANUARY - 23",
+      title: "University/Open Category Online Workshops - IoT Problem Solving Approaches",
       description:
         "An innovation tour to inspire participants and showcase the potential of IoT solutions in real-world applications.",
       imgSrc: "assets/3.png",
@@ -51,8 +51,8 @@ export default function TimeLine() {
       isDone: false,
     },
     {
-      date: "JANUARY",
-      title: "University/Open Category Online Workshops",
+      date: "JANUARY - 25",
+      title: "University/Open Category Online Workshops - AIoT / Embedded ML & TinyML Workshop",
       description:
         "Online workshops specifically designed for university and open category participants to enhance their technical skills.",
       imgSrc: "assets/3.png",

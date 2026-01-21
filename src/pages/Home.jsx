@@ -21,7 +21,7 @@ const Home = () => {
       <Header />
       <SLIoTHeroSection />
       <JoinNow />
-      <InnovationTourPromo />
+      {/* <InnovationTourPromo /> */}
       <About />
       <Prizes />
       <Details />
