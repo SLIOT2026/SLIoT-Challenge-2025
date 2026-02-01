@@ -41,15 +41,7 @@ export default function TimeLine() {
       isDone: true,
     },
 
-       {
-      date: "JANUARY - 24",
-      title: "Close Registrations Acceptance",
-      description:
-        "Final date for teams to complete their registration for the challenge. No new registrations will be accepted after this date.",
-      imgSrc: "assets/3.png",
-      isActive: true,
-      isDone: false,
-    },
+
     {
       date: "JANUARY - 25",
       title: "University/Open Category Online Workshops - AIoT / Embedded ML & TinyML Workshop",
@@ -57,10 +49,33 @@ export default function TimeLine() {
         "Online workshops specifically designed for university and open category participants to enhance their technical skills.",
       imgSrc: "assets/3.png",
       isActive: true,
-      isDone: false,
+      isDone: true,
+    },
+
+    
+
+   {
+      date: "JANUARY - 29",
+      title: "University/Open Category Workshops ",
+      description:
+        "Online workshops specifically designed for university and open category participants to enhance their technical skills.",
+      imgSrc: "assets/3.png",
+      isActive: true,
+      isDone: true,
+    },
+
+
+           {
+      date: "FEBRUARY - 02",
+      title: "Close Registrations Acceptance",
+      description:
+        "Final date for teams to complete their registration for the challenge. No new registrations will be accepted after this date.",
+      imgSrc: "assets/3.png",
+      isActive: true,
+      isDone: true,
     },
     {
-      date: "FEBRUARY - 02",
+      date: "FEBRUARY - 04",
       title: "Close Proposal Acceptance",
       description:
         "Final deadline for all teams to submit their project proposals. No proposals will be accepted after this date.",

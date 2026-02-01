@@ -32,36 +32,62 @@ const JoinNow = () => {
           Undergraduate, or Open categories and bring your ideas to life!
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
-          <motion.a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSd4YOrRO9PAbdBH_VaZxJRVwbRw2Z0jj3LmUmzvdpC8l7Jhhw/viewform?usp=header"
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="inline-block bg-gradient-to-r from-[#46BC41] to-[#01688E] text-white font-bold text-xl  px-16 py-5 rounded-full shadow-lg shadow-[#01688E]/50 hover:shadow-[#01688E] transition-all duration-300">
-            Register Now
-          </motion.a>
+        <div className="flex flex-col gap-6 items-center">
+          {/* Primary row: main CTA(s) */}
+          <div className="flex gap-8 items-center">
+            <motion.a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSd4YOrRO9PAbdBH_VaZxJRVwbRw2Z0jj3LmUmzvdpC8l7Jhhw/viewform?usp=header"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="inline-block bg-gradient-to-r from-[#46BC41] to-[#01688E] text-white font-bold text-xl  px-16 py-5 rounded-full shadow-lg shadow-[#01688E]/50 hover:shadow-[#01688E] transition-all duration-300">
+              Register Now
+            </motion.a>
 
-          <motion.a
-            href="https://drive.google.com/drive/folders/1MJiaOs2xG6MSGquUGd1DLvnY2fj_KToz"
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="inline-block text-white font-bold text-xl px-12 border-4 border-white py-4 rounded-full shadow-lg shadow-white/50 hover:shadow-white/75 transition-all duration-300">
-            Delegates Booklet
-          </motion.a>
+            <motion.a
+              href="https://whatsapp.com/channel/0029Vb6sCXjIXnlnXpnoqT05"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="inline-block text-[#77FF00] font-bold text-xl px-12 border-4 border-[#77FF00] py-4 rounded-full shadow-lg shadow-green-500/50 hover:shadow-green-500/75 transition-all duration-300">
+              Join WhatsApp
+            </motion.a>
+          </div>
 
-          <motion.a
-            href="https://whatsapp.com/channel/0029Vb6sCXjIXnlnXpnoqT05"
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="inline-block text-[#77FF00] font-bold text-xl px-12 border-4 border-[#77FF00] py-4 rounded-full shadow-lg shadow-green-500/50 hover:shadow-green-500/75 transition-all duration-300">
-            Join WhatsApp
-          </motion.a>
+          {/* Secondary row: resource links (wrap on small screens) */}
+          <div className="flex flex-wrap gap-4 justify-center items-center">
+            <motion.a
+              href="https://sliot.cse.mrt.ac.lk/proposal-submission"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.97 }}
+              className="inline-block bg-gradient-to-r from-[#46BC41] to-[#01688E] text-white font-bold text-lg px-8 py-3 rounded-full shadow-lg shadow-[#01688E]/40 hover:shadow-[#01688E] transition-all duration-300">
+              Submit Proposal
+            </motion.a>
+
+            <motion.a
+              href="https://sliot.cse.mrt.ac.lk/guidelines"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.97 }}
+              className="inline-block text-white font-bold text-lg px-6 border-4 border-white py-3 rounded-full shadow-lg shadow-white/40 hover:shadow-white/60 transition-all duration-300">
+              Guidelines & Template
+            </motion.a>
+
+            <motion.a
+              href="https://drive.google.com/drive/folders/1MJiaOs2xG6MSGquUGd1DLvnY2fj_KToz"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.97 }}
+              className="inline-block text-white font-bold text-lg px-6 border-4 border-white py-3 rounded-full shadow-lg shadow-white/40 hover:shadow-white/60 transition-all duration-300">
+              Delegates Booklet
+            </motion.a>
+          </div>
         </div>
 
         <p className="text-neutral-400 text-lg mt-20">
