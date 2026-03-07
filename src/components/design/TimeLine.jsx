@@ -81,7 +81,7 @@ export default function TimeLine() {
         "Final deadline for all teams to submit their project proposals. No proposals will be accepted after this date.",
       imgSrc: "assets/3.png",
       isActive: false,
-      isDone: false,
+      isDone: true,
     },
     {
       date: "FEBRUARY",
@@ -90,7 +90,7 @@ export default function TimeLine() {
         "Dedicated workshop for school category participants to help them develop their projects and prepare for evaluation.",
       imgSrc: "assets/3.png",
       isActive: false,
-      isDone: false,
+      isDone: true,
     },
     {
       date: "FEBRUARY",
@@ -98,11 +98,23 @@ export default function TimeLine() {
       description:
         "Teams must submit video presentations demonstrating their project progress for evaluation by the judges.",
       imgSrc: "assets/3.png",
+      isActive: true,
+      isDone:true, 
+      isDone: true,
+    },
+
+    {
+      date: "MARCH - 12",
+      title: "Announce Semi-Finalists",
+      description:
+        "",
+      imgSrc: "assets/3.png",
       isActive: false,
       isDone: false,
     },
-    {
-      date: "MARCH",
+
+        {
+      date: "MARCH - 22",
       title: "University/Open Category Exclusive Workshops for Semi Finalists",
       description:
         "Intensive workshops for semi-finalists to refine their projects and prepare for the final stages of the competition.",
@@ -110,8 +122,9 @@ export default function TimeLine() {
       isActive: false,
       isDone: false,
     },
+
     {
-      date: "MARCH",
+      date: "APRIL - 03",
       title: "Semi-Finals",
       description:
         "Semi-final rounds where shortlisted teams present their projects. Top teams will advance to the grand finale.",
@@ -120,7 +133,7 @@ export default function TimeLine() {
       isDone: false,
     },
     {
-      date: "MARCH",
+      date: "APRIL - 25/26",
       title: "Grand Finale & Awards Ceremony",
       description:
         "The final competition where finalists present their projects. Winners will be announced and awarded during the ceremony.",
