@@ -110,7 +110,7 @@ export default function TimeLine() {
         "",
       imgSrc: "assets/3.png",
       isActive: false,
-      isDone: false,
+      isDone: true,
     },
 
         {
@@ -120,11 +120,11 @@ export default function TimeLine() {
         "Intensive workshops for semi-finalists to refine their projects and prepare for the final stages of the competition.",
       imgSrc: "assets/3.png",
       isActive: false,
-      isDone: false,
+      isDone: true,
     },
 
     {
-      date: "APRIL - 03",
+      date: "APRIL - 04",
       title: "Semi-Finals",
       description:
         "Semi-final rounds where shortlisted teams present their projects. Top teams will advance to the grand finale.",
