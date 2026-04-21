@@ -130,10 +130,10 @@ export default function TimeLine() {
         "Semi-final rounds where shortlisted teams present their projects. Top teams will advance to the grand finale.",
       imgSrc: "assets/3.png",
       isActive: false,
-      isDone: false,
+      isDone: true,
     },
     {
-      date: "APRIL - 25/26",
+      date: "APRIL - 25",
       title: "Grand Finale & Awards Ceremony",
       description:
         "The final competition where finalists present their projects. Winners will be announced and awarded during the ceremony.",
